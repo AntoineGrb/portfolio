@@ -12,7 +12,183 @@
     <script src="../src/script.js" type="module"> </script>
 </head>
 <body>
-    <p class="text-blue-500"> Hello Tailwind </p>
-    <p class="bg-red-400"> Hello Vanilla </p>
+    <!------ Header ------->
+    <header class="header">
+        <h1 class="header__title"> Antoine Grubert </h1>
+        <nav class="header__nav--screen">
+            <a class="nav__link nav__link--home active" href=""> Accueil </a>
+            <a class="nav__link nav__link--projects active" href=""> Projects </a>
+            <a class="nav__link nav__link--skills active" href=""> Skills </a>
+        </nav>
+        <i hidden> Menu </i>
+    </header>
+    <nav class="header__nav--mobile" hidden> 
+        <a class="nav__link nav__link--home active" href=""> Accueil </a>
+        <a class="nav__link nav__link--projects active" href=""> Projects </a>
+        <a class="nav__link nav__link--skills active" href=""> Skills </a>
+    </nav>
+
+    <main class="main">
+        <!------ Home section ------->
+        <section class="home">
+            <div class="home__content">
+                <p class="home__title--top"> Bonjour monde ! Je suis </p>
+                <p class="home__title--middle"> ANTOINE GRUBERT </p>
+                <p class="home__title--bottom"> Développeur web Fullstack Javascript </p>
+                <p class="home__pres"> Paragraphe de présentation ... </p>
+                <div class="home__icons">
+                    <a href=""> <img src="../src/images/icons/signe-github.png" alt="Github"> </a>
+                    <a href=""> <img src="../src/images/icons/linkedin.png" alt="Linkedin"> </a>
+                </div>
+            </div>
+            <div class="home__img">
+                <img src="" alt="">
+            </div>
+        </section>
+
+        <!------ Projects section ------->
+        <section class="projects">
+            <h2 class="projects__title "> Projets </h2>
+            <div class="projects__grid">
+                <article class="project__cell project__cell--cinemate">
+                    <div class="project-card">
+                        <p class="project-card__title"> Cinémate </p>
+                        <p class="project-card__date"> Octobre 2023 </p>
+                        <p class="project-card__desc"> Site permettant la sélection d'un film à regarder en fonction de ses critères de choix (projet personnel réalisé en autonomie) </p>
+                    </div>
+                </article>
+                <article class="project__cell project__cell--quiz">
+                    <div class="project-card">
+                        <p class="project-card__title"> Quiz hub </p>
+                        <p class="project-card__date"> Juillet 2023 </p>
+                        <p class="project-card__desc"> xxx </p>
+                    </div>
+                </article>
+                <article class="project__cell project__cell--tournois">
+                    <div class="project-card">
+                        <p class="project-card__title"> Tournois générateur </p>
+                        <p class="project-card__date"> Février 2023 </p>
+                        <p class="project-card__desc"> xxx </p>
+                    </div>
+                </article>
+                <article class="project__cell project__cell--rwlist">
+                    <div class="project-card">
+                        <p class="project-card__title"> Read & Watch List </p>
+                        <p class="project-card__date"> Avril 2023 </p>
+                        <p class="project-card__desc"> xxx </p>
+                    </div>
+                </article>
+                <article class="project__cell project__cell--artshop">
+                    <div class="project-card">
+                        <p class="project-card__title"> Art shop </p>
+                        <p class="project-card__date"> Juin 2023 </p>
+                        <p class="project-card__desc"> xxx </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!------ Skills section ------->
+        <section class="skills">
+            <h2 class="skills__title"> Skills </h2>
+            <div class="skills__content">
+                <div class="hard-skills">
+                    <h3> Hard skills </h3>
+                    <div class="hard-skills__content">
+                        <div class="skill hard-skill">
+                            <img src="../src/images/icons/icons8-html-144.png" alt="html" width="100">
+                            <p> HTML </p>
+                            <small> Maitrisé </small>
+                        </div>
+                        <div class="skill hard-skill">
+                            <img src="../src/images/icons/icons8-css-100.png" alt="css" width="100">
+                            <p> CSS </p>
+                            <small> Maitrisé </small>
+                        </div>
+                        <div class="skill hard-skill">
+                            <img src="../src/images/icons/icons8-javascript-144.png" alt="js" width="100">
+                            <p> Javascript Frontend </p>
+                            <small> Maitrisé </small>
+                        </div>
+                        <div class="skill hard-skill">
+                            <img src="../src/images/icons/icons8-react-144.png" alt="js" width="100">
+                            <p> React </p>
+                            <small> Maitrisé </small>
+                        </div>
+                        <div class="skill hard-skill">
+                            <img src="../src/images/icons/icons8-nodejs-144.png" alt="node" width="100">
+                            <p> Javascript Backend </p>
+                            <small> Maitrisé </small>
+                        </div>
+                        <div class="skill hard-skill">
+                            <img src="../src/images/icons/icons8-sql-96.png" alt="node" width="96">
+                            <p> SQL </p>
+                            <small> Maitrisé </small>
+                        </div>
+                        <div class="skill hard-skill">
+                            <img src="../src/images/icons/icons8-python-144.png" alt="node" width="100">
+                            <p> Python </p>
+                            <small> Notions </small>
+                        </div>
+                        <div class="skill hard-skill">
+                            <img src="../src/images/icons/icons8-visual-basic-100.png" alt="node" width="100">
+                            <p> VBA </p>
+                            <small> Notions </small>
+                        </div>
+                        <div class="skill hard-skill">
+                            <img src="../src/images/icons/projet.png" alt="node" width="100">
+                            <p> Gestion de projets (AGILE, Jira, Git, documentation, animation...) </p>
+                            <small> Maitrisé </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="soft-skills">
+                    <h3> Soft skills </h3>
+                    <div class="soft-skills__content">
+                        <div class="skill soft-skill">
+                            <img src="../src/images/icons/organisation.png" alt="html" width="100">
+                            <p> Organisation & rigueur </p>
+                        </div>
+                        <div class="skill soft-skill">
+                            <img src="../src/images/icons/polyvalent.png" alt="html" width="100">
+                            <p> Polyvalence </p>
+                        </div>
+                        <div class="skill soft-skill">
+                            <img src="../src/images/icons/autonomie.png" alt="html" width="100">
+                            <p> Autonomie </p>
+                        </div>
+                        <div class="skill soft-skill">
+                            <img src="../src/images/icons/curieux.png" alt="html" width="100">
+                            <p> Curieux </p>
+                        </div>
+                        <div class="skill soft-skill">
+                            <img src="../src/images/icons/client.png" alt="html" width="100">
+                            <p> Orientation client </p>
+                        </div>
+                        <div class="skill soft-skill">
+                            <img src="../src/images/icons/amelioration.png" alt="html" width="100">
+                            <p> Amélioration continue </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="formation">
+                    <img src="" alt="oclock">
+                    <p> Formé à l'école O'Clock </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <img class="footer__picture" src="" alt="profile-picture">
+        <div class="footer__content">
+            <p> Antoine Grubert </p>
+            <p> Développeur web reconverti et passionné ! </p>
+            <div class="footer__icons">
+                <a href=""> <img src="" alt="Github"> </a>
+                <a href=""> <img src="" alt="Linkedin"> </a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
