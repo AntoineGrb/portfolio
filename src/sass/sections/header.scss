@@ -1,5 +1,5 @@
 .header {
-    background-color: $color-header;
+    background-color: $color-dark;
     width: 100%;
     position: sticky;
     top: 0;
@@ -27,7 +27,7 @@
     }
 
     .nav__link:hover {
-        color:lightgray;
+        color:$color-smooth;
     }
 
     .nav__link.active {

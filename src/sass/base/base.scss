@@ -1,4 +1,12 @@
-$color-header:#0f1113;
+$color-dark:#0f1113;
+
+$color-main:#53599A;
+$color-main-save:#426B69;
+$color-smooth:#DBC2CF;
+$color-font:#616283;
+
+
+// $color-main:#3C6E71;
 
 * {
     margin: 0;
@@ -18,17 +26,28 @@ body {
 
 // ------ FONTS ----------
 
+h1, h2, h3, p, a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-size: 1rem;
+}
+
 h1 {
     font-size: 2rem;
     color:white;
 }
 
 h2 {
+    font-family: 'Open Sans', sans-serif;
     font-size: 3rem;
 }
 
 h3 {
+    font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
+    font-weight: 600;
 }
 
 a {

@@ -7,15 +7,16 @@
     <link rel ="stylesheet" href = './css/style.css' />
 	<link rel="icon" type="image/png" href="" />
     <link rel="stylesheet" href="https://kit.fontawesome.com/5c520df75a.css" crossorigin="anonymous"> <!--Font-awesome -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <script src="../src/script.js" type="module"> </script>
 </head>
 <body>
     <!------ Header ------->
     <header class="header">
         <div class="header__wrapper">
-            <h1 class="header__title"> Antoine Grubert </h1>
+            <h1 class="header__title"> My portfolio </h1>
             <nav class="header__nav--screen">
                 <a class="nav__link nav__link--home active" href="#home"> HOME </a>
                 <a class="nav__link nav__link--projects" href="#projects"> PROJECTS </a>
@@ -44,8 +45,8 @@
                     <p class="home__presentation"> " Que ce soit au cours de ma vie professionnelle ou personne, j’ai toujours côtoyé des développeurs. C’est après avoir moi-même développé des outils en VBA au cours de ma dernière expérience que j’ai compris que c’était ce que je voulais faire dans ma vie. De nature rigoureux et curieux, mes sept années d’expériences professionnelles m’ont permis de renforcer mes compétences en gestion de projet et en relation client. Aujourd’hui, je suis déterminé à mettre à profit mes compétences et développer mes aptitudes techniques. Je souhaite relever de nouveaux défis et suis à la recherche d’un poste de développeur web Fullstack. "
                     </p>
                     <div class="home__icons">
-                        <a href="https://github.com/AntoineGrb"> <img src="../src/images/icons/signe-github.png" alt="Github"> </a>
-                        <a href="https://www.linkedin.com/in/antoine-grubert-588069118/"> <img src="../src/images/icons/linkedin.png" alt="Linkedin"> </a>
+                        <div class="icon"><a href="https://github.com/AntoineGrb"> <img src="../src/images/icons/signe-github.png" alt="Github"> </a></div>
+                        <div class="icon"><a href="https://www.linkedin.com/in/antoine-grubert-588069118/"> <img src="../src/images/icons/linkedin.png" alt="Linkedin"> </a></div>
                     </div>
                 </div>
                 <div class="home__img">
@@ -153,9 +154,12 @@
                                 <p class="hard-skill__name"> VBA </p>
                                 <small class="hard-skill__mastered"> Notions </small>
                             </div>
-                            <div class="skill hard-skill">
+                            <div class="skill hard-skill gestion-projet">
                                 <img src="../src/images/icons/projet.png" alt="node">
-                                <p class="hard-skill__name"> Gestion de projets (AGILE, Jira, Git, documentation, animation...) </p>
+                                <div class="wrapper">
+                                    <p class="hard-skill__name"> Gestion de projets </p>
+                                    <p> AGILE, Jira, Git, documentation, animation... </p>
+                                </div>
                                 <small class="hard-skill__mastered" > Maitrisé </small>
                             </div>
                         </div>

@@ -14,17 +14,28 @@ body {
   background-color: whitesmoke;
 }
 
+h1, h2, h3, p, a {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-size: 1rem;
+}
+
 h1 {
   font-size: 2rem;
   color: white;
 }
 
 h2 {
+  font-family: "Open Sans", sans-serif;
   font-size: 3rem;
 }
 
 h3 {
+  font-family: "Open Sans", sans-serif;
   font-size: 2rem;
+  font-weight: 600;
 }
 
 a {
@@ -57,7 +68,7 @@ a {
   transition: scroll-behavior 0.5s ease-in-out;
 }
 .header__nav--screen .nav__link:hover {
-  color: lightgray;
+  color: #DBC2CF;
 }
 .header__nav--screen .nav__link.active {
   text-decoration: underline;
@@ -87,13 +98,15 @@ a {
   width: 100%;
 }
 .home__title--top {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .home__title--middle {
   font-size: 8rem;
-  font-size: bold;
+  font-weight: bold;
+  color: #0f1113;
 }
 .home__title--bottom {
+  color: #53599A;
   display: flex;
   align-items: center;
   gap: 5px;
@@ -102,9 +115,10 @@ a {
   width: 50px;
 }
 .home__title--bottom > p {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 .home__presentation {
+  font-family: "Open Sans", sans-serif;
   font-size: 1.1rem;
   margin-top: 50px;
   font-style: italic;
@@ -122,7 +136,7 @@ a {
 
 .projects {
   min-height: 93vh;
-  background-color: lightpink;
+  background-color: #53599A;
 }
 .projects__wrapper {
   width: 80%;
@@ -130,6 +144,7 @@ a {
 }
 .projects__title {
   padding: 20px 0 50px;
+  color: whitesmoke;
 }
 .projects__grid {
   display: grid;
@@ -138,7 +153,6 @@ a {
   gap: 10px;
 }
 .projects__grid .project__cell {
-  background-color: lightblue;
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -184,7 +198,7 @@ a {
 
 .skills {
   min-height: 93vh;
-  background-color: lightcyan;
+  background-color: whitesmoke;
 }
 .skills__wrapper {
   width: 80%;
@@ -211,7 +225,7 @@ a {
 .skills__content .hard-skills__grid .hard-skill {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid lightblue;
+  border-bottom: 1px solid lightgray;
   margin-right: 50px;
   padding: 20px 0;
 }
@@ -224,6 +238,9 @@ a {
 }
 .skills__content .hard-skills__grid .hard-skill__mastered {
   margin-left: auto;
+}
+.skills__content .hard-skills__grid .hard-skill.gestion-projet {
+  grid-column: 1/3;
 }
 .skills__content .soft-skills {
   width: 30%;
@@ -239,10 +256,10 @@ a {
   padding: 20px 0;
 }
 .skills__content .soft-skills__content .soft-skill > img {
-  width: 75px;
+  width: 50px;
 }
 .skills__content .soft-skills__content .soft-skill__name {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .footer {
@@ -261,7 +278,10 @@ a {
   color: white;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+}
+.footer__content > p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
 }
 .footer__content__icons {
   display: flex;
@@ -269,6 +289,7 @@ a {
 }
 .footer__content__icons img {
   width: 25px;
+  margin-top: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

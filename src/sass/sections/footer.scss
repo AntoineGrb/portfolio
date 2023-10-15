@@ -1,6 +1,6 @@
 .footer {
     padding: 20px 0;
-    background-color: $color-header;
+    background-color: $color-dark;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,11 @@
         color:white;
         display: flex;
         flex-direction: column;
-        gap: 5px;
+
+        > p {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 0.8rem;
+        }
 
         &__icons {
             display: flex;
@@ -23,6 +27,7 @@
 
             img {
                 width: 25px;
+                margin-top: 5px;
             }
         }
     }

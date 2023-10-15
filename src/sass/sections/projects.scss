@@ -1,6 +1,6 @@
 .projects {
     min-height: 93vh;
-    background-color: lightpink;
+    background-color: $color-main;
 
     &__wrapper {
         width: 80%;
@@ -9,6 +9,7 @@
 
     &__title {
         padding: 20px 0 50px;
+        color: whitesmoke;
     }
 
     &__grid {
@@ -18,7 +19,6 @@
         gap: 10px;
 
         .project__cell {
-            background-color: lightblue;
             height: 100%;
             background-size: cover;
             background-repeat: no-repeat;
