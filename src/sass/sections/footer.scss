@@ -1,0 +1,29 @@
+.footer {
+    padding: 20px 0;
+    background-color: $color-header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    &__picture {
+        width: 75px;
+        border-radius: 100px;
+    }
+
+    &__content {
+        color:white;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        &__icons {
+            display: flex;
+            gap: 5px;
+
+            img {
+                width: 25px;
+            }
+        }
+    }
+}

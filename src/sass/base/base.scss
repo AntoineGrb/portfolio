@@ -1,0 +1,36 @@
+$color-header:#0f1113;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; //Activer le scroll smooth sur le site
+}
+
+body {
+    width: 100%;
+    max-width: 100%;
+    background-color: whitesmoke;
+}
+
+// ------ FONTS ----------
+
+h1 {
+    font-size: 2rem;
+    color:white;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+}

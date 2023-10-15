@@ -17,9 +17,9 @@
         <div class="header__wrapper">
             <h1 class="header__title"> Antoine Grubert </h1>
             <nav class="header__nav--screen">
-                <a class="nav__link nav__link--home active" href=""> HOME </a>
-                <a class="nav__link nav__link--projects" href=""> PROJECTS </a>
-                <a class="nav__link nav__link--skills" href=""> SKILLS </a>
+                <a class="nav__link nav__link--home active" href="#home"> HOME </a>
+                <a class="nav__link nav__link--projects" href="#projects"> PROJECTS </a>
+                <a class="nav__link nav__link--skills" href="#skills"> SKILLS </a>
             </nav>
             <i hidden> Menu </i>
         </div>
@@ -32,148 +32,161 @@
 
     <main class="main">
         <!------ Home section ------->
-        <section class="home">
+        <section class="home" id="home">
             <div class="home__wrapper">
-                <p class="home__title--top"> Bonjour monde ! Je m'appelle </p>
-                <p class="home__title--middle"> ANTOINE </p>
-                <div class="home__title--bottom">
-                    <img src="../src/images/icons/icons8-react-80.png" alt="">
-                    <p class="home__title--bottom"> Développeur web Fullstack Javascript </p>
+                <div class="home__content">
+                    <p class="home__title--top"> Bonjour monde ! Je m'appelle </p>
+                    <p class="home__title--middle"> ANTOINE </p>
+                    <div class="home__title--bottom">
+                        <img src="../src/images/icons/icons8-react-80.png" alt="">
+                        <p class="home__title--bottom"> Développeur web Fullstack Javascript </p>
+                    </div>
+                    <p class="home__presentation"> " Que ce soit au cours de ma vie professionnelle ou personne, j’ai toujours côtoyé des développeurs. C’est après avoir moi-même développé des outils en VBA au cours de ma dernière expérience que j’ai compris que c’était ce que je voulais faire dans ma vie. De nature rigoureux et curieux, mes sept années d’expériences professionnelles m’ont permis de renforcer mes compétences en gestion de projet et en relation client. Aujourd’hui, je suis déterminé à mettre à profit mes compétences et développer mes aptitudes techniques. Je souhaite relever de nouveaux défis et suis à la recherche d’un poste de développeur web Fullstack. "
+                    </p>
+                    <div class="home__icons">
+                        <a href="https://github.com/AntoineGrb"> <img src="../src/images/icons/signe-github.png" alt="Github"> </a>
+                        <a href="https://www.linkedin.com/in/antoine-grubert-588069118/"> <img src="../src/images/icons/linkedin.png" alt="Linkedin"> </a>
+                    </div>
                 </div>
-                <p class="home__presentation"> " Que ce soit au cours de ma vie professionnelle ou personne, j’ai toujours côtoyé des développeurs. C’est après avoir moi-même développé des outils en VBA au cours de ma dernière expérience que j’ai compris que c’était ce que je voulais faire dans ma vie. De nature rigoureux et curieux, mes sept années d’expériences professionnelles m’ont permis de renforcer mes compétences en gestion de projet et en relation client. Aujourd’hui, je suis déterminé à mettre à profit mes compétences et développer mes aptitudes techniques. Je souhaite relever de nouveaux défis et suis à la recherche d’un poste de développeur web Fullstack. " 
-                </p>
-                <div class="home__icons">
-                    <a href="https://github.com/AntoineGrb"> <img src="../src/images/icons/signe-github.png" alt="Github"> </a>
-                    <a href="https://www.linkedin.com/in/antoine-grubert-588069118/"> <img src="../src/images/icons/linkedin.png" alt="Linkedin"> </a>
+                <div class="home__img">
+                    <img src="../src/images/films/zoolander-who-am-i.gif" alt="">
                 </div>
-            </div>
-            <div class="home__img">
-                <img src="../src/images/films/zoolander-who-am-i.gif" alt="">
             </div>
         </section>
 
         <!------ Projects section ------->
-        <section class="projects">
-            <h2 class="projects__title "> Projets </h2>
-            <div class="projects__grid">
-                <article class="project__cell project__cell--cinemate">
-                    <div class="project-card">
-                        <p class="project-card__title"> Cinémate </p>
-                        <p class="project-card__date"> Octobre 2023 </p>
-                        <p class="project-card__desc"> Site permettant la sélection d'un film à regarder en fonction de ses critères de choix (projet personnel réalisé en autonomie) </p>
-                    </div>
-                </article>
-                <article class="project__cell project__cell--quiz">
-                    <div class="project-card">
-                        <p class="project-card__title"> Quiz hub </p>
-                        <p class="project-card__date"> Juillet 2023 </p>
-                        <p class="project-card__desc"> xxx </p>
-                    </div>
-                </article>
-                <article class="project__cell project__cell--tournois">
-                    <div class="project-card">
-                        <p class="project-card__title"> Tournois générateur </p>
-                        <p class="project-card__date"> Février 2023 </p>
-                        <p class="project-card__desc"> xxx </p>
-                    </div>
-                </article>
-                <article class="project__cell project__cell--rwlist">
-                    <div class="project-card">
-                        <p class="project-card__title"> Read & Watch List </p>
-                        <p class="project-card__date"> Avril 2023 </p>
-                        <p class="project-card__desc"> xxx </p>
-                    </div>
-                </article>
-                <article class="project__cell project__cell--artshop">
-                    <div class="project-card">
-                        <p class="project-card__title"> Art shop </p>
-                        <p class="project-card__date"> Juin 2023 </p>
-                        <p class="project-card__desc"> xxx </p>
-                    </div>
-                </article>
+        <section class="projects" id="projects">
+            <div class="projects__wrapper">
+                <h2 class="projects__title "> Projets </h2>
+                <div class="projects__grid">
+                    <a href="" class="project__cell project__cell-1">
+                        <div class="project-card">
+                            <p class="project-card__title"> Cinémate </p>
+                            <p class="project-card__date"> Octobre 2023 </p>
+                            <p class="project-card__desc"> Site permettant la sélection d'un film à regarder en fonction de ses critères de choix (projet personnel réalisé en autonomie) </p>
+                        </div>
+                    </a>
+                    <a href="" class="project__cell project__cell-2">
+                        <div class="project-card">
+                            <p class="project-card__title"> Quiz hub </p>
+                            <p class="project-card__date"> Juillet 2023 </p>
+                            <p class="project-card__desc"> xxx </p>
+                        </div>
+                    </a>
+                    <a href="" class="project__cell project__cell-3">
+                        <div class="project-card">
+                            <p class="project-card__title"> Tournois générateur </p>
+                            <p class="project-card__date"> Février 2023 </p>
+                            <p class="project-card__desc"> xxx </p>
+                        </div>
+                    </a>
+                    <a href="" class="project__cell project__cell-4">
+                        <div class="project-card">
+                            <p class="project-card__title"> Read & Watch List </p>
+                            <p class="project-card__date"> Avril 2023 </p>
+                            <p class="project-card__desc"> xxx </p>
+                        </div>
+                    </a>
+                    <a href="" class="project__cell project__cell-5">
+                        <div class="project-card">
+                            <p class="project-card__title"> Art shop </p>
+                            <p class="project-card__date"> Juin 2023 </p>
+                            <p class="project-card__desc"> xxx </p>
+                        </div>
+                    </a>
+                    <a href="" class="project__cell project__cell-6">
+                        <div class="project-card">
+                            <p class="project-card__title"> Bonus </p>
+                            <p class="project-card__date"> Juin 2023 </p>
+                            <p class="project-card__desc"> xxx </p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
 
         <!------ Skills section ------->
-        <section class="skills">
-            <h2 class="skills__title"> Skills </h2>
+        <section class="skills" id="skills">
             <div class="skills__wrapper">
-                <div class="hard-skills">
-                    <h3> Hard skills </h3>
-                    <div class="hard-skills__content">
-                        <div class="skill hard-skill">
-                            <img src="../src/images/icons/icons8-html-144.png" alt="html" width="100">
-                            <p> HTML </p>
-                            <small> Maitrisé </small>
-                        </div>
-                        <div class="skill hard-skill">
-                            <img src="../src/images/icons/icons8-css-100.png" alt="css" width="100">
-                            <p> CSS </p>
-                            <small> Maitrisé </small>
-                        </div>
-                        <div class="skill hard-skill">
-                            <img src="../src/images/icons/icons8-javascript-144.png" alt="js" width="100">
-                            <p> Javascript Frontend </p>
-                            <small> Maitrisé </small>
-                        </div>
-                        <div class="skill hard-skill">
-                            <img src="../src/images/icons/icons8-react-144.png" alt="js" width="100">
-                            <p> React </p>
-                            <small> Maitrisé </small>
-                        </div>
-                        <div class="skill hard-skill">
-                            <img src="../src/images/icons/icons8-nodejs-144.png" alt="node" width="100">
-                            <p> Javascript Backend </p>
-                            <small> Maitrisé </small>
-                        </div>
-                        <div class="skill hard-skill">
-                            <img src="../src/images/icons/icons8-sql-96.png" alt="node" width="96">
-                            <p> SQL </p>
-                            <small> Maitrisé </small>
-                        </div>
-                        <div class="skill hard-skill">
-                            <img src="../src/images/icons/icons8-python-144.png" alt="node" width="100">
-                            <p> Python </p>
-                            <small> Notions </small>
-                        </div>
-                        <div class="skill hard-skill">
-                            <img src="../src/images/icons/icons8-visual-basic-100.png" alt="node" width="100">
-                            <p> VBA </p>
-                            <small> Notions </small>
-                        </div>
-                        <div class="skill hard-skill">
-                            <img src="../src/images/icons/projet.png" alt="node" width="100">
-                            <p> Gestion de projets (AGILE, Jira, Git, documentation, animation...) </p>
-                            <small> Maitrisé </small>
+                <h2 class="skills__title"> Skills </h2>
+                <div class="skills__content">
+                    <div class="hard-skills">
+                        <h3> Hard skills </h3>
+                        <div class="hard-skills__grid">
+                            <div class="skill hard-skill">
+                                <img src="../src/images/icons/icons8-html-144.png" alt="html">
+                                <p class="hard-skill__name"> HTML </p>
+                                <small class="hard-skill__mastered"> Maitrisé </small>
+                            </div>
+                            <div class="skill hard-skill">
+                                <img src="../src/images/icons/icons8-css-100.png" alt="css">
+                                <p class="hard-skill__name"> CSS </p>
+                                <small class="hard-skill__mastered"> Maitrisé </small>
+                            </div>
+                            <div class="skill hard-skill">
+                                <img src="../src/images/icons/icons8-javascript-144.png" alt="js">
+                                <p class="hard-skill__name"> Javascript Frontend </p>
+                                <small class="hard-skill__mastered"> Maitrisé </small>
+                            </div>
+                            <div class="skill hard-skill">
+                                <img src="../src/images/icons/icons8-react-144.png" alt="js">
+                                <p class="hard-skill__name"> React </p>
+                                <small class="hard-skill__mastered"> Maitrisé </small>
+                            </div>
+                            <div class="skill hard-skill">
+                                <img src="../src/images/icons/icons8-nodejs-144.png" alt="node">
+                                <p class="hard-skill__name"> Javascript Backend </p>
+                                <small class="hard-skill__mastered"> Maitrisé </small>
+                            </div>
+                            <div class="skill hard-skill">
+                                <img src="../src/images/icons/icons8-sql-96.png" alt="node">
+                                <p class="hard-skill__name"> SQL </p>
+                                <small class="hard-skill__mastered"> Maitrisé </small>
+                            </div>
+                            <div class="skill hard-skill">
+                                <img src="../src/images/icons/icons8-python-144.png" alt="node">
+                                <p class="hard-skill__name"> Python </p>
+                                <small class="hard-skill__mastered"> Notions </small>
+                            </div>
+                            <div class="skill hard-skill">
+                                <img src="../src/images/icons/icons8-visual-basic-100.png" alt="node">
+                                <p class="hard-skill__name"> VBA </p>
+                                <small class="hard-skill__mastered"> Notions </small>
+                            </div>
+                            <div class="skill hard-skill">
+                                <img src="../src/images/icons/projet.png" alt="node">
+                                <p class="hard-skill__name"> Gestion de projets (AGILE, Jira, Git, documentation, animation...) </p>
+                                <small class="hard-skill__mastered" > Maitrisé </small>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="soft-skills">
-                    <h3> Soft skills </h3>
-                    <div class="soft-skills__content">
-                        <div class="skill soft-skill">
-                            <img src="../src/images/icons/organisation.png" alt="html" width="100">
-                            <p> Organisation & rigueur </p>
-                        </div>
-                        <div class="skill soft-skill">
-                            <img src="../src/images/icons/polyvalent.png" alt="html" width="100">
-                            <p> Polyvalence </p>
-                        </div>
-                        <div class="skill soft-skill">
-                            <img src="../src/images/icons/autonomie.png" alt="html" width="100">
-                            <p> Autonomie </p>
-                        </div>
-                        <div class="skill soft-skill">
-                            <img src="../src/images/icons/curieux.png" alt="html" width="100">
-                            <p> Curieux </p>
-                        </div>
-                        <div class="skill soft-skill">
-                            <img src="../src/images/icons/client.png" alt="html" width="100">
-                            <p> Orientation client </p>
-                        </div>
-                        <div class="skill soft-skill">
-                            <img src="../src/images/icons/amelioration.png" alt="html" width="100">
-                            <p> Amélioration continue </p>
+                    <div class="soft-skills">
+                        <h3> Soft skills </h3>
+                        <div class="soft-skills__content">
+                            <div class="skill soft-skill">
+                                <img src="../src/images/icons/organisation.png" alt="html">
+                                <p class="soft-skill__name"> Organisation & rigueur </p>
+                            </div>
+                            <div class="skill soft-skill">
+                                <img src="../src/images/icons/polyvalent.png" alt="html">
+                                <p class="soft-skill__name"> Polyvalence </p>
+                            </div>
+                            <div class="skill soft-skill">
+                                <img src="../src/images/icons/autonomie.png" alt="html">
+                                <p class="soft-skill__name"> Autonomie </p>
+                            </div>
+                            <div class="skill soft-skill">
+                                <img src="../src/images/icons/curieux.png" alt="html">
+                                <p class="soft-skill__name"> Curieux </p>
+                            </div>
+                            <div class="skill soft-skill">
+                                <img src="../src/images/icons/client.png" alt="html">
+                                <p class="soft-skill__name"> Orientation client </p>
+                            </div>
+                            <div class="skill soft-skill">
+                                <img src="../src/images/icons/amelioration.png" alt="html">
+                                <p class="soft-skill__name"> Amélioration continue </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -186,13 +199,13 @@
     </main>
 
     <footer class="footer">
-        <img class="footer__picture" src="" alt="profile-picture">
+        <img class="footer__picture" src="../src/images/AvatarMaker.png" alt="profile-picture">
         <div class="footer__content">
             <p> Antoine Grubert </p>
             <p> Développeur web reconverti et passionné ! </p>
-            <div class="footer__icons">
-                <a href=""> <img src="" alt="Github"> </a>
-                <a href=""> <img src="" alt="Linkedin"> </a>
+            <div class="footer__content__icons">
+                <a href=""> <img src="../src/images/icons/signe-github (1).png" alt="Github"> </a>
+                <a href=""> <img src="../src/images/icons/linkedin (1).png" alt="Linkedin"> </a>
             </div>
         </div>
     </footer>

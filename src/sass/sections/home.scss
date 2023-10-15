@@ -1,0 +1,69 @@
+// ------ HOME ----------
+.home {
+    min-height: 93vh;
+    display: flex;
+    align-items: center;
+
+    &__wrapper {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        padding-right: 15%;
+    }
+
+    &__img {
+        width: 40%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__title--top {
+        font-size: 2rem;
+    }
+
+    &__title--middle {
+        font-size: 8rem;
+        font-size: bold;
+    }
+
+    &__title--bottom {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        img {
+            width: 50px;
+        }
+
+        > p {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__presentation {
+        font-size: 1.1rem;
+        margin-top: 50px;
+        font-style: italic;
+        text-align: justify;
+    }
+
+    &__icons {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 50px;
+
+        img {
+            width: 50px;
+        }
+    }
+}

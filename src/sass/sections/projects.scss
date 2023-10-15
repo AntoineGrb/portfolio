@@ -1,0 +1,72 @@
+.projects {
+    min-height: 93vh;
+    background-color: lightpink;
+
+    &__wrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    &__title {
+        padding: 20px 0 50px;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(8, 10vh);
+        gap: 10px;
+
+        .project__cell {
+            background-color: lightblue;
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .project__cell-1 {
+            grid-column: 1;
+            grid-row: 1/4;
+            background-image: url('../../src/images/projets/cinemate-incr.jpg');
+            background-position: center;
+        }
+
+        .project__cell-2 {
+            grid-column: 2;
+            grid-row: 1/5;
+            background-image: url('../../src/images/projets/quiz-incr.jpg');
+            background-position: center;
+        }
+
+        .project__cell-3 {
+            grid-column: 3;
+            grid-row: 1/3;
+            background-image: url('../../src/images/projets/tournois-incr.jpg');
+            background-position: center 35%;
+        }
+
+        .project__cell-4 {
+            grid-column: 1;
+            grid-row: 4/7;
+            background-image: url('../../src/images/projets/rw-list-incr.png');
+            background-position: center 50%;
+        }
+
+        .project__cell-5 {
+            grid-column: 2;
+            grid-row:5/8;
+            background-image: url('../../src/images/projets/art-react-incr.jpg');
+            background-position: 25% 70%;
+
+        }
+
+        .project__cell-6 {
+            grid-column: 3;
+            grid-row:3/6;
+        }
+    }
+}
+
+.project-card {
+    display: none;
+}
