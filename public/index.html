@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
-    <link rel ="stylesheet" href = './css/styles.css' />
+    <link rel ="stylesheet" href = './css/style.css' />
 	<link rel="icon" type="image/png" href="" />
     <link rel="stylesheet" href="https://kit.fontawesome.com/5c520df75a.css" crossorigin="anonymous"> <!--Font-awesome -->
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Google fonts -->
@@ -14,13 +14,15 @@
 <body>
     <!------ Header ------->
     <header class="header">
-        <h1 class="header__title"> Antoine Grubert </h1>
-        <nav class="header__nav--screen">
-            <a class="nav__link nav__link--home active" href=""> Accueil </a>
-            <a class="nav__link nav__link--projects active" href=""> Projects </a>
-            <a class="nav__link nav__link--skills active" href=""> Skills </a>
-        </nav>
-        <i hidden> Menu </i>
+        <div class="header__wrapper">
+            <h1 class="header__title"> Antoine Grubert </h1>
+            <nav class="header__nav--screen">
+                <a class="nav__link nav__link--home active" href=""> HOME </a>
+                <a class="nav__link nav__link--projects" href=""> PROJECTS </a>
+                <a class="nav__link nav__link--skills" href=""> SKILLS </a>
+            </nav>
+            <i hidden> Menu </i>
+        </div>
     </header>
     <nav class="header__nav--mobile" hidden> 
         <a class="nav__link nav__link--home active" href=""> Accueil </a>
@@ -31,18 +33,22 @@
     <main class="main">
         <!------ Home section ------->
         <section class="home">
-            <div class="home__content">
-                <p class="home__title--top"> Bonjour monde ! Je suis </p>
-                <p class="home__title--middle"> ANTOINE GRUBERT </p>
-                <p class="home__title--bottom"> Développeur web Fullstack Javascript </p>
-                <p class="home__pres"> Paragraphe de présentation ... </p>
+            <div class="home__wrapper">
+                <p class="home__title--top"> Bonjour monde ! Je m'appelle </p>
+                <p class="home__title--middle"> ANTOINE </p>
+                <div class="home__title--bottom">
+                    <img src="../src/images/icons/icons8-react-80.png" alt="">
+                    <p class="home__title--bottom"> Développeur web Fullstack Javascript </p>
+                </div>
+                <p class="home__presentation"> " Que ce soit au cours de ma vie professionnelle ou personne, j’ai toujours côtoyé des développeurs. C’est après avoir moi-même développé des outils en VBA au cours de ma dernière expérience que j’ai compris que c’était ce que je voulais faire dans ma vie. De nature rigoureux et curieux, mes sept années d’expériences professionnelles m’ont permis de renforcer mes compétences en gestion de projet et en relation client. Aujourd’hui, je suis déterminé à mettre à profit mes compétences et développer mes aptitudes techniques. Je souhaite relever de nouveaux défis et suis à la recherche d’un poste de développeur web Fullstack. " 
+                </p>
                 <div class="home__icons">
-                    <a href=""> <img src="../src/images/icons/signe-github.png" alt="Github"> </a>
-                    <a href=""> <img src="../src/images/icons/linkedin.png" alt="Linkedin"> </a>
+                    <a href="https://github.com/AntoineGrb"> <img src="../src/images/icons/signe-github.png" alt="Github"> </a>
+                    <a href="https://www.linkedin.com/in/antoine-grubert-588069118/"> <img src="../src/images/icons/linkedin.png" alt="Linkedin"> </a>
                 </div>
             </div>
             <div class="home__img">
-                <img src="" alt="">
+                <img src="../src/images/films/zoolander-who-am-i.gif" alt="">
             </div>
         </section>
 
@@ -91,7 +97,7 @@
         <!------ Skills section ------->
         <section class="skills">
             <h2 class="skills__title"> Skills </h2>
-            <div class="skills__content">
+            <div class="skills__wrapper">
                 <div class="hard-skills">
                     <h3> Hard skills </h3>
                     <div class="hard-skills__content">
