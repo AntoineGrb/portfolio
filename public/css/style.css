@@ -56,6 +56,16 @@ a {
   margin: 0 auto;
   padding: 15px 0;
 }
+.header__title {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+.header__title .cursor {
+  width: 7px;
+  height: 25px;
+  background-color: #DBC2CF;
+}
 
 .header__nav--screen {
   display: flex;
@@ -82,7 +92,7 @@ a {
 .home__wrapper {
   width: 80%;
   margin: 0 auto;
-  padding-top: 60px;
+  padding: 200px 0 100px;
   display: flex;
   align-items: center;
 }
@@ -250,6 +260,7 @@ a {
 }
 .skills__title {
   padding-bottom: 40px;
+  color: #0f1113;
 }
 .skills__content {
   display: flex;

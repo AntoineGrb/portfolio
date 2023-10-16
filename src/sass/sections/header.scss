@@ -12,6 +12,18 @@
         margin: 0 auto;
         padding: 15px 0;
     }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        gap: 1px;
+
+        .cursor {
+            width:7px;
+            height: 25px;
+            background-color: $color-smooth;
+        }
+    }
 }
 
 //Header screen
