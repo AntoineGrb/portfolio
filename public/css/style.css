@@ -45,7 +45,7 @@ a {
 .header {
   background-color: #0f1113;
   width: 100%;
-  position: sticky;
+  position: fixed;
   top: 0;
 }
 .header__wrapper {
@@ -54,7 +54,7 @@ a {
   align-items: center;
   width: 80%;
   margin: 0 auto;
-  height: 7vh;
+  padding: 15px 0;
 }
 
 .header__nav--screen {
@@ -75,13 +75,14 @@ a {
 }
 
 .home {
-  min-height: 93vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
 }
 .home__wrapper {
   width: 80%;
   margin: 0 auto;
+  padding-top: 60px;
   display: flex;
   align-items: center;
 }
@@ -92,10 +93,30 @@ a {
   padding-right: 15%;
 }
 .home__img {
-  width: 40%;
+  width: 50%;
+  height: 100%;
 }
-.home__img img {
+.home__img .bg-img {
   width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../src/images/illustr/zoolander-who-am-i.gif");
+  background-repeat: no-repeat;
+  background-position: 30% 46%;
+  background-size: 55%;
+  background-color: #0f1113;
+  border-radius: 5px;
+  border: 10px solid #DBC2CF;
+}
+.home__img .bg-img .front-img {
+  width: 95%;
+  height: 95%;
+  background-image: url("../../src/images/illustr/tv-cut-clean.png");
+  background-size: 120%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .home__title--top {
   font-size: 1.5rem;
@@ -106,7 +127,7 @@ a {
   color: #0f1113;
 }
 .home__title--bottom {
-  color: #53599A;
+  color: #0f1113;
   display: flex;
   align-items: center;
   gap: 5px;
@@ -123,6 +144,14 @@ a {
   margin-top: 50px;
   font-style: italic;
   text-align: justify;
+  line-height: 1.5;
+}
+.home__presentation .keyword {
+  background-color: #DBC2CF;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+  padding: 1px 5px;
+  border-radius: 5px;
 }
 .home__icons {
   display: flex;
@@ -130,26 +159,34 @@ a {
   justify-content: center;
   margin-top: 50px;
 }
-.home__icons img {
+.home__icons figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.home__icons figure img {
   width: 50px;
 }
 
 .projects {
-  min-height: 93vh;
-  background-color: #53599A;
+  min-height: 100vh;
+  background-color: rgb(228, 225, 225);
+  padding-top: 80px;
 }
 .projects__wrapper {
   width: 80%;
   margin: 0 auto;
 }
 .projects__title {
-  padding: 20px 0 50px;
-  color: whitesmoke;
+  padding-bottom: 40px;
+  color: #0f1113;
 }
 .projects__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(8, 10vh);
+  grid-template-rows: repeat(10, 10vh);
   gap: 10px;
 }
 .projects__grid .project__cell {
@@ -189,7 +226,13 @@ a {
 }
 .projects__grid .project__cell-6 {
   grid-column: 3;
-  grid-row: 3/6;
+  grid-row: 3/7;
+  background-color: white;
+}
+.projects__grid .project__cell-7 {
+  grid-column: 1;
+  grid-row: 7/9;
+  background-color: white;
 }
 
 .project-card {
@@ -197,15 +240,16 @@ a {
 }
 
 .skills {
-  min-height: 93vh;
+  min-height: 100vh;
   background-color: whitesmoke;
+  padding-top: 80px;
 }
 .skills__wrapper {
   width: 80%;
   margin: 0 auto;
 }
 .skills__title {
-  padding: 20px 0 40px;
+  padding-bottom: 40px;
 }
 .skills__content {
   display: flex;
@@ -260,6 +304,41 @@ a {
 }
 .skills__content .soft-skills__content .soft-skill__name {
   font-size: 1.3rem;
+}
+.skills .formation {
+  display: flex;
+  background-color: lightgray;
+  border-radius: 10px;
+  width: 70%;
+  margin: 100px auto;
+}
+.skills .formation__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 50%;
+  padding: 50px 20px;
+  border-right: 10px solid #0f1113;
+}
+.skills .formation__wrapper img {
+  width: 25%;
+  border-radius: 5px;
+}
+.skills .formation__wrapper .formation__content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.skills .formation__wrapper .formation__content .paragraph-1 {
+  font-size: 1.5rem;
+}
+.skills .formation__img {
+  width: 50%;
+  background-image: url("../../../src/images/illustr/Graduate_06.20_Blog_Image_Resize.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 25%;
+  border-radius: 0 10px 10px 0;
 }
 
 .footer {

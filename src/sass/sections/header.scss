@@ -1,7 +1,7 @@
 .header {
     background-color: $color-dark;
     width: 100%;
-    position: sticky;
+    position: fixed;
     top: 0;
 
     &__wrapper {
@@ -10,7 +10,7 @@
         align-items: center;
         width: 80% ;
         margin: 0 auto;
-        height: 7vh;
+        padding: 15px 0;
     }
 }
 

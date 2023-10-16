@@ -1,7 +1,8 @@
 
 .skills {
-    min-height: 93vh;
+    min-height: 100vh;
     background-color: whitesmoke;
+    padding-top: 80px;
 
     &__wrapper {
         width: 80%;
@@ -9,7 +10,7 @@
     }
 
     &__title {
-        padding: 20px 0 40px;
+        padding-bottom: 40px;
     }
 
     &__content {
@@ -77,6 +78,48 @@
                     }
                 }
             }
+        }
+    }
+
+    .formation {
+        display: flex;
+        background-color: lightgray;
+        border-radius: 10px;
+        width: 70%;
+        margin: 100px auto;
+
+        &__wrapper {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 50%;
+            padding: 50px 20px;
+            border-right: 10px solid $color-dark;
+
+            img {
+                width: 25%;
+                border-radius: 5px;
+            }
+
+            .formation__content {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                .paragraph-1 {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        &__img {
+            width: 50%;
+            background-image: url('../../../src/images/illustr/Graduate_06.20_Blog_Image_Resize.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center 25%;
+            border-radius: 0 10px 10px 0;
+            //../../src/images/projets/tournois-incr.jpg'
         }
     }
 }

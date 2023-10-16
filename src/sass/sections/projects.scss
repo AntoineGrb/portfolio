@@ -1,6 +1,7 @@
 .projects {
-    min-height: 93vh;
-    background-color: $color-main;
+    min-height: 100vh;
+    background-color: rgb(228, 225, 225);
+    padding-top: 80px;
 
     &__wrapper {
         width: 80%;
@@ -8,14 +9,14 @@
     }
 
     &__title {
-        padding: 20px 0 50px;
-        color: whitesmoke;
+        padding-bottom: 40px;
+        color: $color-dark;
     }
 
     &__grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(8, 10vh);
+        grid-template-rows: repeat(10, 10vh);
         gap: 10px;
 
         .project__cell {
@@ -62,7 +63,14 @@
 
         .project__cell-6 {
             grid-column: 3;
-            grid-row:3/6;
+            grid-row:3/7;
+            background-color: white;
+        }
+
+        .project__cell-7 {
+            grid-column: 1;
+            grid-row:7/9;
+            background-color: white;
         }
     }
 }
