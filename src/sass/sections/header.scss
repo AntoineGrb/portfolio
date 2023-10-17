@@ -37,15 +37,20 @@
         color:white;
         font-size: 1.2rem;
         letter-spacing: 1px;
-        transition: scroll-behavior 0.5s ease-in-out;
-    }
+        position: relative;
 
-    .nav__link:hover {
-        color:$color-smooth;
-    }
+        &:hover {
+            color:$color-smooth;
+        }
 
-    .nav__link.active {
-        text-decoration: underline;
+        &.active {
+            border-bottom: 2px solid white;
+            padding-bottom: 1px;
+
+            &:hover {
+                border-color:$color-smooth;
+            }
+        }
     }
 }
 
