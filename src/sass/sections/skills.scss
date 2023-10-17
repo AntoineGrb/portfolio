@@ -32,18 +32,18 @@
 
                 .hard-skill {
                     display: flex;
+                    gap:15px;
                     align-items: center;
                     border-bottom: 1px solid lightgray;
                     margin-right: 50px;
                     padding: 20px 0;
 
                     > img {
-                        width: 75px;
-                        margin-right: 10px;
+                        width: 60px;
                     }
 
                     &__name {
-                        font-size: 1.5rem;
+                        font-size: 1.2rem;
                     }
 
                     &__mastered {
@@ -59,6 +59,10 @@
 
         .soft-skills {
             width: 30%;
+            background-color: $color-smooth;
+            padding: 20px;
+            border-radius: 5px;
+            border: 10px solid black;
 
             &__content {
                 display: flex;
@@ -67,15 +71,15 @@
                 .soft-skill {
                     display: flex;
                     align-items: center;
-                    gap: 10px;
+                    gap: 15px;
                     padding: 20px 0;
 
                     > img {
-                        width: 50px;
+                        width: 45px;
                     }
 
                     &__name {
-                        font-size: 1.3rem;
+                        font-size: 1.1rem;
                     }
                 }
             }

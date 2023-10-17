@@ -3,6 +3,7 @@
     width: 100%;
     position: fixed;
     top: 0;
+    z-index: 3;
 
     &__wrapper {
         display: flex;
@@ -11,6 +12,7 @@
         width: 80% ;
         margin: 0 auto;
         padding: 15px 0;
+        height: 70px;
     }
 
     &__title {

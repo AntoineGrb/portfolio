@@ -47,6 +47,7 @@ a {
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 3;
 }
 .header__wrapper {
   display: flex;
@@ -55,6 +56,7 @@ a {
   width: 80%;
   margin: 0 auto;
   padding: 15px 0;
+  height: 70px;
 }
 .header__title {
   display: flex;
@@ -182,7 +184,7 @@ a {
 
 .projects {
   min-height: 100vh;
-  background-color: rgb(228, 225, 225);
+  background-color: #DBC2CF;
   padding-top: 80px;
 }
 .projects__wrapper {
@@ -246,7 +248,31 @@ a {
 }
 
 .project-card {
-  display: none;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f1113;
+  z-index: 0;
+  color: white;
+  text-align: justify;
+  padding: 15%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease-out, visibility 0.4s ease-out;
+}
+.project-card__title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.project-card__date {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+.project-card__desc {
+  font-size: 0.8rem;
 }
 
 .skills {
@@ -279,17 +305,17 @@ a {
 }
 .skills__content .hard-skills__grid .hard-skill {
   display: flex;
+  gap: 15px;
   align-items: center;
   border-bottom: 1px solid lightgray;
   margin-right: 50px;
   padding: 20px 0;
 }
 .skills__content .hard-skills__grid .hard-skill > img {
-  width: 75px;
-  margin-right: 10px;
+  width: 60px;
 }
 .skills__content .hard-skills__grid .hard-skill__name {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .skills__content .hard-skills__grid .hard-skill__mastered {
   margin-left: auto;
@@ -299,6 +325,10 @@ a {
 }
 .skills__content .soft-skills {
   width: 30%;
+  background-color: #DBC2CF;
+  padding: 20px;
+  border-radius: 5px;
+  border: 10px solid black;
 }
 .skills__content .soft-skills__content {
   display: flex;
@@ -307,14 +337,14 @@ a {
 .skills__content .soft-skills__content .soft-skill {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
   padding: 20px 0;
 }
 .skills__content .soft-skills__content .soft-skill > img {
-  width: 50px;
+  width: 45px;
 }
 .skills__content .soft-skills__content .soft-skill__name {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 .skills .formation {
   display: flex;
