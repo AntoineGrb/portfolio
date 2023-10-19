@@ -1,4 +1,5 @@
-//Gérer le curseur du header
+//--- CURSEUR DU HEADER ---
+
 const cursor = document.querySelector('#header-cursor');
 let isCursor = true;
 
@@ -15,7 +16,8 @@ function cursorWinking() {
 
 setInterval(cursorWinking , 500);
 
-//Gérer l'écriture du titre du header
+//--- TITRE DU HEADER ---
+
 const typingLetters = [
     {letter:'M', interval:'1200'},
     {letter:'y', interval:'1400'},
@@ -61,7 +63,52 @@ function handleHeaderTitle() {
 handleHeaderTitle();
 setInterval(handleHeaderTitle, 20000);
 
-//Gérer le hover des cards projets
+//--- MENU MOBILE ---
+
+const menuIcon = document.querySelector('.menu-icon--mobile');
+const menuMobile = document.querySelector('.header__nav--mobile');
+const mainSection = document.querySelector('.main');
+let isMenuActive = false;
+
+menuIcon.addEventListener('click' , (e) => {
+    if (!isMenuActive) {
+        // menuMobile.style.display = 'flex';
+        menuMobile.classList.add('open');
+    }
+    else {
+        // menuMobile.style.display = 'none';
+        menuMobile.classList.remove('open');
+    }    
+    !isMenuActive
+});
+
+for (let section of [mainSection, menuMobile]) {
+    section.addEventListener('click' , () => {
+        menuMobile.classList.remove('open');
+        isMenuActive = false;
+    })
+}
+
+//--- HIDE DESCRIPTION TEXT ---
+const homePresentation = document.querySelector('.home__presentation');
+const homeButtonShow = document.querySelector('.home__button-show-more');
+let isTextTruncated = true;
+
+homeButtonShow.addEventListener('click', () => {
+
+    if (isTextTruncated) {
+        homePresentation.classList.remove('truncated');
+        homeButtonShow.innerHTML = 'Cacher description <i class="fa-solid fa-circle-chevron-up"></i>';
+    } else {
+        homePresentation.classList.add('truncated');
+        homeButtonShow.innerHTML = 'Voir description <i class="fa-solid fa-circle-chevron-down"></i>';
+    }
+    isTextTruncated = !isTextTruncated;
+});
+
+
+//--- CARD PROJET AU HOVER  ---
+
 const projectCells = document.querySelectorAll('.project__cell');
 
 projectCells.forEach((cell) => {
@@ -80,7 +127,8 @@ projectCells.forEach((cell) => {
     })
 });
 
-//Gérer le scroll de la page
+//--- SCROLL SUR LA PAGE ---
+
 const homeSection = document.querySelector('#home');
 const projectsSection = document.querySelector('#projects');
 const skillsSection = document.querySelector('#skills');

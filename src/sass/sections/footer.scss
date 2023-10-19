@@ -9,6 +9,9 @@
     &__picture {
         width: 75px;
         border-radius: 100px;
+        @include media-max($largephone) {
+            width: 50px;
+        }  
     }
 
     &__content {

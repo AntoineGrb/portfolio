@@ -7,67 +7,114 @@
     &__wrapper {
         width: 80%;
         margin: 0 auto;
-    }
-
-    &__title {
-        padding-bottom: 40px;
-        color: $color-dark;
+        @include media-max($largescreen) {
+            width: 90%;
+        }
     }
 
     &__content {
         display: flex;
         gap: 20px;
-
-        h3 {
-            margin-bottom: 10px;
+        @include media-max($smallscreen) {
+            flex-direction: column;
+            gap: 50px;
         }
 
         .hard-skills {
             width: 70%;
+            margin-right: 50px;
+            @include media-max($smallscreen) {
+                width: 100%;
+                flex-direction: column;
+            }
 
             &__grid {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-auto-rows: auto;
+                column-gap:50px;
+                @include media-max($mediumscreen) {
+                    column-gap: 20px;
+                }
+                @include media-max($smallscreen) {
+                    column-gap:50px;
+                }
+                @include media-max($tablet) {
+                    grid-template-columns: repeat(1, 1fr);
+                }
 
                 .hard-skill {
                     display: flex;
                     gap:15px;
                     align-items: center;
                     border-bottom: 1px solid lightgray;
-                    margin-right: 50px;
                     padding: 20px 0;
+                    @include media-max($smallscreen) {
+                        margin-right: 0;
+                    }
 
-                    > img {
+                    img {
                         width: 60px;
                     }
 
                     &__name {
                         font-size: 1.2rem;
+                        @include media-max($largescreen) {
+                            font-size: 1rem;
+                        }
                     }
 
                     &__mastered {
                         margin-left: auto;
+                        font-size: 1rem;
+                        @include media-max($largescreen) {
+                            font-size: 0.8rem;
+                        }
+                        @include media-max($mediumscreen) {
+                            min-width: 30%;
+                            text-align: right;
+                        }
+                        @include media-max($tablet) {
+                            min-width: 15%;
+                            text-align: right;
+                        }
 
                         i {
                             margin-left: 5px;
                             font-size: 1rem;
+                            @include media-max($largescreen) {
+                                font-size: 0.8rem;
+                            }
                         }
                     }
                 }
 
                 .hard-skill.gestion-projet {
                     grid-column: 1/3;
+                    @include media-max($tablet) {
+                        grid-column: 1;
+                    }
+
+                    .hard-skill__desc {
+                        @include media-max($largephone) {
+                            display: none;
+                        }
+                    }
                 }
             }
         }
 
         .soft-skills {
             width: 30%;
-            background-color: $color-smooth;
+            background-color: $color-bg-smooth;
             padding: 20px;
             border-radius: 5px;
-            border: 5px solid black;
+            @include media-max($smallscreen) {
+                width: 100%;
+                padding: 0;
+                border: none;
+                background-color: whitesmoke;
+            }
 
             &__content {
                 display: flex;
@@ -80,11 +127,14 @@
                     padding: 15px 0;
 
                     > img {
-                        width: 45px;
+                        width: 40px;
                     }
 
                     &__name {
-                        font-size: 1.1rem;
+                        font-size: 1.2rem;
+                        @include media-max($largescreen) {
+                            font-size: 1rem;
+                        }
                     }
                 }
             }
@@ -97,6 +147,13 @@
         border-radius: 10px;
         width: 70%;
         margin: 100px auto;
+        @include media-max($largescreen) {
+            width: 85%;
+        }
+        @include media-max($smallscreen) {
+            margin: 30px auto;
+            width: 100%;
+        }
 
         &__wrapper {
             display: flex;
@@ -105,10 +162,23 @@
             width: 50%;
             padding: 50px 20px;
             border-right: 10px solid $color-dark;
+            @include media-max($tablet) {
+                width: 75%;
+            }
+            @include media-max($largephone) {
+                width: 100%;
+                padding: 20px 10px;
+                border:none;
+                gap:15px;
+            }  
+             
 
             img {
                 width: 25%;
                 border-radius: 5px;
+                @include media-max($tablet) {
+                    width: 40px;
+                }
             }
 
             .formation__content {
@@ -117,7 +187,23 @@
                 gap: 5px;
 
                 .paragraph-1 {
-                    font-size: 1.5rem;
+                    font-size: 1.4rem;
+                    @include media-max($largescreen) {
+                        font-size: 1.2rem;
+                    }
+                    @include media-max($tablet) {
+                        font-size: 1rem;;
+                    }
+                }
+
+                .paragraph-2 , .paragraph-3 {
+                    font-size: 1rem;
+                    @include media-max($largescreen) {
+                        font-size: 0.8rem;
+                    }
+                    @include media-max($tablet) {
+                        font-size: 0.7rem;;
+                    }
                 }
             }
         }
@@ -129,7 +215,9 @@
             background-repeat: no-repeat;
             background-position: center 25%;
             border-radius: 0 10px 10px 0;
-            //../../src/images/projets/tournois-incr.jpg'
+            @include media-max($largephone) {
+                display: none;
+            }  
         }
     }
 }

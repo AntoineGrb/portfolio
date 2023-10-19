@@ -21,19 +21,22 @@
                 <h1 id="header-text"> </h1>
                 <span id='header-cursor' class="cursor"></span>
             </div> 
+            <!------ Menu écran ------->
             <nav class="header__nav--screen">
                 <a class="nav__link nav__link--home active" href="#home"> HOME </a>
                 <a class="nav__link nav__link--projects" href="#projects"> PROJECTS </a>
                 <a class="nav__link nav__link--skills" href="#skills"> SKILLS </a>
             </nav>
-            <i hidden> Menu </i>
+            <!------ Menu mobile ------->
+            <i class="menu-icon--mobile fa-solid fa-bars"></i>
         </div>
+        <nav class="header__nav--mobile"> 
+            <a class="nav__link nav__link--home active" href="#home"> HOME </a>
+            <a class="nav__link nav__link--projects active" href="#projects"> PROJECTS </a>
+            <a class="nav__link nav__link--skills active" href="#skills"> SKILLS </a>
+        </nav>
     </header>
-    <nav class="header__nav--mobile" hidden> 
-        <a class="nav__link nav__link--home active" href=""> Accueil </a>
-        <a class="nav__link nav__link--projects active" href=""> Projects </a>
-        <a class="nav__link nav__link--skills active" href=""> Skills </a>
-    </nav>
+
 
     <main class="main">
         <!------ Home section ------->
@@ -46,10 +49,11 @@
                         <img src="../src/images/icons/icons8-react-80.png" alt="">
                         <p class="home__title--bottom"> Développeur web Fullstack Javascript </p>
                     </div>
-                    <p class="home__presentation"> " Que ce soit au cours de ma vie professionnelle ou personne, j’ai toujours côtoyé des développeurs. C’est après avoir moi-même développé des outils en VBA au cours de ma dernière expérience de Responsable Qualité que j’ai compris que c’était ce que je voulais faire dans ma vie. C'est pourquoi j'ai décidé à la fin de l'année 2022 de sauter le pas et me reconvertir !  <br> 
-                    J'ai commencé à apprendre en autodidacte et en réalisant une myriade de petits projets personnels. J'ai ensuite décidé de suivre la formation intensive de 6 mois de l'école O'Clock en août 2023. Elle m'a permis de développer mes compétences aux côtés de professeurs aguerris et d'élèves surmotivés. <br>
-                    Diplômé depuis mars 2023, je suis à la recherche de nouveaux défis et d'un poste de développeur web JavaScript. 
+                    <p class="home__presentation truncated"> " Que ce soit au cours de ma vie professionnelle ou personne, j’ai toujours côtoyé des <span class="keyword">développeurs</span>. C’est après avoir moi-même développé des outils en VBA au cours de ma dernière expérience de Responsable Qualité que j’ai compris que c’était ce que je voulais faire dans ma vie. C'est pourquoi j'ai décidé à la fin de l'année 2022 de sauter le pas et me <span class="keyword">reconvertir</span> !
+                    J'ai commencé à apprendre en autodidacte et en réalisant une myriade de petits projets personnels. J'ai ensuite décidé de suivre la formation intensive de 6 mois de l'école <span class="keyword">O'Clock</span> en août 2023. Elle m'a permis de développer mes compétences aux côtés de professeurs aguerris et d'élèves surmotivés.
+                    Diplômé depuis mars 2023, je suis à la recherche de nouveaux défis et d'un poste de <span class="keyword">développeur web JavaScript</span>. 
                     </p>
+                    <p class="home__button-show-more"> Voir description <i class="fa-solid fa-circle-chevron-down"></i> </p>
                     <div class="home__icons">
                         <div class="icon">
                             <a href="https://github.com/AntoineGrb" target="_blank"> 
@@ -91,7 +95,10 @@
         <!------ Projects section ------->
         <section class="projects" id="projects">
             <div class="projects__wrapper">
-                <h2 class="projects__title "> MES PROJETS </h2>
+                <div class="section__title">
+                    PROJETS
+                    <h2> PROJETS </h2>
+                </div>
                 <div class="projects__grid">
                     <a href="https://reco-cine.vercel.app/" target="_blank" class="project__cell project__cell-1">
                         <div class="project-card">
@@ -107,14 +114,14 @@
                             <p class="project-card__desc"> Petit hub permettant d'accéder à 4 quiz. Le contenu des quiz est fabriqué dynamiquement par rapport à des fichiers data .json, que j'ai préparés sur différentes thématiques. <br> Projet personnel réalisé seul.  </p>
                         </div>
                     </a>
-                    <a href="https://tournois-generateur.vercel.app/" target="_blank" class="project__cell project__cell-3">
+                    <a href="https://github.com/AntoineGrb/tournois-generateur" target="_blank" class="project__cell project__cell-3">
                         <div class="project-card">
                             <p class="project-card__title"> Générateur de tournois </p>
                             <p class="project-card__date"> Février 2023 </p>
                             <p class="project-card__desc"> Petite application permettant de créer rapidement une arborescence pour un tournoi entre amis. <br> Projet personnel réalisé seul.  </p>
                         </div>
                     </a>
-                    <a href="https://read-watch-list.vercel.app/" target="_blank" class="project__cell project__cell-4">
+                    <a href="https://github.com/AntoineGrb/read-watch-list" target="_blank" class="project__cell project__cell-4">
                         <div class="project-card">
                             <p class="project-card__title"> Read & Watch List </p>
                             <p class="project-card__date"> Avril 2023 </p>
@@ -149,7 +156,10 @@
         <!------ Skills section ------->
         <section class="skills" id="skills">
             <div class="skills__wrapper">
-                <h2 class="skills__title"> MES SKILLS </h2>
+                <div class="section__title">
+                    <span>SKILLS</span>
+                    <h2> SKILLS </h2>
+                </div>
                 <div class="skills__content">
                     <div class="hard-skills">
                         <h3> Hard skills </h3>
@@ -157,32 +167,32 @@
                             <div class="skill hard-skill">
                                 <img src="../src/images/icons/icons8-html-144.png" alt="html">
                                 <p class="hard-skill__name"> HTML </p>
-                                <p class="hard-skill__mastered"> Acquis <i class="fa-solid fa-circle-check"></i> </p>
+                                <p class="hard-skill__mastered"> Maitrisé <i class="fa-solid fa-circle-check"></i> </p>
                             </div>
                             <div class="skill hard-skill">
                                 <img src="../src/images/icons/icons8-css-100.png" alt="css">
                                 <p class="hard-skill__name"> CSS </p>
-                                <p class="hard-skill__mastered"> Acquis <i class="fa-solid fa-circle-check"></i> </p>
+                                <p class="hard-skill__mastered"> Maitrisé <i class="fa-solid fa-circle-check"></i> </p>
                             </div>
                             <div class="skill hard-skill">
                                 <img src="../src/images/icons/icons8-javascript-144.png" alt="js">
                                 <p class="hard-skill__name"> Javascript Frontend </p>
-                                <p class="hard-skill__mastered"> Acquis <i class="fa-solid fa-circle-check"></i> </p>
+                                <p class="hard-skill__mastered"> Maitrisé <i class="fa-solid fa-circle-check"></i> </p>
                             </div>
                             <div class="skill hard-skill">
                                 <img src="../src/images/icons/icons8-react-144.png" alt="js">
                                 <p class="hard-skill__name"> React </p>
-                                <p class="hard-skill__mastered"> Acquis <i class="fa-solid fa-circle-check"></i> </p>
+                                <p class="hard-skill__mastered"> Maitrisé <i class="fa-solid fa-circle-check"></i> </p>
                             </div>
                             <div class="skill hard-skill">
                                 <img src="../src/images/icons/icons8-nodejs-144.png" alt="node">
                                 <p class="hard-skill__name"> Javascript Backend </p>
-                                <p class="hard-skill__mastered"> Acquis <i class="fa-solid fa-circle-check"></i> </p>
+                                <p class="hard-skill__mastered"> Maitrisé <i class="fa-solid fa-circle-check"></i> </p>
                             </div>
                             <div class="skill hard-skill">
                                 <img src="../src/images/icons/icons8-sql-96.png" alt="node">
                                 <p class="hard-skill__name"> SQL </p>
-                                <p class="hard-skill__mastered"> Acquis <i class="fa-solid fa-circle-check"></i> </p>
+                                <p class="hard-skill__mastered"> Maitrisé <i class="fa-solid fa-circle-check"></i> </p>
                             </div>
                             <div class="skill hard-skill">
                                 <img src="../src/images/icons/icons8-python-144.png" alt="node">
@@ -198,9 +208,9 @@
                                 <img src="../src/images/icons/projet.png" alt="node">
                                 <div class="wrapper">
                                     <p class="hard-skill__name"> Gestion de projets </p>
-                                    <p> Méthode AGILE et cycle en V, JIRA, Git, rédaction documents techniques... </p>
+                                    <small class="hard-skill__desc"> Méthode AGILE et cycle en V, JIRA, Git, rédaction documents techniques... </small>
                                 </div>
-                                <p class="hard-skill__mastered" > Acquis <i class="fa-solid fa-circle-check"></i> </p>
+                                <p class="hard-skill__mastered" > Maitrisé <i class="fa-solid fa-circle-check"></i> </p>
                             </div>
                         </div>
                     </div>

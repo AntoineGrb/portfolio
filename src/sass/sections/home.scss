@@ -7,21 +7,42 @@
     &__wrapper {
         width: 80%;
         margin: 0 auto;
-        padding: 200px 0 100px;
         display: flex;
         align-items: center;
+        @include media-max($largescreen) {
+            width: 90%;
+        }
+        @include media-max($smallscreen) {
+            flex-direction: column;
+            gap: 50px;
+            padding: 150px 0 100px;
+            margin: 0;
+            width: 100%;
+        }
     }
 
     &__content {
         display: flex;
         flex-direction: column;
         width: 60%;
-        padding-right: 15%;
+        padding-right: 9%;
+        @include media-max($largescreen) {
+            padding-right: 5%;
+        }
+        @include media-max($smallscreen) {
+            width: 90%;
+            margin: 0 auto;
+            padding: 0; 
+        }
     }
 
+    // L'image GIF à droite du conteneur
     &__img {
         width: 50%;
         height: 100%;
+        @include media-max($smallscreen) {
+            width: 90%;
+        }
 
         .bg-img {
             width: 100%;
@@ -36,6 +57,9 @@
             background-color: $color-dark;
             border-radius: 5px;
             border: 10px solid $color-smooth;
+            @include media-max($largephone) {
+               height: 30vh;
+            }
 
             .front-img {
                 width: 95%;
@@ -48,14 +72,45 @@
         }
     }
 
+    // Les textes sur la gauche du conteneur
     &__title--top {
         font-size: 1.5rem;
+        @include media-max($largescreen) {
+            font-size: 1.3rem;
+        }
+        @include media-max($mediumscreen) {
+            font-size: 1.2rem;
+        }
+        @include media-max($smallscreen) {
+            font-size: 1.7rem;
+        }
+        @include media-max($tablet) {
+            font-size: 1.4rem;
+        }
+        @include media-max($largephone) {
+            font-size: 1.1rem;
+        }         
     }
 
     &__title--middle {
         font-size: 8rem;
         font-weight: bold;
         color: $color-dark;
+        @include media-max($largescreen) {
+            font-size: 6rem;
+        }
+        @include media-max($mediumscreen) {
+            font-size: 5.5rem;
+        }
+        @include media-max($smallscreen) {
+            font-size: 8rem;
+        }
+        @include media-max($tablet) {
+            font-size: 6em;
+        }
+        @include media-max($largephone) {
+            font-size: 4rem;
+        }          
     }
 
     &__title--bottom {
@@ -66,10 +121,34 @@
 
         img {
             width: 50px;
+            @include media-max($mediumscreen) {
+                width: 40px;
+            }
+            @include media-max($smallscreen) {
+                width: 50px;
+            }
+            @include media-max($largephone) {
+                width: 35px;
+            }  
         }
 
         > p {
             font-size: 1.8rem;
+            @include media-max($largescreen) {
+                font-size: 1.3rem;
+            }
+            @include media-max($mediumscreen) {
+                font-size: 1.2rem;
+            }
+            @include media-max($smallscreen) {
+                font-size: 1.8rem;
+            }
+            @include media-max($tablet) {
+                font-size: 1.4rem;
+            }
+            @include media-max($largephone) {
+                font-size: 1rem;
+            }       
         }
     }
 
@@ -80,7 +159,21 @@
         font-style: italic;
         text-align: justify;
         line-height: 1.5;
-
+        @include media-max($largescreen) {
+            font-size: 0.9rem;
+        }
+        @include media-max($tablet) {
+            font-size: 0.8rem;
+        }
+        
+        &.truncated {
+            @include media-max($tablet) {
+                white-space: nowrap;      /* Empêche le texte de passer à la ligne */
+                overflow: hidden;         /* Cache le contenu débordant */
+                text-overflow: ellipsis;  /* Ajoute des points de suspension */
+            }
+        }
+        
         .keyword {
             background-color: $color-smooth;
             color: white;
@@ -90,11 +183,27 @@
         }
     }
 
+    &__button-show-more {
+        display: none;
+        @include media-max($tablet) {
+            font-size: 0.8rem;
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+    }
+
     &__icons {
         display: flex;
         gap: 20px;
         justify-content: center;
         margin-top: 50px;
+        @include media-max($smallscreen) {
+            gap:10px;    
+        }
+        @include media-max($largephone) {
+            margin-top: 25px;   
+        }
 
         figure {
             display: flex;
@@ -105,6 +214,18 @@
 
             img {
                 width: 50px;
+                @include media-max($smallscreen) {
+                width: 45px;
+                }
+                @include media-max($largephone) {
+                    width: 30px;    
+                }
+            }
+
+            figcaption {
+                @include media-max($smallscreen) {
+                    display: none;
+                    }
             }
         }
     }

@@ -1,8 +1,12 @@
-@import "./base/base.scss";
 @import "./base/mediasQueries.scss";
+@import "./base/base.scss";
 @import "./sections/header.scss";
 @import "./sections/home.scss";
 @import "./sections/projects.scss";
 @import "./sections/skills.scss";
 @import "./sections/footer.scss";
+
+.hidden {
+    display: none;
+}
 
