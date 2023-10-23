@@ -79,7 +79,7 @@ menuIcon.addEventListener('click' , (e) => {
         // menuMobile.style.display = 'none';
         menuMobile.classList.remove('open');
     }    
-    !isMenuActive
+    isMenuActive = !isMenuActive;
 });
 
 for (let section of [mainSection, menuMobile]) {

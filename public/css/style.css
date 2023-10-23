@@ -157,11 +157,11 @@ a {
 }
 
 .menu-icon--mobile {
-  display: none;
+  display: none !important;
 }
 @media screen and (max-width: 980px) {
   .menu-icon--mobile {
-    display: block;
+    display: flex !important;
     color: white;
     font-size: 1.4rem;
     margin-right: 10px;

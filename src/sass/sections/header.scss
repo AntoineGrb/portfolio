@@ -62,9 +62,9 @@
 
 //Header mobile
 .menu-icon--mobile {
-    display: none;
+    display: none !important; //Sinon bug de font-awesome
     @include media-max($smallscreen) {
-        display: block;
+        display: flex !important;
         color:white;
         font-size: 1.4rem;
         margin-right: 10px;
