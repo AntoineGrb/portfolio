@@ -1,3 +1,10 @@
+//!TO DO :
+    //!Factoriser le script en fonctions pour le rendre plus clean
+    //!Ajouter un changement de couleur au survol des icones de la page Home.
+    //!Eventuellement prévoir une animation sur la coloration des mots dans le résumé.
+    //!Prévoir une apparition décalée des blocs projets.
+    //!Mettre à jour les projets et la grid.
+
 //--- CURSEUR DU HEADER ---
 
 const cursor = document.querySelector('#header-cursor');
