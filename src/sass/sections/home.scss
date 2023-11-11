@@ -183,6 +183,7 @@
         }
     }
 
+    //Gestion du résumé en version téléphone
     &__button-show-more {
         display: none;
         @include media-max($tablet) {
@@ -193,11 +194,13 @@
         }
     }
 
+    //! Revoir complètement la disposition des icones + la couleur
     &__icons {
         display: flex;
         gap: 20px;
-        justify-content: center;
-        margin-top: 50px;
+        justify-content: space-around;
+        width: 50%;
+        margin: 50px auto 0;
         @include media-max($smallscreen) {
             gap:10px;    
         }
@@ -205,28 +208,105 @@
             margin-top: 25px;   
         }
 
-        figure {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 5px;
-
-            img {
-                width: 50px;
-                @include media-max($smallscreen) {
-                width: 45px;
-                }
-                @include media-max($largephone) {
-                    width: 30px;    
-                }
-            }
-
-            figcaption {
-                @include media-max($smallscreen) {
-                    display: none;
+        .icon {
+            figure {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+    
+                img {
+                    width: 50px;
+                    @include media-max($smallscreen) {
+                    width: 45px;
                     }
+                    @include media-max($largephone) {
+                        width: 30px;    
+                    }
+                }
+    
+                figcaption {
+                    @include media-max($smallscreen) {
+                        display: none;
+                        }
+                }
             }
         }
+
+        .icon-git {
+            position: relative;
+
+            .img-git, .img-git-hover {
+                position: absolute;
+                top: 0;
+                left: 30px;
+                transition: opacity .2s ease-out;
+            }
+
+            .img-git-hover {
+                opacity: 0;
+            }
+        }
+
+        .icon-git:hover {
+            .img-git-hover {
+                opacity: 1;
+            }
+
+            .img-git {
+                opacity: 0;
+            }
+        }
+
+        .icon-linkedin {
+            position: relative;
+
+            .img-linkedin, .img-linkedin-hover {
+                position: absolute;
+                top: 0;
+                left: 0;
+                transition: opacity .2s ease-out;
+            }
+
+            .img-linkedin-hover {
+                opacity: 0;
+            }
+        }
+
+        .icon-linkedin:hover {
+            .img-linkedin-hover {
+                opacity: 1;
+            }
+
+            .img-linkedin {
+                opacity: 0;
+            }
+        }
+
+        .icon-cv {
+            position: relative;
+
+            .img-cv, .img-cv-hover {
+                position: absolute;
+                top: 0;
+                left: -20px;
+                transition: opacity .2s ease-out;
+            }
+
+            .img-cv-hover {
+                opacity: 0;
+            }
+        }
+
+        .icon-cv:hover {
+            .img-cv-hover {
+                opacity: 1;
+            }
+
+            .img-cv {
+                opacity: 0;
+            }
+        }        
     }
 }
