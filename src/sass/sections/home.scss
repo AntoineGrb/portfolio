@@ -209,6 +209,9 @@
         }
 
         .icon {
+            &:visited {
+                color: inherit;
+            }
             figure {
                 display: flex;
                 flex-direction: column;

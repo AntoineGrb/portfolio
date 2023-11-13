@@ -448,6 +448,9 @@ a {
     margin-top: 25px;
   }
 }
+.home__icons .icon:visited {
+  color: inherit;
+}
 .home__icons .icon figure {
   display: flex;
   flex-direction: column;
