@@ -433,10 +433,9 @@ a {
 }
 .home__icons {
   display: flex;
-  gap: 20px;
-  justify-content: space-around;
+  justify-content: center;
   width: 50%;
-  margin: 50px auto 0;
+  margin: 25px auto 0;
 }
 @media screen and (max-width: 980px) {
   .home__icons {
@@ -448,87 +447,27 @@ a {
     margin-top: 25px;
   }
 }
+.home__icons .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+}
 .home__icons .icon:visited {
   color: inherit;
 }
-.home__icons .icon figure {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
+.home__icons .icon img {
+  width: 40px;
+  transition: width 0.1s ease-out;
 }
-.home__icons .icon figure img {
+.home__icons .icon img:hover {
   width: 50px;
 }
-@media screen and (max-width: 980px) {
-  .home__icons .icon figure img {
-    width: 45px;
-  }
-}
 @media screen and (max-width: 570px) {
-  .home__icons .icon figure img {
+  .home__icons .icon img {
     width: 30px;
   }
-}
-@media screen and (max-width: 980px) {
-  .home__icons .icon figure figcaption {
-    display: none;
-  }
-}
-.home__icons .icon-git {
-  position: relative;
-}
-.home__icons .icon-git .img-git, .home__icons .icon-git .img-git-hover {
-  position: absolute;
-  top: 0;
-  left: 30px;
-  transition: opacity 0.2s ease-out;
-}
-.home__icons .icon-git .img-git-hover {
-  opacity: 0;
-}
-.home__icons .icon-git:hover .img-git-hover {
-  opacity: 1;
-}
-.home__icons .icon-git:hover .img-git {
-  opacity: 0;
-}
-.home__icons .icon-linkedin {
-  position: relative;
-}
-.home__icons .icon-linkedin .img-linkedin, .home__icons .icon-linkedin .img-linkedin-hover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: opacity 0.2s ease-out;
-}
-.home__icons .icon-linkedin .img-linkedin-hover {
-  opacity: 0;
-}
-.home__icons .icon-linkedin:hover .img-linkedin-hover {
-  opacity: 1;
-}
-.home__icons .icon-linkedin:hover .img-linkedin {
-  opacity: 0;
-}
-.home__icons .icon-cv {
-  position: relative;
-}
-.home__icons .icon-cv .img-cv, .home__icons .icon-cv .img-cv-hover {
-  position: absolute;
-  top: 0;
-  left: -20px;
-  transition: opacity 0.2s ease-out;
-}
-.home__icons .icon-cv .img-cv-hover {
-  opacity: 0;
-}
-.home__icons .icon-cv:hover .img-cv-hover {
-  opacity: 1;
-}
-.home__icons .icon-cv:hover .img-cv {
-  opacity: 0;
 }
 
 .projects {
@@ -577,7 +516,8 @@ a {
 .projects__grid .project__cell-2 {
   grid-column: 2;
   grid-row: 1/5;
-  background-color: white;
+  background-image: url("../../src/images/projets/maxrep-incr.png");
+  background-position: center 25%;
 }
 @media screen and (max-width: 980px) {
   .projects__grid .project__cell-2 {
@@ -623,7 +563,7 @@ a {
 .projects__grid .project__cell-6 {
   grid-column: 3;
   grid-row: 3/7;
-  background-color: white;
+  background-image: url("../../src/images/projets/budget-monitor-incr.png");
 }
 @media screen and (max-width: 980px) {
   .projects__grid .project__cell-6 {
