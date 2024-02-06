@@ -75,10 +75,10 @@ h1 {
             font-size: 2.5rem;
         }
         @include media-max($smallscreen) {
-            font-size: 2rem;
+            font-size: 2.2rem;
         }
         @include media-max($largephone) {
-            font-size: 1.7rem;
+            font-size: 1.9rem;
         }  
     }
 }

@@ -9,6 +9,9 @@
         @include media-max($largescreen) {
             width: 90%;
         }
+        @include media-max($largephone) {
+            width: 100%;
+        }
     }
 
     &__grid {
@@ -23,7 +26,10 @@
         }
         @include media-max($tablet) {
             grid-template-rows: 5vh;
-         }
+        }
+        @include media-max($largephone) {
+            gap: 10px;
+        }
         
 
         .project__cell {
@@ -79,6 +85,9 @@
             @include media-max($smallscreen) {
                 grid-column: 1;
                 grid-row: auto;
+            }
+            @include media-max($largephone) {
+                background-position: 50% 70%;
             }
 
         }

@@ -44,6 +44,7 @@
         font-size: 1.2rem;
         letter-spacing: 1px;
         position: relative;
+        transition: color .1s ease-out;
 
         &:hover {
             color:$color-smooth;

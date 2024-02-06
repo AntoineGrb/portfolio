@@ -73,12 +73,12 @@ h1 {
 }
 @media screen and (max-width: 980px) {
   .section__title h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 }
 @media screen and (max-width: 570px) {
   .section__title h2 {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
   }
 }
 
@@ -144,6 +144,7 @@ a {
   font-size: 1.2rem;
   letter-spacing: 1px;
   position: relative;
+  transition: color 0.1s ease-out;
 }
 .header__nav--screen .nav__link:hover {
   color: #DBC2CF;
@@ -484,6 +485,11 @@ a {
     width: 90%;
   }
 }
+@media screen and (max-width: 570px) {
+  .projects__wrapper {
+    width: 100%;
+  }
+}
 .projects__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -500,6 +506,11 @@ a {
 @media screen and (max-width: 775px) {
   .projects__grid {
     grid-template-rows: 5vh;
+  }
+}
+@media screen and (max-width: 570px) {
+  .projects__grid {
+    gap: 10px;
   }
 }
 .projects__grid .project__cell {
@@ -558,6 +569,11 @@ a {
   .projects__grid .project__cell-5 {
     grid-column: 1;
     grid-row: auto;
+  }
+}
+@media screen and (max-width: 570px) {
+  .projects__grid .project__cell-5 {
+    background-position: 50% 70%;
   }
 }
 .projects__grid .project__cell-6 {
