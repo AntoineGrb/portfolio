@@ -168,10 +168,10 @@
         text-align: justify;
         line-height: 1.5;
         @include media-max($largescreen) {
-            font-size: 0.9rem;
+            font-size: 1rem;
         }
         @include media-max($tablet) {
-            font-size: 0.8rem;
+            font-size: 0.9rem;
             margin-top: 20px;
         }
         

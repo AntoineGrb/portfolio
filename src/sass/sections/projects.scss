@@ -28,7 +28,7 @@
             grid-template-rows: 5vh;
         }
         @include media-max($largephone) {
-            gap: 10px;
+            gap: 0px;
         }
         
 
@@ -53,6 +53,9 @@
             @include media-max($smallscreen) {
                 grid-column: 1;
                 grid-row: auto;
+            }
+            @include media-max($largephone) {
+                border-bottom: 1px solid lightgrey;
             }
         }
 
@@ -95,7 +98,7 @@
         .project__cell-6 {
             grid-column: 3;
             grid-row:3/7;
-            background-image: url('../../src/images/projets/budget-monitor-incr.png');
+            background-image: url('../../src/images/projets/budget-monitor-incr-2.png');
             background-size: cover;
             background-position: center 50%;
             @include media-max($smallscreen) {
