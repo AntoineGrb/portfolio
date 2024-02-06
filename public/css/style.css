@@ -641,6 +641,11 @@ a {
     width: 90%;
   }
 }
+@media screen and (max-width: 980px) {
+  .skills__wrapper {
+    width: 100%;
+  }
+}
 .skills__content {
   display: flex;
   gap: 20px;
@@ -659,6 +664,12 @@ a {
   .skills__content .hard-skills {
     width: 100%;
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 980px) {
+  .skills__content .hard-skills {
+    width: 90%;
+    margin: 0 auto;
   }
 }
 .skills__content .hard-skills__grid {
@@ -698,11 +709,16 @@ a {
   width: 60px;
 }
 .skills__content .hard-skills__grid .hard-skill__name {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 @media screen and (max-width: 1500px) {
   .skills__content .hard-skills__grid .hard-skill__name {
     font-size: 1rem;
+  }
+}
+@media screen and (max-width: 775px) {
+  .skills__content .hard-skills__grid .hard-skill__name {
+    font-size: 0.9rem;
   }
 }
 .skills__content .hard-skills__grid .hard-skill__mastered {
@@ -712,6 +728,7 @@ a {
 @media screen and (max-width: 1500px) {
   .skills__content .hard-skills__grid .hard-skill__mastered {
     font-size: 0.8rem;
+    min-width: 35%;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -722,7 +739,6 @@ a {
 }
 @media screen and (max-width: 775px) {
   .skills__content .hard-skills__grid .hard-skill__mastered {
-    min-width: 15%;
     text-align: right;
   }
 }
@@ -759,7 +775,11 @@ a {
     width: 100%;
     padding: 0;
     border: none;
-    background-color: whitesmoke;
+  }
+}
+@media screen and (max-width: 980px) {
+  .skills__content .soft-skills {
+    padding: 20px 5%;
   }
 }
 .skills__content .soft-skills__content {
@@ -776,11 +796,16 @@ a {
   width: 40px;
 }
 .skills__content .soft-skills__content .soft-skill__name {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 @media screen and (max-width: 1500px) {
   .skills__content .soft-skills__content .soft-skill__name {
     font-size: 1rem;
+  }
+}
+@media screen and (max-width: 775px) {
+  .skills__content .soft-skills__content .soft-skill__name {
+    font-size: 0.9rem;
   }
 }
 .skills .formation {
@@ -798,7 +823,7 @@ a {
 @media screen and (max-width: 980px) {
   .skills .formation {
     margin: 30px auto;
-    width: 100%;
+    width: 95%;
   }
 }
 .skills .formation__wrapper {

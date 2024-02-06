@@ -10,6 +10,9 @@
         @include media-max($largescreen) {
             width: 90%;
         }
+        @include media-max($smallscreen) {
+            width: 100%;
+        }
     }
 
     &__content {
@@ -26,6 +29,10 @@
             @include media-max($smallscreen) {
                 width: 100%;
                 flex-direction: column;
+            }
+            @include media-max($smallscreen) {
+                width: 90%;
+                margin: 0 auto;
             }
 
             &__grid {
@@ -58,9 +65,12 @@
                     }
 
                     &__name {
-                        font-size: 1.2rem;
+                        font-size: 1.1rem;
                         @include media-max($largescreen) {
                             font-size: 1rem;
+                        }
+                        @include media-max($tablet) {
+                            font-size: .9rem;
                         }
                     }
 
@@ -69,13 +79,13 @@
                         font-size: 1rem;
                         @include media-max($largescreen) {
                             font-size: 0.8rem;
+                            min-width: 35%;
                         }
                         @include media-max($mediumscreen) {
                             min-width: 30%;
                             text-align: right;
                         }
                         @include media-max($tablet) {
-                            min-width: 15%;
                             text-align: right;
                         }
 
@@ -113,7 +123,9 @@
                 width: 100%;
                 padding: 0;
                 border: none;
-                background-color: whitesmoke;
+            }
+            @include media-max($smallscreen) {
+                padding: 20px 5%;
             }
 
             &__content {
@@ -131,9 +143,12 @@
                     }
 
                     &__name {
-                        font-size: 1.2rem;
+                        font-size: 1.1rem;
                         @include media-max($largescreen) {
                             font-size: 1rem;
+                        }
+                        @include media-max($tablet) {
+                            font-size: .9rem;
                         }
                     }
                 }
@@ -152,7 +167,7 @@
         }
         @include media-max($smallscreen) {
             margin: 30px auto;
-            width: 100%;
+            width: 95%;
         }
 
         &__wrapper {
