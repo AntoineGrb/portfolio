@@ -96,6 +96,8 @@
             grid-column: 3;
             grid-row:3/7;
             background-image: url('../../src/images/projets/budget-monitor-incr.png');
+            background-size: cover;
+            background-position: center 50%;
             @include media-max($smallscreen) {
                 grid-column: 1;
                 grid-row: auto;

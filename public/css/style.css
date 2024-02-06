@@ -580,6 +580,8 @@ a {
   grid-column: 3;
   grid-row: 3/7;
   background-image: url("../../src/images/projets/budget-monitor-incr.png");
+  background-size: cover;
+  background-position: center 50%;
 }
 @media screen and (max-width: 980px) {
   .projects__grid .project__cell-6 {
