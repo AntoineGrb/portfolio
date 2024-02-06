@@ -1,27 +1,6 @@
 //!TO DO :
     //!Factoriser le script en fonctions pour le rendre plus clean
-    //!Ajouter un changement de couleur au survol des icones de la page Home.
-    //!Eventuellement prévoir une animation sur la coloration des mots dans le résumé.
     //!Prévoir une apparition décalée des blocs projets.
-    //!Mettre à jour les projets et la grid.
-
-//--- CURSEUR DU HEADER ---
-
-const cursor = document.querySelector('#header-cursor');
-let isCursor = true;
-
-function cursorWinking() {
-    if (isCursor) {
-        cursor.style.display = 'none';
-        isCursor = false;
-    }
-    else {
-        cursor.style.display = 'block';
-        isCursor = true;
-    }
-}
-
-setInterval(cursorWinking , 500);
 
 //--- TITRE DU HEADER ---
 
@@ -41,6 +20,19 @@ const typingLetters = [
 ];
 const headerText = document.querySelector('#header-text');
 
+handleHeaderTitle();
+setInterval(handleHeaderTitle, 20000);
+
+function handleHeaderTitle() {
+    headerText.innerText = '';
+
+    writeHeaderTitle();
+
+    setTimeout(() => {
+        eraseHeaderTitle()
+    }, 15000); 
+}
+
 function writeHeaderTitle() {
     for (let el of typingLetters) {
         setTimeout(() => {
@@ -57,18 +49,23 @@ function eraseHeaderTitle() {
     }
 }
 
-function handleHeaderTitle() {
-    headerText.innerText = '';
+//--- CURSEUR DU HEADER ---
 
-    writeHeaderTitle();
+const cursor = document.querySelector('#header-cursor');
+let isCursor = true;
 
-    setTimeout(() => {
-        eraseHeaderTitle()
-    }, 15000); 
+setInterval(cursorWinking , 500);
+
+function cursorWinking() {
+    if (isCursor) {
+        cursor.style.display = 'none';
+        isCursor = false;
+    }
+    else {
+        cursor.style.display = 'block';
+        isCursor = true;
+    }
 }
-
-handleHeaderTitle();
-setInterval(handleHeaderTitle, 20000);
 
 //--- MENU MOBILE ---
 
@@ -79,11 +76,9 @@ let isMenuActive = false;
 
 menuIcon.addEventListener('click' , (e) => {
     if (!isMenuActive) {
-        // menuMobile.style.display = 'flex';
         menuMobile.classList.add('open');
     }
     else {
-        // menuMobile.style.display = 'none';
         menuMobile.classList.remove('open');
     }    
     isMenuActive = !isMenuActive;
@@ -95,24 +90,6 @@ for (let section of [mainSection, menuMobile]) {
         isMenuActive = false;
     })
 }
-
-//--- HIDE DESCRIPTION TEXT ---
-const homePresentation = document.querySelector('.home__presentation');
-const homeButtonShow = document.querySelector('.home__button-show-more');
-let isTextTruncated = true;
-
-homeButtonShow.addEventListener('click', () => {
-
-    if (isTextTruncated) {
-        homePresentation.classList.remove('truncated');
-        homeButtonShow.innerHTML = 'Cacher description <i class="fa-solid fa-circle-chevron-up"></i>';
-    } else {
-        homePresentation.classList.add('truncated');
-        homeButtonShow.innerHTML = 'Voir description <i class="fa-solid fa-circle-chevron-down"></i>';
-    }
-    isTextTruncated = !isTextTruncated;
-});
-
 
 //--- CARD PROJET AU HOVER  ---
 

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -181,7 +180,7 @@ a {
     flex-direction: column;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s ease-in-out;
+    transition: max-height 0.3s ease-in-out;
   }
 }
 .header__nav--mobile.open {
@@ -203,7 +202,14 @@ a {
 .home {
   min-height: 100vh;
   display: flex;
+  justify-content: center;
   align-items: center;
+  padding-top: 80px;
+}
+@media screen and (max-width: 980px) {
+  .home {
+    padding-top: 0px;
+  }
 }
 .home__wrapper {
   width: 80%;
@@ -213,13 +219,18 @@ a {
 }
 @media screen and (max-width: 1500px) {
   .home__wrapper {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .home__wrapper {
     width: 90%;
   }
 }
 @media screen and (max-width: 980px) {
   .home__wrapper {
     flex-direction: column;
-    gap: 50px;
+    gap: 25px;
     padding: 150px 0 100px;
     margin: 0;
     width: 100%;
@@ -324,7 +335,7 @@ a {
 }
 @media screen and (max-width: 980px) {
   .home__title--middle {
-    font-size: 8rem;
+    font-size: 7rem;
   }
 }
 @media screen and (max-width: 775px) {
@@ -405,13 +416,7 @@ a {
 @media screen and (max-width: 775px) {
   .home__presentation {
     font-size: 0.8rem;
-  }
-}
-@media screen and (max-width: 775px) {
-  .home__presentation.truncated {
-    white-space: nowrap; /* Empêche le texte de passer à la ligne */
-    overflow: hidden; /* Cache le contenu débordant */
-    text-overflow: ellipsis; /* Ajoute des points de suspension */
+    margin-top: 20px;
   }
 }
 .home__presentation .keyword {
@@ -438,11 +443,6 @@ a {
   width: 50%;
   margin: 25px auto 0;
 }
-@media screen and (max-width: 980px) {
-  .home__icons {
-    gap: 10px;
-  }
-}
 @media screen and (max-width: 570px) {
   .home__icons {
     margin-top: 25px;
@@ -458,6 +458,12 @@ a {
 .home__icons .icon:visited {
   color: inherit;
 }
+@media screen and (max-width: 775px) {
+  .home__icons .icon {
+    width: 50px;
+    height: 50px;
+  }
+}
 .home__icons .icon img {
   width: 40px;
   transition: width 0.1s ease-out;
@@ -465,9 +471,12 @@ a {
 .home__icons .icon img:hover {
   width: 50px;
 }
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 775px) {
   .home__icons .icon img {
-    width: 30px;
+    width: 35px;
+  }
+  .home__icons .icon img:hover {
+    width: 40px;
   }
 }
 
