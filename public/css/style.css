@@ -905,7 +905,7 @@ a {
 }
 .skills .formation__img {
   width: 50%;
-  background-image: url("portfolio/src/images/illustr/Graduate_06.20_Blog_Image_Resize.jpg");
+  background-image: url("/portfolio/src/images/illustr/Graduate_06.20_Blog_Image_Resize.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 25%;
