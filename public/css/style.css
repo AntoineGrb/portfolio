@@ -502,7 +502,7 @@ a {
 .projects__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(10, 10vh);
+  grid-template-rows: repeat(15, 10vh);
   gap: 10px;
 }
 @media screen and (max-width: 980px) {
@@ -553,8 +553,7 @@ a {
 .projects__grid .project__cell-3 {
   grid-column: 3;
   grid-row: 1/4;
-  background-image: url("../../src/images/projets/budget-monitor-incr-2.png");
-  background-position: center 50%;
+  background-image: url("../../src/images/projets/tierlist-incr (2).png");
 }
 @media screen and (max-width: 980px) {
   .projects__grid .project__cell-3 {
@@ -611,6 +610,18 @@ a {
 }
 @media screen and (max-width: 980px) {
   .projects__grid .project__cell-7 {
+    grid-row: auto;
+  }
+}
+.projects__grid .project__cell-8 {
+  grid-column: 3;
+  grid-row: 6/9;
+  background-image: url("../../src/images/projets/budget-monitor-incr-2.png");
+  background-position: center 30%;
+}
+@media screen and (max-width: 980px) {
+  .projects__grid .project__cell-8 {
+    grid-column: 1;
     grid-row: auto;
   }
 }

@@ -17,7 +17,7 @@
     &__grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(10, 10vh);
+        grid-template-rows: repeat(15, 10vh);
         gap: 10px;
         @include media-max($smallscreen) {
             grid-template-columns: repeat(1, 1fr);
@@ -61,8 +61,7 @@
         .project__cell-3 {
             grid-column: 3;
             grid-row: 1/4;
-            background-image: url('../../src/images/projets/budget-monitor-incr-2.png');
-            background-position: center 50%;
+            background-image: url('../../src/images/projets/tierlist-incr (2).png');
             @include media-max($smallscreen) {
                 grid-column: 1;
                 grid-row: auto;
@@ -112,6 +111,17 @@
             background-image: url('../../src/images/projets/rw-list-incr.png');
             background-position: 50% 45%;
             @include media-max($smallscreen) {
+                grid-row: auto;
+            }
+        }
+
+        .project__cell-8 {
+            grid-column: 3;
+            grid-row:6/9;
+            background-image: url('../../src/images/projets/budget-monitor-incr-2.png');
+            background-position: center 30%;
+            @include media-max($smallscreen) {
+                grid-column: 1;
                 grid-row: auto;
             }
         }
