@@ -502,7 +502,7 @@ a {
 .projects__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(15, 10vh);
+  grid-template-rows: repeat(10, 10vh);
   gap: 10px;
 }
 @media screen and (max-width: 980px) {
