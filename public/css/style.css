@@ -761,6 +761,7 @@ a {
 .skills__content .hard-skills__grid .hard-skill__mastered {
   margin-left: auto;
   font-size: 1rem;
+  min-width: 35%;
 }
 @media screen and (max-width: 1500px) {
   .skills__content .hard-skills__grid .hard-skill__mastered {
@@ -776,6 +777,7 @@ a {
 }
 @media screen and (max-width: 775px) {
   .skills__content .hard-skills__grid .hard-skill__mastered {
+    min-width: 30%;
     text-align: right;
   }
 }
