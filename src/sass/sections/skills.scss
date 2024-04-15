@@ -78,17 +78,16 @@
                         margin-left: auto;
                         font-size: 1rem;
                         min-width: 35%;
+                        text-align: right;
                         @include media-max($largescreen) {
                             font-size: 0.8rem;
                             min-width: 35%;
                         }
                         @include media-max($mediumscreen) {
                             min-width: 30%;
-                            text-align: right;
                         }
                         @include media-max($tablet) {
                             min-width: 30%;
-                            text-align: right;
                         }
 
                         i {
