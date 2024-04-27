@@ -82,6 +82,9 @@ h1 {
         font-size: 3.8rem;
         letter-spacing: 4px;
     }    
+    @include media-max($smallphone) {
+        font-size: 3rem;
+    }  
 
     h2 {
         position: absolute;
@@ -101,6 +104,9 @@ h1 {
         }
         @include media-max($largephone) {
             font-size: 1.9rem;
+        }  
+        @include media-max($smallphone) {
+            font-size: 1.6rem;
         }  
     }
 }

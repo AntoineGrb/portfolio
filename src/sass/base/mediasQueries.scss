@@ -3,7 +3,7 @@ $mediumscreen : 1200px;
 $smallscreen : 980px; //Breakpoint mode tél/tablet
 $tablet : 775px;
 $largephone : 570px;
-//Min largeur : 340px
+$smallphone : 350px;
 
 //Pc first
 @mixin media-max($_max-width) {

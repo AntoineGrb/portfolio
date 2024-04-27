@@ -106,6 +106,8 @@
         font-size: 8rem;
         font-weight: bold;
         color:$color-text-dark;
+        overflow-x: hidden;
+        word-break: break-all;
         @include media-max($largescreen) {
             font-size: 6rem;
         }
@@ -120,7 +122,10 @@
         }
         @include media-max($largephone) {
             font-size: 4rem;
-        }          
+        }      
+        @include media-max($smallphone) {
+            font-size: 3.5rem;
+        }       
     }
 
     &__title--bottom {
