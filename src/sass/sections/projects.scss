@@ -22,7 +22,7 @@
         @include media-max($smallscreen) {
             grid-template-columns: repeat(1, 1fr);
             grid-template-rows: auto;
-            gap: 20px;
+            gap: 10px;
         }
         @include media-max($tablet) {
             grid-template-rows: 5vh;
@@ -106,17 +106,6 @@
         }
 
         .project__cell-7 {
-            grid-column: 1;
-            grid-row:8/10;
-            background-color: white;
-            background-image: url('../../src/images/projets/quiz-incr.jpg');
-            background-position: 50% 57%;
-            @include media-max($smallscreen) {
-                grid-row: auto;
-            }
-        }
-
-        .project__cell-8 {
             grid-column: 3;
             grid-row:6/9;
             background-image: url('../../src/images/projets/budget-monitor-incr-2.png');
@@ -136,14 +125,27 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: $color-dark;
+    background-color: $color-background-dark;
     z-index: 0;
     color:white;
     text-align: justify;
-    padding: 15%;
+    padding: 10%;
     opacity: 0;
     visibility: hidden;
-    transition: opacity .4s ease-out, visibility .4s ease-out;
+    transition: opacity .3s ease-out, visibility .3s ease-out;
+    position: relative;
+
+    .card__links {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }   
+
+    .card__infos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     &__title {
         font-size: 1.5rem;
@@ -153,15 +155,67 @@
         }
     }
 
-    &__date {
-        font-size: 1rem;
-        margin-bottom: 20px;
-        @include media-max-height(1500px) {
-            font-size: 0.8rem;
-        }
-    }
-
     &__desc {
         font-size: 0.8rem;
+    }
+
+    &__technos {
+        margin-top: 10px;  
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        .project-card__techno {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3px;
+
+            p {
+                font-size: 0.8rem;
+            }
+    
+            .techno-dot {
+                width: 10px;
+                height: 10px;
+                border-radius: 50px;
+                background-color: red;
+            }
+
+            .techno-dot--html {
+                background-color: $color-dot-html;
+            }
+            .techno-dot--js {
+                background-color: $color-dot-js;
+            }
+            .techno-dot--react {
+                background-color: $color-dot-react;
+            }
+            .techno-dot--scss {
+                background-color: $color-dot-scss;
+            }
+            .techno-dot--next {
+                background-color: $color-dot-next;
+            }
+            .techno-dot--ts {
+                background-color: $color-dot-ts;
+            }
+            .techno-dot--node {
+                background-color: $color-dot-node;
+            }
+            .techno-dot--postgres {
+                background-color: $color-dot-postgres;
+            }
+            .techno-dot--styled-components {
+                background-color: $color-dot-styled-components;
+            }
+            .techno-dot--tailwind {
+                background-color: $color-dot-tailwind;
+            }
+            .techno-dot--prisma {
+                background-color: $color-dot-prisma;
+            }
+        }
+    
     }
 }

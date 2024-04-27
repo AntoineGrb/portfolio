@@ -404,7 +404,8 @@ a {
 .home__links {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 8px;
+  flex-wrap: wrap;
   margin-top: 25px;
 }
 .home__links .home__link {
@@ -416,9 +417,37 @@ a {
   padding: 4px 20px 4px 10px;
   border-radius: 20px;
 }
+@media screen and (max-width: 980px) {
+  .home__links .home__link {
+    padding: 2px 10px 2px 5px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .home__links .home__link {
+    padding: 2px 10px 2px 5px;
+  }
+}
+.home__links .home__link img {
+  width: 30px;
+}
+@media screen and (max-width: 980px) {
+  .home__links .home__link img {
+    width: 25px;
+  }
+}
 .home__links .home__link p {
   color: white;
   font-size: 0.9rem;
+}
+@media screen and (max-width: 980px) {
+  .home__links .home__link p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 570px) {
+  .home__links .home__link p {
+    font-size: 0.8rem;
+  }
 }
 .home__links .home__link:hover {
   background-color: #1c1917;
@@ -453,7 +482,7 @@ a {
   .projects__grid {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
-    gap: 20px;
+    gap: 10px;
   }
 }
 @media screen and (max-width: 775px) {
@@ -547,25 +576,13 @@ a {
   }
 }
 .projects__grid .project__cell-7 {
-  grid-column: 1;
-  grid-row: 8/10;
-  background-color: white;
-  background-image: url("../../src/images/projets/quiz-incr.jpg");
-  background-position: 50% 57%;
-}
-@media screen and (max-width: 980px) {
-  .projects__grid .project__cell-7 {
-    grid-row: auto;
-  }
-}
-.projects__grid .project__cell-8 {
   grid-column: 3;
   grid-row: 6/9;
   background-image: url("../../src/images/projets/budget-monitor-incr-2.png");
   background-position: center 30%;
 }
 @media screen and (max-width: 980px) {
-  .projects__grid .project__cell-8 {
+  .projects__grid .project__cell-7 {
     grid-column: 1;
     grid-row: auto;
   }
@@ -578,14 +595,25 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #0f1113;
+  background-color: #0c0a09;
   z-index: 0;
   color: white;
   text-align: justify;
-  padding: 15%;
+  padding: 10%;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.4s ease-out, visibility 0.4s ease-out;
+  transition: opacity 0.3s ease-out, visibility 0.3s ease-out;
+  position: relative;
+}
+.project-card .card__links {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.project-card .card__infos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .project-card__title {
   font-size: 1.5rem;
@@ -596,17 +624,62 @@ a {
     font-size: 1.2rem;
   }
 }
-.project-card__date {
-  font-size: 1rem;
-  margin-bottom: 20px;
-}
-@media screen and (max-height: 1500px) {
-  .project-card__date {
-    font-size: 0.8rem;
-  }
-}
 .project-card__desc {
   font-size: 0.8rem;
+}
+.project-card__technos {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.project-card__technos .project-card__techno {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+.project-card__technos .project-card__techno p {
+  font-size: 0.8rem;
+}
+.project-card__technos .project-card__techno .techno-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  background-color: red;
+}
+.project-card__technos .project-card__techno .techno-dot--html {
+  background-color: #e34c26;
+}
+.project-card__technos .project-card__techno .techno-dot--js {
+  background-color: #f1e05a;
+}
+.project-card__technos .project-card__techno .techno-dot--react {
+  background-color: #61dafb;
+}
+.project-card__technos .project-card__techno .techno-dot--scss {
+  background-color: #c6538c;
+}
+.project-card__technos .project-card__techno .techno-dot--next {
+  background-color: white;
+}
+.project-card__technos .project-card__techno .techno-dot--ts {
+  background-color: #3178c6;
+}
+.project-card__technos .project-card__techno .techno-dot--node {
+  background-color: #026e00;
+}
+.project-card__technos .project-card__techno .techno-dot--postgres {
+  background-color: #336791;
+}
+.project-card__technos .project-card__techno .techno-dot--styled-components {
+  background-color: #DB7093;
+}
+.project-card__technos .project-card__techno .techno-dot--tailwind {
+  background-color: #38b2ac;
+}
+.project-card__technos .project-card__techno .techno-dot--prisma {
+  background-color: #2D3748;
 }
 
 .skills {
