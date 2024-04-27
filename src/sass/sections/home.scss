@@ -61,11 +61,11 @@
             align-items: center;
             background-image: url('../../src/images/illustr/zoolander-who-am-i.gif');
             background-repeat: no-repeat;
-            background-position: 30% 46%;
+            background-position: 25% 46%;
             background-size: 55%;
             background-color: $color-dark;
             border-radius: 5px;
-            border: 10px solid $color-smooth;
+            border: 5px solid $color-smooth;
             @include media-max($largephone) {
                height: 30vh;
             }
@@ -74,7 +74,7 @@
                 width: 95%;
                 height: 95%;
                 background-image: url('../../src/images/illustr/tv-cut-clean.png');
-                background-size:120%;
+                background-size:135%;
                 background-position: center;
                 background-repeat: no-repeat;
             }
@@ -84,6 +84,7 @@
     // Les textes sur la gauche du conteneur
     &__title--top {
         font-size: 1.5rem;
+        color:$color-text-dark;
         @include media-max($largescreen) {
             font-size: 1.3rem;
         }
@@ -104,7 +105,7 @@
     &__title--middle {
         font-size: 8rem;
         font-weight: bold;
-        color: $color-dark;
+        color:$color-text-dark;
         @include media-max($largescreen) {
             font-size: 6rem;
         }
@@ -123,7 +124,7 @@
     }
 
     &__title--bottom {
-        color: $color-dark;
+        color:$color-text-dark;
         display: flex;
         align-items: center;
         gap: 5px;
@@ -161,77 +162,69 @@
         }
     }
 
-    &__presentation {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 1rem;
-        margin-top: 50px;
-        font-style: italic;
-        text-align: justify;
-        line-height: 1.5;
-        @include media-max($largescreen) {
-            font-size: 1rem;
-        }
-        @include media-max($tablet) {
-            font-size: 0.9rem;
-            margin-top: 20px;
-        }
-        
-        .keyword {
-            background-color: $color-smooth;
-            color: white;
-            text-shadow: 1px 1px 3px black;
-            padding: 1px 5px;
-            border-radius: 5px;
-        }
-    }
-
-    //Gestion du résumé en version téléphone
-    &__button-show-more {
-        display: none;
-        @include media-max($tablet) {
-            font-size: 0.8rem;
-            display: block;
-            text-align: center;
-            margin-top: 10px;
-        }
-    }
-
-    &__icons {
+    &__links {
         display: flex;
-        justify-content: center;
-        width: 50%;
-        margin: 25px auto 0;
-        @include media-max($largephone) {
-            margin-top: 25px;   
-        }
+        align-items: center;
+        gap: 5px;
+        margin-top: 25px;
 
-        .icon {
-            display: flex;
-            justify-content: center;
+        .home__link {
+            display:flex;
+            justify-content: flex-start;
             align-items: center;
-            width: 60px;
-            height: 60px;
-            &:visited {
-                color: inherit;
-            }
-            @include media-max($tablet) {
-                width: 50px;
-                height: 50px;  
+            gap: 2px;
+            background-color: $color-background-dark;
+            padding: 4px 20px 4px 10px;
+            border-radius: 20px;
+
+            p {
+                color:white;
+                font-size: .9rem;
             }
 
-            img {
-                width: 40px;
-                transition: width .1s ease-out;
-                &:hover {
-                    width: 50px;
-                }
-                @include media-max($tablet) {
-                    width: 35px;  
-                    &:hover {
-                        width: 40px;
-                    }  
-                }
+            &:hover {
+                background-color: $color-background-dark-hover;
+            
             }
         }
     }
+
+    // &__icons {
+    //     display: flex;
+    //     justify-content: center;
+    //     width: 50%;
+    //     margin: 25px auto 0;
+    //     @include media-max($largephone) {
+    //         margin-top: 25px;   
+    //     }
+
+    //     .icon {
+    //         display: flex;
+    //         justify-content: center;
+    //         align-items: center;
+    //         width: 60px;
+    //         height: 60px;
+    //         &:visited {
+    //             color: inherit;
+    //         }
+    //         @include media-max($tablet) {
+    //             width: 50px;
+    //             height: 50px;  
+    //         }
+
+    //         img {
+    //             width: 40px;
+    //             transition: width .1s ease-out;
+    //             &:hover {
+    //                 width: 50px;
+    //             }
+    //             @include media-max($tablet) {
+    //                 width: 35px;  
+    //                 &:hover {
+    //                     width: 40px;
+    //                 }  
+    //             }
+    //         }
+    //     }
+    // }
 }

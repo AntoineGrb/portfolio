@@ -11,7 +11,7 @@ html {
 body {
   width: 100%;
   max-width: 100%;
-  background-color: whitesmoke;
+  background-color: #FDFCFD;
 }
 
 h1, h2, h3, p, a, small {
@@ -24,7 +24,7 @@ p {
 
 h1 {
   font-size: 2rem;
-  color: white;
+  color: #fafaf9;
 }
 @media screen and (max-width: 570px) {
   h1 {
@@ -36,7 +36,7 @@ h1 {
   font-size: 7rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 900;
-  color: lightgray;
+  color: #BCBAC7;
   position: relative;
   margin-bottom: 50px;
   text-align: center;
@@ -62,7 +62,7 @@ h1 {
   font-family: "Open Sans", sans-serif;
   font-size: 3rem;
   font-weight: 0;
-  color: black;
+  color: #211F26;
   letter-spacing: 0px;
 }
 @media screen and (max-width: 1500px) {
@@ -98,7 +98,7 @@ a {
 }
 
 .header {
-  background-color: #0f1113;
+  background-color: #0c0a09;
   width: 100%;
   position: fixed;
   top: 0;
@@ -126,7 +126,7 @@ a {
 .header__title .cursor {
   width: 7px;
   height: 25px;
-  background-color: #DBC2CF;
+  background-color: #fafaf9;
 }
 
 .header__nav--screen {
@@ -139,14 +139,14 @@ a {
   }
 }
 .header__nav--screen .nav__link {
-  color: white;
+  color: #fafaf9;
   font-size: 1.2rem;
   letter-spacing: 1px;
   position: relative;
   transition: color 0.1s ease-out;
 }
 .header__nav--screen .nav__link:hover {
-  color: #DBC2CF;
+  color: #d6d3d1;
 }
 .header__nav--screen .nav__link.active {
   border-bottom: 2px solid white;
@@ -271,11 +271,11 @@ a {
   align-items: center;
   background-image: url("../../src/images/illustr/zoolander-who-am-i.gif");
   background-repeat: no-repeat;
-  background-position: 30% 46%;
+  background-position: 25% 46%;
   background-size: 55%;
   background-color: #0f1113;
   border-radius: 5px;
-  border: 10px solid #DBC2CF;
+  border: 5px solid #DBC2CF;
 }
 @media screen and (max-width: 570px) {
   .home__img .bg-img {
@@ -286,12 +286,13 @@ a {
   width: 95%;
   height: 95%;
   background-image: url("../../src/images/illustr/tv-cut-clean.png");
-  background-size: 120%;
+  background-size: 135%;
   background-position: center;
   background-repeat: no-repeat;
 }
 .home__title--top {
   font-size: 1.5rem;
+  color: #0c0a09;
 }
 @media screen and (max-width: 1500px) {
   .home__title--top {
@@ -321,7 +322,7 @@ a {
 .home__title--middle {
   font-size: 8rem;
   font-weight: bold;
-  color: #0f1113;
+  color: #0c0a09;
 }
 @media screen and (max-width: 1500px) {
   .home__title--middle {
@@ -349,7 +350,7 @@ a {
   }
 }
 .home__title--bottom {
-  color: #0f1113;
+  color: #0c0a09;
   display: flex;
   align-items: center;
   gap: 5px;
@@ -400,89 +401,32 @@ a {
     font-size: 1rem;
   }
 }
-.home__presentation {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
-  margin-top: 50px;
-  font-style: italic;
-  text-align: justify;
-  line-height: 1.5;
-}
-@media screen and (max-width: 1500px) {
-  .home__presentation {
-    font-size: 1rem;
-  }
-}
-@media screen and (max-width: 775px) {
-  .home__presentation {
-    font-size: 0.9rem;
-    margin-top: 20px;
-  }
-}
-.home__presentation .keyword {
-  background-color: #DBC2CF;
-  color: white;
-  text-shadow: 1px 1px 3px black;
-  padding: 1px 5px;
-  border-radius: 5px;
-}
-.home__button-show-more {
-  display: none;
-}
-@media screen and (max-width: 775px) {
-  .home__button-show-more {
-    font-size: 0.8rem;
-    display: block;
-    text-align: center;
-    margin-top: 10px;
-  }
-}
-.home__icons {
+.home__links {
   display: flex;
-  justify-content: center;
-  width: 50%;
-  margin: 25px auto 0;
-}
-@media screen and (max-width: 570px) {
-  .home__icons {
-    margin-top: 25px;
-  }
-}
-.home__icons .icon {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  width: 60px;
-  height: 60px;
+  gap: 5px;
+  margin-top: 25px;
 }
-.home__icons .icon:visited {
-  color: inherit;
+.home__links .home__link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2px;
+  background-color: #0c0a09;
+  padding: 4px 20px 4px 10px;
+  border-radius: 20px;
 }
-@media screen and (max-width: 775px) {
-  .home__icons .icon {
-    width: 50px;
-    height: 50px;
-  }
+.home__links .home__link p {
+  color: white;
+  font-size: 0.9rem;
 }
-.home__icons .icon img {
-  width: 40px;
-  transition: width 0.1s ease-out;
-}
-.home__icons .icon img:hover {
-  width: 50px;
-}
-@media screen and (max-width: 775px) {
-  .home__icons .icon img {
-    width: 35px;
-  }
-  .home__icons .icon img:hover {
-    width: 40px;
-  }
+.home__links .home__link:hover {
+  background-color: #1c1917;
 }
 
 .projects {
   min-height: 100vh;
-  background-color: rgb(245, 235, 245);
+  background-color: #F2EFF3;
   padding-top: 80px;
 }
 .projects__wrapper {
@@ -667,7 +611,7 @@ a {
 
 .skills {
   min-height: 100vh;
-  background-color: whitesmoke;
+  background-color: #FDFCFD;
   padding-top: 80px;
 }
 .skills__wrapper {
@@ -801,50 +745,6 @@ a {
 @media screen and (max-width: 570px) {
   .skills__content .hard-skills__grid .hard-skill.gestion-projet .hard-skill__desc {
     display: none;
-  }
-}
-.skills__content .soft-skills {
-  width: 30%;
-  background-color: #f5ebf5;
-  padding: 20px;
-  border-radius: 5px;
-}
-@media screen and (max-width: 980px) {
-  .skills__content .soft-skills {
-    width: 100%;
-    padding: 0;
-    border: none;
-  }
-}
-@media screen and (max-width: 980px) {
-  .skills__content .soft-skills {
-    padding: 20px 5%;
-  }
-}
-.skills__content .soft-skills__content {
-  display: flex;
-  flex-direction: column;
-}
-.skills__content .soft-skills__content .soft-skill {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  padding: 15px 0;
-}
-.skills__content .soft-skills__content .soft-skill > img {
-  width: 40px;
-}
-.skills__content .soft-skills__content .soft-skill__name {
-  font-size: 1.1rem;
-}
-@media screen and (max-width: 1500px) {
-  .skills__content .soft-skills__content .soft-skill__name {
-    font-size: 1rem;
-  }
-}
-@media screen and (max-width: 775px) {
-  .skills__content .soft-skills__content .soft-skill__name {
-    font-size: 0.9rem;
   }
 }
 .skills .formation {

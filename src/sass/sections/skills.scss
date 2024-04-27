@@ -1,7 +1,7 @@
 
 .skills {
     min-height: 100vh;
-    background-color: whitesmoke;
+    background-color: $color-background1;
     padding-top: 80px;
 
     &__wrapper {
@@ -109,47 +109,6 @@
                     .hard-skill__desc {
                         @include media-max($largephone) {
                             display: none;
-                        }
-                    }
-                }
-            }
-        }
-
-        .soft-skills {
-            width: 30%;
-            background-color: $color-bg-smooth;
-            padding: 20px;
-            border-radius: 5px;
-            @include media-max($smallscreen) {
-                width: 100%;
-                padding: 0;
-                border: none;
-            }
-            @include media-max($smallscreen) {
-                padding: 20px 5%;
-            }
-
-            &__content {
-                display: flex;
-                flex-direction: column;
-
-                .soft-skill {
-                    display: flex;
-                    align-items: center;
-                    gap: 15px;
-                    padding: 15px 0;
-
-                    > img {
-                        width: 40px;
-                    }
-
-                    &__name {
-                        font-size: 1.1rem;
-                        @include media-max($largescreen) {
-                            font-size: 1rem;
-                        }
-                        @include media-max($tablet) {
-                            font-size: .9rem;
                         }
                     }
                 }

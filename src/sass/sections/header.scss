@@ -1,5 +1,5 @@
 .header {
-    background-color: $color-dark;
+    background-color: $color-background-dark;
     width: 100%;
     position: fixed;
     top: 0;
@@ -26,7 +26,7 @@
         .cursor {
             width:7px;
             height: 25px;
-            background-color: $color-smooth;
+            background-color: $color-text-light;
         }
     }
 }
@@ -40,14 +40,14 @@
     }
 
     .nav__link {
-        color:white;
+        color:$color-text-light;
         font-size: 1.2rem;
         letter-spacing: 1px;
         position: relative;
         transition: color .1s ease-out;
 
         &:hover {
-            color:$color-smooth;
+            color:$color-text-light-hover;
         }
 
         &.active {
