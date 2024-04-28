@@ -12,6 +12,7 @@
 
     &__wrapper {
         width: 80%;
+        max-width: 1700px;
         margin: 0 auto;
         display: flex;
         align-items: center;
@@ -85,6 +86,7 @@
     &__title--top {
         font-size: 1.5rem;
         color:$color-text-dark;
+        cursor: default;
         @include media-max($largescreen) {
             font-size: 1.3rem;
         }
@@ -107,7 +109,7 @@
         font-weight: bold;
         color:$color-text-dark;
         overflow-x: hidden;
-        word-break: break-all;
+        cursor: default;
         @include media-max($largescreen) {
             font-size: 6rem;
         }
@@ -133,6 +135,7 @@
         display: flex;
         align-items: center;
         gap: 5px;
+        cursor: default;
 
         img {
             width: 50px;
@@ -182,6 +185,7 @@
             background-color: $color-background-dark;
             padding: 4px 20px 4px 10px;
             border-radius: 20px;
+            cursor: pointer;
             @include media-max($smallscreen) {
                 padding: 2px 10px 2px 5px;
             } 

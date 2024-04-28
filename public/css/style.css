@@ -41,6 +41,7 @@ h1 {
   margin-bottom: 50px;
   text-align: center;
   letter-spacing: 10px;
+  cursor: default;
 }
 @media screen and (max-width: 980px) {
   .section__title {
@@ -54,7 +55,7 @@ h1 {
     letter-spacing: 4px;
   }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 370px) {
   .section__title {
     font-size: 3rem;
   }
@@ -85,7 +86,7 @@ h1 {
     font-size: 1.9rem;
   }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 370px) {
   .section__title h2 {
     font-size: 1.6rem;
   }
@@ -132,6 +133,7 @@ a {
   display: flex;
   align-items: center;
   gap: 1px;
+  cursor: default;
 }
 .header__title .cursor {
   width: 7px;
@@ -223,6 +225,7 @@ a {
 }
 .home__wrapper {
   width: 80%;
+  max-width: 1700px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -303,6 +306,7 @@ a {
 .home__title--top {
   font-size: 1.5rem;
   color: #0c0a09;
+  cursor: default;
 }
 @media screen and (max-width: 1500px) {
   .home__title--top {
@@ -334,7 +338,7 @@ a {
   font-weight: bold;
   color: #0c0a09;
   overflow-x: hidden;
-  word-break: break-all;
+  cursor: default;
 }
 @media screen and (max-width: 1500px) {
   .home__title--middle {
@@ -361,7 +365,7 @@ a {
     font-size: 4rem;
   }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 370px) {
   .home__title--middle {
     font-size: 3.5rem;
   }
@@ -371,6 +375,7 @@ a {
   display: flex;
   align-items: center;
   gap: 5px;
+  cursor: default;
 }
 .home__title--bottom img {
   width: 50px;
@@ -433,6 +438,7 @@ a {
   background-color: #0c0a09;
   padding: 4px 20px 4px 10px;
   border-radius: 20px;
+  cursor: pointer;
 }
 @media screen and (max-width: 980px) {
   .home__links .home__link {
@@ -475,8 +481,14 @@ a {
   background-color: #F2EFF3;
   padding-top: 80px;
 }
+@media screen and (max-width: 980px) {
+  .projects {
+    padding-bottom: 50px;
+  }
+}
 .projects__wrapper {
   width: 80%;
+  max-width: 1700px;
   margin: 0 auto;
 }
 @media screen and (max-width: 1500px) {
@@ -621,6 +633,7 @@ a {
   visibility: hidden;
   transition: opacity 0.3s ease-out, visibility 0.3s ease-out;
   position: relative;
+  cursor: default;
 }
 .project-card .card__links {
   position: absolute;
@@ -708,6 +721,11 @@ a {
   width: 80%;
   margin: 0 auto;
 }
+@media screen and (max-width: 1500px) {
+  .skills__wrapper {
+    width: 90%;
+  }
+}
 .skills__content {
   display: flex;
 }
@@ -719,10 +737,33 @@ a {
 }
 .skills__content .skills__grid {
   width: 100%;
+  max-width: 1700px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
   grid-auto-rows: auto;
   gap: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .skills__content .skills__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 980px) {
+  .skills__content .skills__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 570px) {
+  .skills__content .skills__grid {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .skills__content .skills__grid {
+    grid-template-columns: 1fr;
+  }
 }
 .skills__content .skills__grid .skill {
   display: flex;
@@ -734,24 +775,47 @@ a {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
 }
+@media screen and (max-width: 570px) {
+  .skills__content .skills__grid .skill {
+    padding: 10px;
+  }
+}
 .skills__content .skills__grid .skill__icons {
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
 }
 .skills__content .skills__grid .skill__icons img {
-  width: 100px;
+  width: 75px;
+}
+@media screen and (max-width: 570px) {
+  .skills__content .skills__grid .skill__icons img {
+    width: 50px;
+  }
 }
 .skills__content .skills__grid .skill__name {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: #211F26;
   margin-bottom: 50px;
+  text-align: center;
+}
+@media screen and (max-width: 570px) {
+  .skills__content .skills__grid .skill__name {
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+  }
 }
 .skills__content .skills__grid .skill__mastered {
   position: absolute;
   bottom: 15px;
   right: 15px;
+  font-size: 0.9rem;
+}
+@media screen and (max-width: 570px) {
+  .skills__content .skills__grid .skill__mastered {
+    font-size: 0.8rem;
+  }
 }
 .skills .formation {
   display: flex;

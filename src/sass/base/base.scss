@@ -74,6 +74,7 @@ h1 {
     margin-bottom: 50px;
     text-align: center;
     letter-spacing: 10px;
+    cursor: default;
     @include media-max($smallscreen) {
         font-size: 5rem;
         letter-spacing: 5px;
