@@ -6,7 +6,8 @@
 	<title></title>
     <link rel ="stylesheet" href = './public/css/style.css' />
 	<link rel="icon" type="image/png" href="" />
-    <link rel="stylesheet" href="https://kit.fontawesome.com/5c520df75a.css" crossorigin="anonymous"> <!--Font-awesome -->
+    <link rel="stylesheet" href="https://kit.fontawesome.com/5c520df75a.css" crossorigin="anonymous"> <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> <!-- Animate.css -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -46,25 +47,28 @@
                     <p class="home__title--top"> Hi world ! I am </p>
                     <p class="home__title--middle"> ANTOINE </p>
                     <div class="home__title--bottom">
-                        <img src="./src/images/icons/icons8-react-80.png" alt="">
                         <p class="home__title--bottom"> Fullstack web developer </p>
                     </div>
-                    <p class="home__presentation"> " Throughout my professional and personal life, I have always been in the company of <span class="keyword"> developers.</span> It was after developing VBA tools during my last experience as a Quality Manager that I realized this was what I wanted to do with my life. That's why in 2022 I decided to take the plunge and embark on a <span class="keyword"> career change!</span>
-                    I started learning on my own, working on several personal projects. Later on, in August 2023, I made the decision to enroll in the intensive 6-month program at <span class="keyword"> O'Clock school</span>. It allowed me to enhance my skills alongside experienced instructors and highly motivated fellow students.
-                    Graduating in March 2023, I am now seeking new challenges and a position as a <span class="keyword"> JavaScript web developer.</span>"
-                    </p>
-                    <div class="home__icons">
-                        <div class="icon icon-git">
-                            <a href="https://github.com/AntoineGrb" target="_blank"> 
-                                <!-- Changer les couleurs des icones au survol -->
-                                <img src="./src/images/icons/icons8-github-96.png" alt="Github" /> 
-                            </a>
-                        </div>
-                        <div class="icon icon-linkedin">
-                            <a href="https://www.linkedin.com/in/antoine-grubert-588069118/" target="_blank"> 
-                                <img src="./src/images/icons/icons8-linkedin-100.png" alt="Linkedin" />
-                            </a>
-                        </div>
+                    <div class="home__links">
+                        <a href="https://github.com/AntoineGrb" target="_blank">
+                            <div class="home__link">
+                                <img src="./src/images/icons/icons8-github-30.png" alt="Github" class="animate__animated"  />
+                                <p> Github </p>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/antoine-grubert-dev/" target="_blank">
+                            <div class="home__link">
+                                <img src="./src/images/icons/icons8-linkedin-30.png" alt="Github" class="animate__animated"/>
+                                <p> Linkedin </p>
+                            </div>
+                        </a>
+                        <a href="mailto:antoine.grubert@outlook.fr">
+                            <div class="home__link">
+                                <img src="./src/images/icons/icons8-enveloppe-cerclée-30.png" alt="Github" class="animate__animated" />
+                                <p> antoine.grubert@outlook.fr </p>
+                            </div>
+                        </a>
+
                     </div>
                 </div>
                 <div class="home__img">
@@ -85,62 +89,213 @@
                     <h2> PROJECTS </h2>
                 </div>
                 <div class="projects__grid">
-                    <a href="https://github.com/AntoineGrb/cinemate-react" target="_blank" class="project__cell project__cell-1">
+                    <div class="project__cell project__cell-1">
                         <div class="project-card">
-                            <p class="project-card__title"> Cinemate </p>
-                            <p class="project-card__date"> Personal project - December 2023 </p>
-                            <p class="project-card__desc"> Site allowing you to search for a movie to watch based on your selection criteria. </p>
+                            <div class="card__links"> 
+                                <a href="https://github.com/AntoineGrb/cinemate-react" target="_blank">
+                                    <img src="./src/images/icons/icons8-github-30.png" alt="Github" width="25" />
+                                </a>
+                                <a href="https://cinemate-react.vercel.app/" target="_blank">
+                                    <img src="./src/images/icons/icons8-lien-50.png" alt="Website" width="25" />
+                                </a>
+                            </div>
+                            <div class="card__infos">
+                                <p class="project-card__title"> Cinemate </p>
+                                <p class="project-card__desc"> December 2023 - Site allowing you to search for a movie to watch based on your selection criteria. </p>
+                                <div class="project-card__technos"> 
+                                    <div class="project-card__techno">
+                                        <div class="techno-dot techno-dot--react"></div>
+                                        <p> React </p>
+                                    </div>
+                                    <div class="project-card__techno">
+                                        <div class="techno-dot techno-dot--styled-components"></div>
+                                        <p> Styled components </p>
+                                    </div>
+                                    <div class="project-card__techno">
+                                        <div class="techno-dot techno-dot--ts"></div>
+                                        <p> TypeScript </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </a>
-                    <a href="https://github.com/AntoineGrb/maxrep-front" target="_blank" class="project__cell project__cell-2">
+                    </div>
+                    <div class="project__cell project__cell-2">
                         <div class="project-card">
-                            <p class="project-card__title"> MaxRep </p>
-                            <p class="project-card__date"> Project with 2 developers - January 2024 </p>
-                            <p class="project-card__desc"> Full-stack web application for planning exercise sessions and tracking sports performance. </p>
+                            <div class="card__links"> 
+                                <a href="https://github.com/AntoineGrb/maxrep-front" target="_blank">
+                                    <img src="./src/images/icons/icons8-github-30.png" alt="Github" width="25" />
+                                </a>
+                                <a href="https://maxrep.vercel.app/" target="_blank">
+                                    <img src="./src/images/icons/icons8-lien-50.png" alt="Website" width="25" />
+                                </a>
+                            </div>
+                            <div class="card__infos">
+                                <p class="project-card__title"> MaxRep </p>
+                                <p class="project-card__desc"> January 2024 - Full-stack web application for planning exercise sessions and tracking sports performance. </p>
+                                <div class="project-card__technos"> 
+                                    <div class="project-card__techno">
+                                        <div class="techno-dot techno-dot--react"></div>
+                                        <p> React </p>
+                                    </div>
+                                    <div class="project-card__techno">
+                                        <div class="techno-dot techno-dot--node"></div>
+                                        <p> Node.js </p>
+                                    </div>
+                                    <div class="project-card__techno">
+                                        <div class="techno-dot techno-dot--postgres"></div>
+                                        <p> PostgreSQL </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </a>
-                    <a href="https://github.com/AntoineGrb/tierlist-next" target="_blank" class="project__cell project__cell-3">
+                    </div>
+                    <div class="project__cell project__cell-3">
                         <div class="project-card">
-                            <p class="project-card__title"> S Tier List </p>
-                            <p class="project-card__date"> Personal project - Mars 2024 (in progress) </p>
-                            <p class="project-card__desc"> Full-stack web application for creating fun and customiezed tier lists. </p>
+                            <div class="card__links"> 
+                                <a href="https://github.com/AntoineGrb/tierlist-next" target="_blank">
+                                    <img src="./src/images/icons/icons8-github-30.png" alt="Github" width="25" />
+                                </a>
+                                <a href="https://tierlist-next.vercel.app/" target="_blank">
+                                    <img src="./src/images/icons/icons8-lien-50.png" alt="Website" width="25" />
+                                </a>
+                            </div>
+                            <div class="card__infos">
+                                <p class="project-card__title"> S Tier List </p>
+                                <p class="project-card__desc"> Mars 2024 - Full-stack web application for creating fun and customiezed tier lists. </p>
+                                <div class="project-card__technos"> 
+                                    <div class="project-card__techno">
+                                        <div class="techno-dot techno-dot--next"></div>
+                                        <p> NextJS </p>
+                                    </div>
+                                    <div class="project-card__techno">
+                                        <div class="techno-dot techno-dot--tailwind"></div>
+                                        <p> Tailwind CSS </p>
+                                    </div>
+                                    <div class="project-card__techno">
+                                        <div class="techno-dot techno-dot--prisma"></div>
+                                        <p> Prisma </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </a>
-                    <a href="https://github.com/AntoineGrb/spotify-dashboard" target="_blank" class="project__cell project__cell-4">
+                    </div>
+                    <div class="project__cell project__cell-4">
                         <div class="project-card">
-                            <p class="project-card__title"> Spotify Dashboard </p>
-                            <p class="project-card__date"> Personal project - April 2024 </p>
-                            <p class="project-card__desc"> Dashboard for real-time insights and trends analysis on your Spotify account. </p>
+                            <div class="card__links"> 
+                                <a href="https://github.com/AntoineGrb/spotify-dashboard" target="_blank">
+                                    <img src="./src/images/icons/icons8-github-30.png" alt="Github" width="25" />
+                                </a>
+                            </div>
+                            <div class="card__infos">
+                                <p class="project-card__title"> Spotify Dashboard </p>
+                                <p class="project-card__desc"> April 2024 - Dashboard for real-time insights and trends analysis on your Spotify account. </p>
+                                <div class="project-card__technos"> 
+                                    <div class="project-card__techno">
+                                        <div class="techno-dot techno-dot--next"></div>
+                                        <p> NextJS </p>
+                                    </div>
+                                    <div class="project-card__techno">
+                                        <div class="techno-dot techno-dot--ts"></div>
+                                        <p> TypeScript </p>
+                                    </div>
+                                    <div class="project-card__techno">
+                                        <div class="techno-dot techno-dot--tailwind"></div>
+                                        <p> Tailwind CSS </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </a>
-                    <a href="https://github.com/AntoineGrb/artshop-react" target="_blank" class="project__cell project__cell-5">
+                    </div>
+                    <div class="project__cell project__cell-5">
                         <div class="project-card">
-                            <p class="project-card__title"> Art shop </p>
-                            <p class="project-card__date"> Personal project - June 2023 </p>
-                            <p class="project-card__desc"> Mockup of an e-commerce website for selling paintings (created by my father). The goal was to learn how React works. </p>
+                            <div class="card__links"> 
+                                <a href="https://github.com/AntoineGrb/quizz-hub" target="_blank">
+                                    <img src="./src/images/icons/icons8-github-30.png" alt="Github" width="25" />
+                                </a>
+                                <a href="https://quizz-op.vercel.app/" target="_blank">
+                                    <img src="./src/images/icons/icons8-lien-50.png" alt="Website" width="25" />
+                                </a>
+                            </div>
+                            <div class="card__infos">
+                                <p class="project-card__title"> Quiz hub </p>
+                                <p class="project-card__desc"> June 2023 - Small hub allowing access to 4 quizzes on various topics </p>
+                                <div class="project-card__technos"> 
+                                    <div class="project-card__techno">
+                                        <div class="techno-dot techno-dot--html"></div>
+                                        <p> HTML </p>
+                                    </div>
+                                    <div class="project-card__techno">
+                                        <div class="techno-dot techno-dot--scss"></div>
+                                        <p> Sass </p>
+                                    </div>
+                                    <div class="project-card__techno">
+                                        <div class="techno-dot techno-dot--js"></div>
+                                        <p> JavaScript </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </a>
-                    <a href="https://github.com/AntoineGrb/tournois-generateur" target="_blank" class="project__cell project__cell-6">
+                    </div>
+                    <div class="project__cell project__cell-6">
                         <div class="project-card">
-                            <p class="project-card__title"> Tournaments generator </p>
-                            <p class="project-card__date"> Personal project - February 2023 </p>
-                            <p class="project-card__desc"> Small application allowing for quickly creating a structure for a tournament among friends. </p> </p>
+                            <div class="card__links"> 
+                                <a href="https://github.com/AntoineGrb/tournois-generateur" target="_blank">
+                                    <img src="./src/images/icons/icons8-github-30.png" alt="Github" width="25" />
+                                </a>
+                                <a href="https://tournois-generateur.vercel.app/" target="_blank">
+                                    <img src="./src/images/icons/icons8-lien-50.png" alt="Website" width="25" />
+                                </a>
+                            </div>
+                            <div class="card__infos">
+                                <p class="project-card__title"> Tournaments </p>
+                                <p class="project-card__desc"> February 2023 - Small application allowing for quickly creating a tournament among friends </p>
+                                <div class="project-card__technos"> 
+                                    <div class="project-card__techno">
+                                        <div class="techno-dot techno-dot--html"></div>
+                                        <p> HTML </p>
+                                    </div>
+                                    <div class="project-card__techno">
+                                        <div class="techno-dot techno-dot--scss"></div>
+                                        <p> Sass </p>
+                                    </div>
+                                    <div class="project-card__techno">
+                                        <div class="techno-dot techno-dot--js"></div>
+                                        <p> JavaScript </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </a>
-                    <a href="https://github.com/AntoineGrb/quizz-hub" target="_blank" class="project__cell project__cell-7">
+                    </div>
+                    <div class="project__cell project__cell-7">
                         <div class="project-card">
-                            <p class="project-card__title"> Quiz hub </p>
-                            <p class="project-card__date"> Personal project - July 2023 </p>
-                            <p class="project-card__desc"> Small hub allowing access to 4 quizzes on various topics. </p>
+                            <div class="card__links"> 
+                                <a href="https://github.com/AntoineGrb/budget-monitor-react" target="_blank">
+                                    <img src="./src/images/icons/icons8-github-30.png" alt="Github" width="25" />
+                                </a>
+                                <a href="https://budget-monitor-react.vercel.app/" target="_blank">
+                                    <img src="./src/images/icons/icons8-lien-50.png" alt="Website" width="25" />
+                                </a>
+                            </div>
+                            <div class="card__infos">
+                                <p class="project-card__title"> Budget Monitor </p>
+                                <p class="project-card__desc"> October 2023 - Small React application designed to track expenses month by month </p>
+                                <div class="project-card__technos"> 
+                                    <div class="project-card__techno">
+                                        <div class="techno-dot techno-dot--react"></div>
+                                        <p> React </p>
+                                    </div>
+                                    <div class="project-card__techno">
+                                        <div class="techno-dot techno-dot--js"></div>
+                                        <p> JavaScript </p>
+                                    </div>
+                                    <div class="project-card__techno">
+                                        <div class="techno-dot techno-dot--scss"></div>
+                                        <p> Sass </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </a>
-                    <a href="https://github.com/AntoineGrb/budget-monitor-react" target="_blank" class="project__cell project__cell-8">
-                        <div class="project-card">
-                            <p class="project-card__title"> Budget Monitor </p>
-                            <p class="project-card__date"> Personal project - October 2023 </p>
-                            <p class="project-card__desc"> Small React application designed to track expenses month by month. </p>
-                        </div>
-                    </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -153,97 +308,83 @@
                     <h2> SKILLS </h2>
                 </div>
                 <div class="skills__content">
-                    <div class="hard-skills">
-                        <h3> Hard skills </h3>
-                        <div class="hard-skills__grid">
-                            <article class="skill hard-skill">
+                    <div class="skills__grid">
+                        <article class="skill">
+                            <div class="skill__icons">
                                 <img src="./src/images/icons/icons8-html-144.png" alt="html">
-                                <p class="hard-skill__name"> HTML </p>
-                                <p class="hard-skill__mastered"> Mastered <i class="fa-solid fa-circle-check"></i> </p>
-                            </article>
-                            <article class="skill hard-skill">
                                 <img src="./src/images/icons/icons8-css-100.png" alt="css">
-                                <p class="hard-skill__name"> CSS / SASS / Tailwind CSS </p>
-                                <p class="hard-skill__mastered"> Mastered <i class="fa-solid fa-circle-check"></i> </p>
-                            </article>
-                            <article class="skill hard-skill">
-                                <img src="./src/images/icons/icons8-javascript-144.png" alt="js">
-                                <p class="hard-skill__name"> Javascript Frontend </p>
-                                <p class="hard-skill__mastered"> Mastered <i class="fa-solid fa-circle-check"></i> </p>
-                            </article>
-                            <article class="skill hard-skill">
-                                <img src="./src/images/icons/icons8-react-144.png" alt="js">
-                                <p class="hard-skill__name"> React / Next.js </p>
-                                <p class="hard-skill__mastered"> Mastered <i class="fa-solid fa-circle-check"></i> </p>
-                            </article>
-                            <article class="skill hard-skill">
-                                <img src="./src/images/icons/icons8-nodejs-144.png" alt="node">
-                                <p class="hard-skill__name"> Javascript Backend </p>
-                                <p class="hard-skill__mastered"> Mastered <i class="fa-solid fa-circle-check"></i> </p>
-                            </article>
-                            <article class="skill hard-skill">
-                                <img src="./src/images/icons/icons8-sql-96.png" alt="node">
-                                <p class="hard-skill__name"> SQL </p>
-                                <p class="hard-skill__mastered"> Mastered <i class="fa-solid fa-circle-check"></i> </p>
-                            </article>
-                            <article class="skill hard-skill">
-                                <img src="./src/images/icons/icons8-typescript-144.png" alt="node">
-                                <p class="hard-skill__name"> TypeScript </p>
-                                <p class="hard-skill__mastered"> Acquired <i class="fa-regular fa-circle-check"></i> </p>
-                            </article>
-                            <article class="skill hard-skill">
-                                <img src="./src/images/icons/icons8-vue-js-144.png" alt="node">
-                                <p class="hard-skill__name"> Vue.js </p>
-                                <p class="hard-skill__mastered"> In progress <i class="fa-solid fa-spinner"></i> </p>
-                            </article>
-                            <article class="skill hard-skill">
-                                <img src="./src/images/icons/icons8-python-144.png" alt="node">
-                                <p class="hard-skill__name"> Python </p>
-                                <p class="hard-skill__mastered"> In progress <i class="fa-solid fa-spinner"></i> </p>
-                            </article>
-                            <article class="skill hard-skill">
-                                <img src="./src/images/icons/icons8-visual-basic-100.png" alt="node">
-                                <p class="hard-skill__name"> VBA </p>
-                                <p class="hard-skill__mastered"> In progress <i class="fa-solid fa-spinner"></i> </p>
-                            </article>
-                            <article class="skill hard-skill gestion-projet">
-                                <img src="./src/images/icons/projet.png" alt="node">
-                                <div class="wrapper">
-                                    <p class="hard-skill__name"> Project management </p>
-                                    <small class="hard-skill__desc"> AGILE Methodology and V-Model, JIRA, Git, Technical Documentation Writing... </small>
-                                </div>
-                                <p class="hard-skill__mastered" > Mastered <i class="fa-solid fa-circle-check"></i> </p>
-                            </article>
-                        </div>
-                    </div>
-                    <div class="soft-skills">
-                        <h3> Soft skills </h3>
-                        <div class="soft-skills__content">
-                            <article class="skill soft-skill">
-                                <img src="./src/images/icons/organiser.png" alt="html">
-                                <p class="soft-skill__name">Organization & Rigor</p>
-                            </article>
-                            <article class="skill soft-skill">
-                                <img src="./src/images/icons/polyvalence.png" alt="html">
-                                <p class="soft-skill__name">Versatility</p>
-                            </article>
-                            <article class="skill soft-skill">
-                                <img src="./src/images/icons/volant.png" alt="html">
-                                <p class="soft-skill__name">Autonomy</p>
-                            </article>
-                            <article class="skill soft-skill">
-                                <img src="./src/images/icons/tete-chauve-avec-point-dinterrogation.png" alt="html">
-                                <p class="soft-skill__name">Curiosity</p>
-                            </article>
-                            <article class="skill soft-skill">
-                                <img src="./src/images/icons/satisfaction.png" alt="html">
-                                <p class="soft-skill__name">Customer Orientation</p>
-                            </article>
-                            <article class="skill soft-skill">
-                                <img src="./src/images/icons/amelioration.png" alt="html">
-                                <p class="soft-skill__name">Continuous Improvement</p>
-                            </article>
-                        </div>
+                            </div>
+                            <p class="skill__name"> HTML, CSS </p>
+                            <p class="skill__mastered"> Mastered <i class="fa-solid fa-circle-check"></i> </p>
+                        </article>
+                        <article class="skill">
+                            <div class="skill__icons">
+                                <img src="./src/images/icons/icons8-sass-144.png" alt="html">
+                                <img src="./src/images/icons/icons8-tailwind-144.png" alt="css">
+                            </div>
+                            <p class="skill__name"> Sass, Tailwind CSS </p>
+                            <p class="skill__mastered"> Mastered <i class="fa-solid fa-circle-check"></i> </p>
+                        </article>
+                        <article class="skill">
+                            <div class="skill__icons">
+                                <img src="./src/images/icons/icons8-javascript-144.png" alt="html">
+                                <img src="./src/images/icons/icons8-typescript-144.png" alt="css">
+                            </div>
+                            <p class="skill__name"> JavaScript, TypeScript </p>
+                            <p class="skill__mastered"> Mastered <i class="fa-solid fa-circle-check"></i> </p>
+                        </article>
+                        <article class="skill">
+                            <div class="skill__icons">
+                                <img src="./src/images/icons/icons8-react-144.png" alt="html">
+                                <img src="./src/images/icons/icons8-next-144.png" alt="css">
+                            </div>
+                            <p class="skill__name"> React, NextJS </p>
+                            <p class="skill__mastered"> Mastered <i class="fa-solid fa-circle-check"></i> </p>
+                        </article>
+                        <article class="skill">
+                            <div class="skill__icons">
+                                <img src="./src/images/icons/icons8-nodejs-144.png" alt="html">
+                            </div>
+                            <p class="skill__name"> Node.js </p>
+                            <p class="skill__mastered"> Mastered <i class="fa-solid fa-circle-check"></i> </p>
+                        </article>
+                        <article class="skill">
+                            <div class="skill__icons">
+                                <img src="./src/images/icons/icons8-postgres-144.png" alt="html">
+                                <img src="./src/images/icons/icons8-sequelize-256.png" alt="css">
+                            </div>
+                            <p class="skill__name"> PostgreSQL, Sequelize </p>
+                            <p class="skill__mastered"> Mastered <i class="fa-solid fa-circle-check"></i> </p>
+                        </article>
+                        <article class="skill">
+                            <div class="skill__icons">
+                                <img src="./src/images/icons/icons8-mongo-144.png" alt="html">
+                                <img src="./src/images/icons/icons8-prisma-144.png" alt="css">
+                            </div>
+                            <p class="skill__name"> MongoDB, Prisma </p>
+                            <p class="skill__mastered"> Already used <i class="fa-regular fa-circle-check"></i>  </p>
+                        </article>
+                        <article class="skill">
+                            <div class="skill__icons">
+                                <img src="./src/images/icons/icons8-vue-js-144.png" alt="html">
+                            </div>
+                            <p class="skill__name"> VueJS </p>
+                            <p class="skill__mastered"> Already Used <i class="fa-regular fa-circle-check"></i>  </p>
+                        </article>
+                        <article class="skill">
+                            <div class="skill__icons">
+                                <img src="./src/images/icons/icons8-react-native-96.png" alt="html">
+                            </div>
+                            <p class="skill__name"> React Native </p>
+                            <p class="skill__mastered"> Interested <i class="fa-regular fa-eye"></i>  </p>
+                        </article>
+                        <article class="skill">
+                            <div class="skill__icons">
+                                <img src="./src/images/icons/icons8-python-144.png" alt="html">
+                            </div>
+                            <p class="skill__name"> Python </p>
+                            <p class="skill__mastered"> Interested <i class="fa-regular fa-eye"></i>  </p>
+                        </article>
                     </div>
                 </div>
                 <div class="formation">

@@ -1,7 +1,3 @@
-//!TO DO :
-    //!Factoriser le script en fonctions pour le rendre plus clean
-    //!Prévoir une apparition décalée des blocs projets.
-
 //--- TITRE DU HEADER ---
 
 const typingLetters = [
@@ -91,25 +87,88 @@ for (let section of [mainSection, menuMobile]) {
     })
 }
 
-//--- CARD PROJET AU HOVER  ---
+//--- ANIMATION DES ICONES HOME PAGE ---
+const homeLinks = document.querySelectorAll('.home__link');
+homeLinks.forEach(link => {
+    const icon = link.querySelector('img');
+    link.addEventListener('mouseover' , () => {
+        icon.classList.add('animate__swing');
+    })
+    link.addEventListener('mouseout' , () => {
+        icon.classList.remove('animate__swing');
+    })
+})
 
+//--- CARD PROJET REVELES AU CLICK OU HOVER ---
 const projectCells = document.querySelectorAll('.project__cell');
 
-projectCells.forEach((cell) => {
-    cell.addEventListener('mouseover' , () => {
-        const card = cell.firstElementChild;
-        card.style.opacity = '1';
-        card.style.visibility = 'visible';
-    })
-});
+// Fonctions gestionnaires pour le desktop
+const desktopMouseOver = (event) => {
+    const card = event.currentTarget.firstElementChild;
+    card.style.opacity = '1';
+    card.style.visibility = 'visible';
+};
 
-projectCells.forEach((cell) => {
-    cell.addEventListener('mouseout' , () => {
-        const card = cell.firstElementChild;
-        card.style.opacity = '0';
-        card.style.visibility = 'hidden';
-    })
-});
+const desktopMouseOut = (event) => {
+    const card = event.currentTarget.firstElementChild;
+    card.style.opacity = '0';
+    card.style.visibility = 'hidden';
+};
+
+// Fonction gestionnaire pour le mobile
+const mobileClick = (event) => {
+    const card = event.currentTarget.firstElementChild;
+    const isVisible = card.style.visibility === 'visible';
+    card.style.opacity = isVisible ? '0' : '1';
+    card.style.visibility = isVisible ? 'hidden' : 'visible';
+};
+
+// Appliquer les comportements selon le type de device
+const applyDesktopBehavior = () => {
+    projectCells.forEach(cell => {
+        cell.addEventListener('mouseover', desktopMouseOver);
+        cell.addEventListener('mouseout', desktopMouseOut);
+    });
+};
+
+const removeDesktopBehavior = () => {
+    projectCells.forEach(cell => {
+        cell.removeEventListener('mouseover', desktopMouseOver);
+        cell.removeEventListener('mouseout', desktopMouseOut);
+    });
+};
+
+const applyMobileBehavior = () => {
+    projectCells.forEach(cell => {
+        cell.addEventListener('click', mobileClick);
+    });
+};
+
+const removeMobileBehavior = () => {
+    projectCells.forEach(cell => {
+        cell.removeEventListener('click', mobileClick);
+    });
+};
+
+// Mise à jour du comportement en fonction de la taille de la fenêtre
+const updateBehavior = () => {
+    const currentIsDesktop = window.innerWidth > 980;
+    // Suppression des comportements précédents
+    removeDesktopBehavior();
+    removeMobileBehavior();
+
+    // Application des nouveaux comportements
+    if (currentIsDesktop) {
+        applyDesktopBehavior();
+    } else {
+        applyMobileBehavior();
+    }
+};
+
+updateBehavior();
+
+// Réappliquer le comportement correct lors du redimensionnement de la fenêtre
+window.addEventListener('resize', updateBehavior);
 
 //--- SCROLL SUR LA PAGE ---
 

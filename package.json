@@ -12,5 +12,8 @@
     "eslint": "^8.48.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.28.1"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1"
   }
 }
