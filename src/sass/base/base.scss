@@ -1,13 +1,13 @@
 //Colors
 
-$color-background1: #FDFCFD;
-$color-background2: #F2EFF3;
+$color-background1: #fafaf9; //Stone 50
+$color-background2: #e7e5e4; //Stone 200
 $color-background-dark: #0c0a09; //Stone 950
 $color-background-dark-hover: #1c1917;
-$color-title1: #211F26;
-$color-title2: #BCBAC7;
+$color-title1: #292524; //Stone 800
+$color-title2: #a8a29e; //Stone 400
 $color-text-light: #fafaf9;
-$color-text-light-hover: #d6d3d1;
+$color-text-light-hover: #d6d3d1; //Stone 300
 $color-text-dark: #0c0a09;
 
 $color-dot-js: #f1e05a;
@@ -21,14 +21,6 @@ $color-dot-postgres: #336791;
 $color-dot-tailwind: #38b2ac;
 $color-dot-styled-components: #DB7093;
 $color-dot-prisma: #2D3748;
-
-$color-dark:#0f1113;
-
-$color-main:#657ED4;
-$color-main-save:#426B69;
-$color-smooth:#DBC2CF;
-$color-bg-smooth:#f5ebf5;
-$color-font:#616283;
 
 
 * {

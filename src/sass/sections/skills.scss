@@ -47,11 +47,16 @@
                 justify-content: center;
                 align-items: center;
                 padding: 15px;
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
                 position: relative;
                 @include media-max($largephone) {
                     padding: 10px;
+                }
+
+                &:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
                 }
 
                 &__icons {
@@ -94,10 +99,10 @@
 
     .formation {
         display: flex;
-        background-color: lightgray;
+        background-color: #d6d3d1;
         border-radius: 10px;
         width: 70%;
-        margin: 100px auto;
+        margin: 75px auto;
         @include media-max($largescreen) {
             width: 85%;
         }
@@ -112,7 +117,7 @@
             gap: 10px;
             width: 50%;
             padding: 50px 20px;
-            border-right: 10px solid $color-dark;
+            border-right: 10px solid $color-background-dark;
             @include media-max($tablet) {
                 width: 75%;
             }

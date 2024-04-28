@@ -11,7 +11,7 @@ html {
 body {
   width: 100%;
   max-width: 100%;
-  background-color: #FDFCFD;
+  background-color: #fafaf9;
 }
 
 h1, h2, h3, p, a, small {
@@ -36,7 +36,7 @@ h1 {
   font-size: 7rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 900;
-  color: #BCBAC7;
+  color: #a8a29e;
   position: relative;
   margin-bottom: 50px;
   text-align: center;
@@ -68,7 +68,7 @@ h1 {
   font-family: "Open Sans", sans-serif;
   font-size: 3rem;
   font-weight: 0;
-  color: #211F26;
+  color: #292524;
   letter-spacing: 0px;
 }
 @media screen and (max-width: 1500px) {
@@ -165,7 +165,7 @@ a {
   padding-bottom: 1px;
 }
 .header__nav--screen .nav__link.active:hover {
-  border-color: #DBC2CF;
+  border-color: #d6d3d1;
 }
 
 .menu-icon--mobile {
@@ -243,7 +243,7 @@ a {
 @media screen and (max-width: 980px) {
   .home__wrapper {
     flex-direction: column;
-    gap: 25px;
+    gap: 50px;
     padding: 150px 0 100px;
     margin: 0;
     width: 100%;
@@ -286,13 +286,23 @@ a {
   background-repeat: no-repeat;
   background-position: 25% 46%;
   background-size: 55%;
-  background-color: #0f1113;
+  background-color: #0c0a09;
   border-radius: 5px;
-  border: 5px solid #DBC2CF;
+  border: 5px solid #d6d3d1;
+}
+@media screen and (max-width: 980px) {
+  .home__img .bg-img {
+    max-height: 50vh;
+  }
 }
 @media screen and (max-width: 570px) {
   .home__img .bg-img {
-    height: 30vh;
+    max-height: 40vh;
+  }
+}
+@media screen and (max-width: 370px) {
+  .home__img .bg-img {
+    max-height: 30vh;
   }
 }
 .home__img .bg-img .front-img {
@@ -475,10 +485,13 @@ a {
 .home__links .home__link:hover {
   background-color: #1c1917;
 }
+.home__links .home__link .animate__animated.animate__swing {
+  --animate-duration: .5s;
+}
 
 .projects {
   min-height: 100vh;
-  background-color: #F2EFF3;
+  background-color: #e7e5e4;
   padding-top: 80px;
 }
 @media screen and (max-width: 980px) {
@@ -561,17 +574,18 @@ a {
   .projects__grid .project__cell-3 {
     grid-column: 1;
     grid-row: auto;
+    background-position: center 25%;
   }
 }
 .projects__grid .project__cell-4 {
   grid-column: 1;
   grid-row: 4/8;
   background-image: url("../../src/images/projets/spotify-dashboard-incr3.png");
-  background-position: center 4;
 }
 @media screen and (max-width: 980px) {
   .projects__grid .project__cell-4 {
     grid-row: auto;
+    background-position: center 25%;
   }
 }
 .projects__grid .project__cell-5 {
@@ -714,7 +728,7 @@ a {
 
 .skills {
   min-height: 100vh;
-  background-color: #FDFCFD;
+  background-color: #fafaf9;
   padding-top: 80px;
 }
 .skills__wrapper {
@@ -771,7 +785,7 @@ a {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
 }
@@ -779,6 +793,10 @@ a {
   .skills__content .skills__grid .skill {
     padding: 10px;
   }
+}
+.skills__content .skills__grid .skill:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 .skills__content .skills__grid .skill__icons {
   display: flex;
@@ -796,7 +814,7 @@ a {
 .skills__content .skills__grid .skill__name {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #211F26;
+  color: #292524;
   margin-bottom: 50px;
   text-align: center;
 }
@@ -819,10 +837,10 @@ a {
 }
 .skills .formation {
   display: flex;
-  background-color: lightgray;
+  background-color: #d6d3d1;
   border-radius: 10px;
   width: 70%;
-  margin: 100px auto;
+  margin: 75px auto;
 }
 @media screen and (max-width: 1500px) {
   .skills .formation {
@@ -841,7 +859,7 @@ a {
   gap: 10px;
   width: 50%;
   padding: 50px 20px;
-  border-right: 10px solid #0f1113;
+  border-right: 10px solid #0c0a09;
 }
 @media screen and (max-width: 775px) {
   .skills .formation__wrapper {
@@ -912,7 +930,7 @@ a {
 
 .footer {
   padding: 20px 0;
-  background-color: #0f1113;
+  background-color: #0c0a09;
   display: flex;
   justify-content: center;
   align-items: center;

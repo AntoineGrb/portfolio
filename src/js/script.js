@@ -1,7 +1,3 @@
-//!TO DO :
-    //!Factoriser le script en fonctions pour le rendre plus clean
-    //!Prévoir une apparition décalée des blocs projets.
-
 //--- TITRE DU HEADER ---
 
 const typingLetters = [
@@ -91,6 +87,18 @@ for (let section of [mainSection, menuMobile]) {
     })
 }
 
+//--- ANIMATION DES ICONES HOME PAGE ---
+const homeLinks = document.querySelectorAll('.home__link');
+homeLinks.forEach(link => {
+    const icon = link.querySelector('img');
+    link.addEventListener('mouseover' , () => {
+        icon.classList.add('animate__swing');
+    })
+    link.addEventListener('mouseout' , () => {
+        icon.classList.remove('animate__swing');
+    })
+})
+
 //--- CARD PROJET REVELES AU CLICK OU HOVER ---
 const projectCells = document.querySelectorAll('.project__cell');
 
@@ -157,7 +165,6 @@ const updateBehavior = () => {
     }
 };
 
-// Vérification initiale et installation
 updateBehavior();
 
 // Réappliquer le comportement correct lors du redimensionnement de la fenêtre
