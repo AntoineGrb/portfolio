@@ -11,15 +11,20 @@ html {
 body {
   width: 100%;
   max-width: 100%;
-  background-color: #fafaf9;
+  background-color: #f8fafc;
 }
 
 h1, h2, h3, p, a, small {
   font-family: "Montserrat", sans-serif;
 }
 
+h1, h2, h3, p, small {
+  cursor: default;
+}
+
 p {
   font-size: 1rem;
+  cursor: default;
 }
 
 h1 {
@@ -36,7 +41,7 @@ h1 {
   font-size: 7rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 900;
-  color: #a8a29e;
+  color: #94a3b8;
   position: relative;
   margin-bottom: 50px;
   text-align: center;
@@ -68,7 +73,7 @@ h1 {
   font-family: "Open Sans", sans-serif;
   font-size: 3rem;
   font-weight: 0;
-  color: #292524;
+  color: #0f172a;
   letter-spacing: 0px;
 }
 @media screen and (max-width: 1500px) {
@@ -109,7 +114,7 @@ a {
 }
 
 .header {
-  background-color: #0c0a09;
+  background-color: #020617;
   width: 100%;
   position: fixed;
   top: 0;
@@ -133,7 +138,6 @@ a {
   display: flex;
   align-items: center;
   gap: 1px;
-  cursor: default;
 }
 .header__title .cursor {
   width: 7px;
@@ -158,14 +162,14 @@ a {
   transition: color 0.1s ease-out;
 }
 .header__nav--screen .nav__link:hover {
-  color: #d6d3d1;
+  color: #cbd5e1;
 }
 .header__nav--screen .nav__link.active {
   border-bottom: 2px solid white;
   padding-bottom: 1px;
 }
 .header__nav--screen .nav__link.active:hover {
-  border-color: #d6d3d1;
+  border-color: #cbd5e1;
 }
 
 .menu-icon--mobile {
@@ -286,9 +290,9 @@ a {
   background-repeat: no-repeat;
   background-position: 25% 46%;
   background-size: 55%;
-  background-color: #0c0a09;
+  background-color: #020617;
   border-radius: 5px;
-  border: 5px solid #d6d3d1;
+  border: 5px solid #cbd5e1;
 }
 @media screen and (max-width: 980px) {
   .home__img .bg-img {
@@ -316,7 +320,6 @@ a {
 .home__title--top {
   font-size: 1.5rem;
   color: #0c0a09;
-  cursor: default;
 }
 @media screen and (max-width: 1500px) {
   .home__title--top {
@@ -348,7 +351,6 @@ a {
   font-weight: bold;
   color: #0c0a09;
   overflow-x: hidden;
-  cursor: default;
 }
 @media screen and (max-width: 1500px) {
   .home__title--middle {
@@ -385,7 +387,6 @@ a {
   display: flex;
   align-items: center;
   gap: 5px;
-  cursor: default;
 }
 .home__title--bottom img {
   width: 50px;
@@ -445,7 +446,7 @@ a {
   justify-content: flex-start;
   align-items: center;
   gap: 2px;
-  background-color: #0c0a09;
+  background-color: #020617;
   padding: 4px 20px 4px 10px;
   border-radius: 20px;
   cursor: pointer;
@@ -483,7 +484,7 @@ a {
   }
 }
 .home__links .home__link:hover {
-  background-color: #1c1917;
+  background-color: #0f172a;
 }
 .home__links .home__link .animate__animated.animate__swing {
   --animate-duration: .5s;
@@ -491,7 +492,7 @@ a {
 
 .projects {
   min-height: 100vh;
-  background-color: #e7e5e4;
+  background-color: #e2e8f0;
   padding-top: 80px;
 }
 @media screen and (max-width: 980px) {
@@ -638,7 +639,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #0c0a09;
+  background-color: #020617;
   z-index: 0;
   color: white;
   text-align: justify;
@@ -647,7 +648,6 @@ a {
   visibility: hidden;
   transition: opacity 0.3s ease-out, visibility 0.3s ease-out;
   position: relative;
-  cursor: default;
 }
 .project-card .card__links {
   position: absolute;
@@ -728,7 +728,7 @@ a {
 
 .skills {
   min-height: 100vh;
-  background-color: #fafaf9;
+  background-color: #f8fafc;
   padding-top: 80px;
 }
 .skills__wrapper {
@@ -814,7 +814,7 @@ a {
 .skills__content .skills__grid .skill__name {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #292524;
+  color: #0f172a;
   margin-bottom: 50px;
   text-align: center;
 }
@@ -837,7 +837,7 @@ a {
 }
 .skills .formation {
   display: flex;
-  background-color: #d6d3d1;
+  background-color: #cbd5e1;
   border-radius: 10px;
   width: 70%;
   margin: 75px auto;
@@ -859,7 +859,7 @@ a {
   gap: 10px;
   width: 50%;
   padding: 50px 20px;
-  border-right: 10px solid #0c0a09;
+  border-right: 10px solid #020617;
 }
 @media screen and (max-width: 775px) {
   .skills .formation__wrapper {
@@ -901,6 +901,10 @@ a {
     font-size: 1rem;
   }
 }
+.skills .formation__wrapper .formation__content .paragraph-1 span {
+  font-weight: 700;
+  color: #020617;
+}
 .skills .formation__wrapper .formation__content .paragraph-2, .skills .formation__wrapper .formation__content .paragraph-3 {
   font-size: 1rem;
 }
@@ -930,7 +934,7 @@ a {
 
 .footer {
   padding: 20px 0;
-  background-color: #0c0a09;
+  background-color: #020617;
   display: flex;
   justify-content: center;
   align-items: center;
