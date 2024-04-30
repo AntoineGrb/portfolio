@@ -1,6 +1,6 @@
 .projects {
     min-height: 100vh;
-    background-color: $color-background2;
+    background: radial-gradient(rgb(226, 232, 240), rgb(241, 245, 249), rgb(226, 232, 240));
     padding-top: 80px;
     @include media-max($smallscreen) {
         padding-bottom: 50px;

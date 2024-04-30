@@ -1,8 +1,8 @@
 
 .skills {
     min-height: 100vh;
-    background-color: $color-background1;
-    padding-top: 80px;
+    background: radial-gradient(rgb(255, 255, 255), rgb(241, 245, 249), rgb(255, 255, 255));
+    padding: 80px 0 80px;
 
     &__wrapper {
         width: 80%;
@@ -48,6 +48,7 @@
                 align-items: center;
                 padding: 15px;
                 transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+                background-color: #f8fafc;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
                 position: relative;
                 @include media-max($largephone) {
@@ -102,7 +103,7 @@
         background-color: #cbd5e1;
         border-radius: 10px;
         width: 70%;
-        margin: 75px auto;
+        margin: 75px auto 0;
         @include media-max($largescreen) {
             width: 85%;
         }

@@ -220,6 +220,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: radial-gradient(rgb(255, 255, 255), rgb(241, 245, 249), rgb(255, 255, 255));
   padding-top: 80px;
 }
 @media screen and (max-width: 980px) {
@@ -291,8 +292,7 @@ a {
   background-position: 25% 46%;
   background-size: 55%;
   background-color: #020617;
-  border-radius: 5px;
-  border: 5px solid #cbd5e1;
+  border-radius: 4px;
 }
 @media screen and (max-width: 980px) {
   .home__img .bg-img {
@@ -472,6 +472,7 @@ a {
 .home__links .home__link p {
   color: white;
   font-size: 0.9rem;
+  cursor: pointer;
 }
 @media screen and (max-width: 980px) {
   .home__links .home__link p {
@@ -492,7 +493,7 @@ a {
 
 .projects {
   min-height: 100vh;
-  background-color: #e2e8f0;
+  background: radial-gradient(rgb(226, 232, 240), rgb(241, 245, 249), rgb(226, 232, 240));
   padding-top: 80px;
 }
 @media screen and (max-width: 980px) {
@@ -728,8 +729,8 @@ a {
 
 .skills {
   min-height: 100vh;
-  background-color: #f8fafc;
-  padding-top: 80px;
+  background: radial-gradient(rgb(255, 255, 255), rgb(241, 245, 249), rgb(255, 255, 255));
+  padding: 80px 0 80px;
 }
 .skills__wrapper {
   width: 80%;
@@ -786,6 +787,7 @@ a {
   align-items: center;
   padding: 15px;
   transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+  background-color: #f8fafc;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
 }
@@ -840,7 +842,7 @@ a {
   background-color: #cbd5e1;
   border-radius: 10px;
   width: 70%;
-  margin: 75px auto;
+  margin: 75px auto 0;
 }
 @media screen and (max-width: 1500px) {
   .skills .formation {
