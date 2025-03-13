@@ -20,14 +20,9 @@ const typingLettersTitle2 = [
   { letter: "i", interval: "1700" },
   { letter: "n", interval: "1900" },
   { letter: "e", interval: "2100" },
-  { letter: "\u00A0", interval: "2500" },
-  { letter: "G", interval: "2600" },
-  { letter: "r", interval: "2750" },
-  { letter: "u", interval: "2900" },
-  { letter: "b", interval: "3000" },
-  { letter: "e", interval: "3200" },
-  { letter: "r", interval: "3300" },
-  { letter: "t", interval: "3400" },
+  { letter: "G", interval: "2500" },
+  { letter: "r", interval: "2650" },
+  { letter: "b", interval: "2700" },
 ];
 
 const typingLettersTitle3 = [
