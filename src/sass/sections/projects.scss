@@ -6,18 +6,12 @@
     rgb(226, 232, 240)
   );
   padding-top: 80px;
-  @include media-max($smallscreen) {
-    padding-bottom: 50px;
-  }
 
   &__wrapper {
     width: 80%;
     max-width: 1700px;
     margin: 0 auto;
-    @include media-max($largescreen) {
-      width: 90%;
-    }
-    @include media-max($largephone) {
+    @include media-max($smallscreen) {
       width: 100%;
     }
   }
