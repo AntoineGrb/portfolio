@@ -562,7 +562,7 @@ a {
 .projects__grid .project__cell-2 {
   grid-column: 2;
   grid-row: 1/5;
-  background-image: url("../../src/images/projets/maxrep-incr.png");
+  background-image: url("../../src/images/projets/assets/mockup-pc4.webp");
   background-position: center 25%;
 }
 @media screen and (max-width: 980px) {
@@ -591,7 +591,8 @@ a {
 .projects__grid .project__cell-4 {
   grid-column: 1;
   grid-row: 4/8;
-  background-image: url("../../src/images/projets/spotify-dashboard-incr3.png");
+  background-image: url("../../src/images/projets/ms2000-incr.png");
+  background-position: 35% 25%;
 }
 @media screen and (max-width: 980px) {
   .projects__grid .project__cell-4 {
@@ -602,8 +603,8 @@ a {
 .projects__grid .project__cell-5 {
   grid-column: 2;
   grid-row: 5/8;
-  background-image: url("../../src/images/projets/quiz-incr.jpg");
-  background-position: 25% 55%;
+  background-image: url("../../src/images/projets/randomaize-incr.png");
+  background-position: 25% 40%;
 }
 @media screen and (max-width: 980px) {
   .projects__grid .project__cell-5 {
@@ -619,7 +620,7 @@ a {
 .projects__grid .project__cell-6 {
   grid-column: 3;
   grid-row: 4/6;
-  background-image: url("../../src/images/projets/tournois-incr.jpg");
+  background-image: url("../../src/images/projets/maxrep-incr.png");
   background-size: cover;
   background-position: center 35%;
 }
@@ -630,13 +631,30 @@ a {
   }
 }
 .projects__grid .project__cell-7 {
-  grid-column: 3;
-  grid-row: 6/9;
-  background-image: url("../../src/images/projets/budget-monitor-incr-2.png");
-  background-position: center 30%;
+  grid-column: 2;
+  grid-row: 8/10;
+  background-image: url("../../src/images/projets/tournois-incr.jpg");
+  background-position: 25% 35%;
 }
 @media screen and (max-width: 980px) {
   .projects__grid .project__cell-7 {
+    grid-column: 1;
+    grid-row: auto;
+  }
+}
+@media screen and (max-width: 570px) {
+  .projects__grid .project__cell-7 {
+    background-position: 50% 70%;
+  }
+}
+.projects__grid .project__cell-8 {
+  grid-column: 3;
+  grid-row: 6/9;
+  background-image: url("../../src/images/projets/spotify-dashboard-incr3.png");
+  background-position: center 30%;
+}
+@media screen and (max-width: 980px) {
+  .projects__grid .project__cell-8 {
     grid-column: 1;
     grid-row: auto;
   }
@@ -734,6 +752,12 @@ a {
 }
 .project-card__technos .project-card__techno .techno-dot--prisma {
   background-color: #2d3748;
+}
+.project-card__technos .project-card__techno .techno-dot--angular {
+  background-color: #dd0031;
+}
+.project-card__technos .project-card__techno .techno-dot--java {
+  background-color: #007396;
 }
 
 .skills {
