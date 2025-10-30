@@ -160,7 +160,7 @@ function initializeProjects() {
             </div>
           </div>
           <div class="p-6 space-y-4">
-            <h3 class="text-2xl font-bold text-gray-800">${project.name}</h3>
+            <h3 class="text-xl font-bold text-gray-800">${project.name}</h3>
             <p class="text-sm text-gray-500">${project.date}</p>
             <p class="text-gray-600 leading-relaxed">${project.description}</p>
             <div class="flex flex-wrap gap-2">
@@ -400,9 +400,9 @@ function initializeNavigation() {
     });
 
     navLinks.forEach(link => {
-      link.classList.remove('text-primary');
+      link.classList.remove('text-indigo-300');
       if (link.getAttribute('href') === `#${current}`) {
-        link.classList.add('text-primary');
+        link.classList.add('text-indigo-300');
       }
     });
   }
