@@ -145,7 +145,7 @@ function initializeProjects() {
 
         card.innerHTML = `
           <div class="relative h-48 bg-gradient-to-br from-purple-400 to-indigo-600 overflow-hidden">
-            <img src="${imageUrl}" alt="${project.name}" class="w-full h-full object-cover" style="object-position: top;" onerror="this.style.display='none'" />
+            <img src="${imageUrl}" alt="${project.name}" class="w-full h-full object-cover" onerror="this.style.display='none'" />
             <div class="absolute top-4 right-4 flex space-x-2">
               ${project.github ? `
                 <a href="${project.github}" target="_blank" class="bg-white p-2 rounded-full shadow-lg hover:scale-110 transition-transform">

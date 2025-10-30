@@ -43,7 +43,7 @@
 
   <body class="bg-gray-50 text-gray-800">
     <!-- Header -->
-    <header class="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-indigo-50 shadow-md ">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-20">
           <!-- Title with typing animation -->
@@ -76,8 +76,8 @@
       </div>
 
       <!-- Mobile Menu -->
-      <nav id="mobile-menu" class="mobile-menu md:hidden fixed top-20 right-0 bottom-0 w-64 bg-white shadow-lg z-40 overflow-y-auto">
-        <div class="flex flex-col p-6 space-y-6">
+      <nav id="mobile-menu" class="mobile-menu md:hidden bg-indigo-50 shadow-lg overflow-hidden">
+        <div class="flex flex-col p-6 space-y-4">
           <a href="#home" class="mobile-nav-link text-lg font-semibold text-gray-700 hover:text-primary transition-colors">
             ACCUEIL
           </a>
@@ -101,7 +101,7 @@
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-0 max-w-7xl">
           <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
             <!-- Left Content -->
-            <div class="lg:col-span-3 space-y-8">
+            <div class="lg:col-span-3 space-y-4 lg:space-y-8">
               <p class="text-2xl sm:text-3xl text-gray-600 animate-fade-in-up" style="animation-delay: 0.1s; opacity: 0;">
                 <span id="home-greeting"></span>
               </p>
@@ -118,9 +118,9 @@
               </div>
             </div>
 
-            <!-- Right Image (Desktop only) -->
-            <div class="hidden lg:flex lg:col-span-2 justify-center items-center animate-fade-in-right" style="animation-delay: 0.5s; opacity: 0;">
-              <div class="profile-image-container overflow-hidden w-80 h-96 shadow-2xl">
+            <!-- Right Image -->
+            <div class="lg:col-span-2 flex justify-center items-center animate-fade-in-right lg:animate-fade-in-right" style="animation-delay: 0.5s; opacity: 0;">
+              <div class="profile-image-container overflow-hidden w-64 h-80 lg:w-80 lg:h-96 shadow-2xl">
                 <img id="profile-image" src="" alt="Antoine Grubert" class="w-full h-full object-cover" />
               </div>
             </div>

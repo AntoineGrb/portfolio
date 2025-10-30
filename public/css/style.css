@@ -173,12 +173,13 @@ body {
 
       /* Mobile menu */
       .mobile-menu {
-        transform: translateX(100%);
-        transition: transform 0.3s ease;
+        max-height: 0;
+        transition: max-height 0.3s ease;
+        border-top: 1px solid #c7d2fe;
       }
 
       .mobile-menu.active {
-        transform: translateX(0);
+        max-height: 400px;
       }
 
       /* Timeline */
@@ -248,16 +249,22 @@ body {
       section {
         min-height: 100vh;
         display: flex;
+        align-items: flex-start;
+        padding-top: 5rem;
+      }
+
+      section#home {
         align-items: center;
+        padding-top: 0;
       }
 
       @media (max-width: 768px) {
         .section-title span {
-          font-size: 3rem;
+          font-size: 4.5rem;
         }
 
         .section-title h2 {
-          font-size: 1.5rem;
+          font-size: 2rem;
         }
 
         .timeline-container {
