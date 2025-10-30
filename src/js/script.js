@@ -145,16 +145,16 @@ function initializeProjects() {
 
         card.innerHTML = `
           <div class="relative h-48 bg-gradient-to-br from-purple-400 to-indigo-600 overflow-hidden">
-            <img src="${imageUrl}" alt="${project.name}" class="w-full h-full object-cover" onerror="this.style.display='none'" />
+            <img src="${imageUrl}" alt="${project.name}" class="w-full h-full object-cover" style="object-position: top;" onerror="this.style.display='none'" />
             <div class="absolute top-4 right-4 flex space-x-2">
               ${project.github ? `
                 <a href="${project.github}" target="_blank" class="bg-white p-2 rounded-full shadow-lg hover:scale-110 transition-transform">
-                  <img src="${profile.icons.github}" alt="Github" class="w-5 h-5" />
+                  <img src="${profile.icons.github}" alt="Github" title="Voir le Github" class="w-5 h-5" />
                 </a>
               ` : ''}
               ${project.website ? `
                 <a href="${project.website}" target="_blank" class="bg-white p-2 rounded-full shadow-lg hover:scale-110 transition-transform">
-                  <img src="${profile.icons.link}" alt="Website" class="w-5 h-5" />
+                  <img src="${profile.icons.link}" alt="Website" title="Voir le site" class="w-5 h-5" />
                 </a>
               ` : ''}
             </div>
@@ -295,10 +295,10 @@ function initializeAbout() {
     // Position content above or below the line
     if (isTop) {
       itemDiv.style.alignItems = 'center';
-      itemDiv.style.paddingBottom = '120px';
+      itemDiv.style.paddingBottom = '150px';
     } else {
       itemDiv.style.alignItems = 'center';
-      itemDiv.style.paddingTop = '120px';
+      itemDiv.style.paddingTop = '170px';
     }
 
     timelineContainer.appendChild(itemDiv);
@@ -354,7 +354,7 @@ function initializeFooter() {
     linkEl.href = link.href;
     linkEl.target = '_blank';
     linkEl.className = 'hover:opacity-75 transition-opacity';
-    linkEl.innerHTML = `<img src="${link.icon}" alt="${link.label}" class="w-8 h-8" />`;
+    linkEl.innerHTML = `<img src="${link.icon}" alt="${link.label}" class="w-12 h-12" />`;
     linksContainer.appendChild(linkEl);
   });
 }

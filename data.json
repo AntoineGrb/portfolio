@@ -2,20 +2,20 @@
   "profile": {
     "name": "Antoine Grubert",
     "title": "Développeur web fullstack",
-    "greeting": "Salut ! Je suis",
+    "greeting": "Hello ! Je suis",
     "firstName": "ANTOINE",
     "email": "antoine.grubert@outlook.fr",
     "github": "https://github.com/AntoineGrb",
     "linkedin": "https://www.linkedin.com/in/antoine-grubert-dev/",
     "profileImage": "./src/images/profile-picture/pp.jpg",
-    "bio": "Après plusieurs années en tant que responsable qualité et chargé de projets, j'ai décidé de me reconvertir dans le développement web. Ma passion pour la technologie et mon expérience professionnelle me permettent d'apporter une vision globale aux projets sur lesquels je travaille.",
+    "bio": "Après plusieurs années en tant que responsable qualité et chargé de projets, j'ai décidé de me reconvertir dans le développement web. Mon expérience professionnelle et ma passion pour l'univers de la tech me permettent d'apporter une vision globale sur mes projets.",
     "icons": {
-      "github": "./src/images/icons/icons8-github-30.png",
-      "linkedin": "./src/images/icons/icons8-linkedin-30.png",
-      "email": "./src/images/icons/icons8-enveloppe-cerclée-30.png",
-      "link": "./src/images/icons/icons8-lien-50.png",
-      "githubFooter": "./src/images/icons/signe-github (1).png",
-      "linkedinFooter": "./src/images/icons/linkedin (1).png"
+      "github": "./src/images/icons/icons8-github-50.png",
+      "linkedin": "./src/images/icons/icons8-linkedin-50.png",
+      "email": "./src/images/icons/icons8-email-50.png",
+      "link": "./src/images/icons/icons8-link-50.png",
+      "githubFooter": "./src/images/icons/icons8-github-100.png",
+      "linkedinFooter": "./src/images/icons/icons8-linkedin-96.png"
     },
     "footer": {
       "description": "Un développeur web passionné et motivé !",
@@ -24,27 +24,27 @@
   },
   "timeline": [
     {
-      "year": "2017",
+      "year": "2016",
       "title": "Responsable qualité",
-      "description": "Embauche en tant que responsable qualité",
+      "description": "Création & maintenance d'un système de management de la qualité",
       "position": "top"
     },
     {
-      "year": "2020",
+      "year": "2019",
       "title": "Chargé de projets / qualité",
-      "description": "Embauche en tant que chargé de projets / qualité",
+      "description": "Pilotage de projets informatiques et du système qualité",
       "position": "bottom"
     },
     {
       "year": "2023",
       "title": "Formation O'Clock",
-      "description": "Formation intensive en développement web",
+      "description": "Formation intensive de 7 mois en développement web",
       "position": "top"
     },
     {
       "year": "2024",
       "title": "Développeur web fullstack",
-      "description": "Embauche en tant que Développeur web fullstack",
+      "description": "Conception & développement d'applications web et outils internes",
       "position": "bottom"
     }
   ],
@@ -56,12 +56,12 @@
     },
     {
       "title": "Qualité & amélioration continue",
-      "description": "Rigueur dans le code, tests et processus d'amélioration continue des projets",
+      "description": "Rigueur dans le suivi de projet et processus d'amélioration continue",
       "icon": "check-circle"
     },
     {
       "title": "Workflow augmenté grâce à l'IA",
-      "description": "Utilisation des outils IA pour optimiser le développement et la productivité",
+      "description": "Utilisation des outils IA modernes pour optimiser le développement et la productivité",
       "icon": "cpu"
     }
   ],
@@ -72,7 +72,7 @@
         "name": "Randomaize",
         "description": "Petite application exploitant l'IA pour influencer la lecture aléatoire des playlists Spotify.",
         "date": "Janvier 2025",
-        "image": "./src/images/projects/randomaize.png",
+        "image": "./src/images/projets/randomaize.png",
         "technologies": [
           { "name": "NextJS", "color": "#000000" },
           { "name": "TypeScript", "color": "#3178C6" },
@@ -82,39 +82,11 @@
         "website": null
       },
       {
-        "id": "spotify-dashboard",
-        "name": "Spotify Dashboard",
-        "description": "Dashboard pour obtenir des informations en temps réel et analyser les tendances de votre compte Spotify.",
-        "date": "Avril 2024",
-        "image": "./src/images/projects/spotify-dashboard.png",
-        "technologies": [
-          { "name": "NextJS", "color": "#000000" },
-          { "name": "TypeScript", "color": "#3178C6" },
-          { "name": "Tailwind CSS", "color": "#06B6D4" }
-        ],
-        "github": "https://github.com/AntoineGrb/spotify-dashboard",
-        "website": null
-      },
-      {
-        "id": "tierlist",
-        "name": "S Tier List",
-        "description": "Application web full-stack permettant de créer des tier lists amusantes et personnalisées.",
-        "date": "Mars 2024",
-        "image": "./src/images/projects/tierlist.png",
-        "technologies": [
-          { "name": "NextJS", "color": "#000000" },
-          { "name": "Tailwind CSS", "color": "#06B6D4" },
-          { "name": "Prisma", "color": "#2D3748" }
-        ],
-        "github": "https://github.com/AntoineGrb/tierlist-next",
-        "website": "https://tierlist-next.vercel.app/"
-      },
-      {
         "id": "maxrep",
         "name": "MaxRep",
-        "description": "Application web full-stack pour planifier des séances d'exercices et suivre vos performances sportives.",
+        "description": "Application web full-stack pour planifier des séances d'exercices et suivre ses performances sportives.",
         "date": "Janvier 2024",
-        "image": "./src/images/projects/maxrep.png",
+        "image": "./src/images/projets/maxrep.png",
         "technologies": [
           { "name": "React", "color": "#61DAFB" },
           { "name": "Node.js", "color": "#339933" },
@@ -126,9 +98,9 @@
       {
         "id": "cinemate",
         "name": "Cinemate",
-        "description": "Site permettant de rechercher un film à regarder en fonction de vos critères de sélection.",
+        "description": "Site permettant de rechercher un film à regarder en fonction de ses critères de sélection.",
         "date": "Décembre 2023",
-        "image": "./src/images/projects/cinemate.png",
+        "image": "./src/images/projets/cinemate.png",
         "technologies": [
           { "name": "React", "color": "#61DAFB" },
           { "name": "Styled components", "color": "#DB7093" },
@@ -142,7 +114,7 @@
         "name": "Tournaments",
         "description": "Petite application permettant de créer rapidement un tournoi entre amis.",
         "date": "Février 2023",
-        "image": "./src/images/projects/tournaments.png",
+        "image": "./src/images/projets/tournament.png",
         "technologies": [
           { "name": "HTML", "color": "#E34F26" },
           { "name": "Sass", "color": "#CC6699" },
@@ -153,12 +125,26 @@
       }
     ],
     "professional": [
+            {
+        "id": "clear-terms",
+        "name": "Clear Terms",
+        "description": "Extension Google Chrome utilisant l'IA pour scorer et résumer les conditions d'utilisation des sites web.",
+        "date": "Octobre 2025",
+        "image": "./src/images/projets/clear-terms.png",
+        "technologies": [
+          { "name": "HTML", "color": "#E34F26" },
+          { "name": "JavaScript", "color": "#F7DF1E" },
+          { "name": "Tailwind CSS", "color": "#06B6D4" }
+        ],
+        "github": "https://github.com/AntoineGrb/clear-terms",
+        "website": "https://clear-terms-landing.vercel.app/"
+      },
       {
         "id": "ms2000",
         "name": "MS2000",
         "description": "Conception et développement d'un outil back-office pour consulter les contrats d'assurance archivés.",
         "date": "Février 2025",
-        "image": "./src/images/projets/ms2000-incr.png",
+        "image": "./src/images/projets/ms2000.png",
         "technologies": [
           { "name": "Angular", "color": "#DD0031" },
           { "name": "Java", "color": "#007396" },
@@ -172,11 +158,23 @@
         "name": "Ripasso",
         "description": "Refonte et modernisation du site web de l'association Régime Interprofessionnel de Prévoyance.",
         "date": "Avril 2025",
-        "image": "./src/images/projects/ripasso.png",
+        "image": "./src/images/projets/ripasso.png",
         "technologies": [
           { "name": "Angular", "color": "#DD0031" },
           { "name": "Java", "color": "#007396" },
           { "name": "Tailwind CSS", "color": "#06B6D4" }
+        ],
+        "github": null,
+        "website": null
+      },
+      {
+        "id": "robots",
+        "name": "Robots RPA",
+        "description": "Développement de robots RPA pour automatiser des tâches répétitives et améliorer l'efficacité des processus internes.",
+        "date": "Septembre 2025",
+        "image": "./src/images/projets/robots.png",
+        "technologies": [
+          { "name": "Python", "color": "#306998" }
         ],
         "github": null,
         "website": null
@@ -232,30 +230,30 @@
         "icon": "./src/images/icons/icons8-logo-java-coffee-cup-144.png",
         "category": "backend"
       },
+            {
+        "name": "Python",
+        "icon": "./src/images/icons/icons8-python-144.png",
+        "category": "language"
+      },
       {
         "name": "Sass",
         "icon": "./src/images/icons/icons8-sass-144.png",
         "category": "frontend"
       },
       {
-        "name": "MariaDB",
-        "icon": "./src/images/icons/icons8-mariadb-144.png",
-        "category": "database"
-      },
-      {
         "name": "MongoDB",
         "icon": "./src/images/icons/icons8-mongo-144.png",
+        "category": "database"
+      },
+            {
+        "name": "MariaDB",
+        "icon": "./src/images/icons/icons8-mariadb-144.png",
         "category": "database"
       },
       {
         "name": "Prisma",
         "icon": "./src/images/icons/icons8-prisma-144.png",
         "category": "orm"
-      },
-      {
-        "name": "Python",
-        "icon": "./src/images/icons/icons8-python-144.png",
-        "category": "language"
       }
     ]
   }
