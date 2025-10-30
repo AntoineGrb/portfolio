@@ -1,603 +1,244 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Antoine Grubert</title>
-    <link rel="stylesheet" href="./public/css/style.css" />
+    <title>Antoine Grubert - Développeur Web Fullstack</title>
     <link rel="icon" type="image/png" href="" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+
+    <!-- Tailwind CSS v3 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
-      href="https://kit.fontawesome.com/5c520df75a.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
       crossorigin="anonymous"
     />
-    <!-- Font-awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <!-- Animate.css -->
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/5c520df75a.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./src/js/script.js" type="module"></script>
+
+    
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#667eea',
+              secondary: '#764ba2',
+            }
+          }
+        }
+      }
+    </script>
   </head>
-  <body>
-    <!------ Header ------->
-    <header class="header">
-      <div class="header__wrapper">
-        <div class="header__title">
-          <h1 id="header-text"></h1>
-          <span id="header-cursor" class="cursor"></span>
+
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+          <!-- Title with typing animation -->
+          <div class="flex items-center">
+            <h1 id="header-text" class="text-2xl sm:text-3xl font-bold gradient-text"></h1>
+            <span id="header-cursor" class="cursor-blink ml-1 text-2xl gradient-text">|</span>
+          </div>
+
+          <!-- Desktop Navigation -->
+          <nav class="hidden md:flex space-x-8 text-xl">
+            <a href="#home" class="nav-link text-gray-700 hover:text-primary font-semibold transition-colors">
+              ACCUEIL
+            </a>
+            <a href="#projects" class="nav-link text-gray-700 hover:text-primary font-semibold transition-colors">
+              PROJETS
+            </a>
+            <a href="#skills" class="nav-link text-gray-700 hover:text-primary font-semibold transition-colors">
+              COMPÉTENCES
+            </a>
+            <a href="#about" class="nav-link text-gray-700 hover:text-primary font-semibold transition-colors">
+              À PROPOS
+            </a>
+          </nav>
+
+          <!-- Mobile Menu Button -->
+          <button id="mobile-menu-btn" class="md:hidden text-2xl text-gray-700">
+            <i class="fa-solid fa-bars"></i>
+          </button>
         </div>
-        <!------ Menu écran ------->
-        <nav class="header__nav--screen">
-          <a class="nav__link nav__link--home active" href="#home"> HOME </a>
-          <a class="nav__link nav__link--projects" href="#projects">
-            PROJECTS
-          </a>
-          <a class="nav__link nav__link--skills" href="#skills"> SKILLS </a>
-        </nav>
-        <!------ Menu mobile ------->
-        <i class="menu-icon--mobile fa-solid fa-bars"></i>
       </div>
-      <nav class="header__nav--mobile">
-        <a class="nav__link nav__link--home active" href="#home"> HOME </a>
-        <a class="nav__link nav__link--projects active" href="#projects">
-          PROJECTS
-        </a>
-        <a class="nav__link nav__link--skills active" href="#skills">
-          SKILLS
-        </a>
+
+      <!-- Mobile Menu -->
+      <nav id="mobile-menu" class="mobile-menu md:hidden fixed top-20 right-0 bottom-0 w-64 bg-white shadow-lg z-40 overflow-y-auto">
+        <div class="flex flex-col p-6 space-y-6">
+          <a href="#home" class="mobile-nav-link text-lg font-semibold text-gray-700 hover:text-primary transition-colors">
+            ACCUEIL
+          </a>
+          <a href="#projects" class="mobile-nav-link text-lg font-semibold text-gray-700 hover:text-primary transition-colors">
+            PROJETS
+          </a>
+          <a href="#skills" class="mobile-nav-link text-lg font-semibold text-gray-700 hover:text-primary transition-colors">
+            COMPÉTENCES
+          </a>
+          <a href="#about" class="mobile-nav-link text-lg font-semibold text-gray-700 hover:text-primary transition-colors">
+            À PROPOS
+          </a>
+        </div>
       </nav>
     </header>
 
-    <main class="main">
-      <!------ Home section ------->
-      <section class="home" id="home">
-        <div class="home__wrapper">
-          <div class="home__content">
-            <p class="home__title--top">Hi world ! I am</p>
-            <p class="home__title--middle">ANTOINE</p>
-            <div class="home__title--bottom">
-              <p class="home__title--bottom">Fullstack web developer</p>
+    <!-- Main Content -->
+    <main class="pt-20">
+      <!-- Home Section -->
+      <section id="home" class="relative overflow-hidden">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-0 max-w-7xl">
+          <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
+            <!-- Left Content -->
+            <div class="lg:col-span-3 space-y-8">
+              <p class="text-2xl sm:text-3xl text-gray-600 animate-fade-in-up" style="animation-delay: 0.1s; opacity: 0;">
+                <span id="home-greeting"></span>
+              </p>
+              <h2 class="text-6xl sm:text-7xl lg:text-8xl font-black gradient-text animate-fade-in-up leading-tight" style="animation-delay: 0.2s; opacity: 0;">
+                <span id="home-name"></span>
+              </h2>
+              <p class="text-3xl sm:text-4xl lg:text-5xl font-light text-gray-700 animate-fade-in-up" style="animation-delay: 0.3s; opacity: 0;">
+                <span id="home-title"></span>
+              </p>
+
+              <!-- Social Links -->
+              <div id="home-links" class="flex flex-col sm:flex-row gap-4 pt-8 animate-fade-in-up" style="animation-delay: 0.4s; opacity: 0;">
+                <!-- Links will be dynamically inserted -->
+              </div>
             </div>
-            <div class="home__links">
-              <a href="https://github.com/AntoineGrb" target="_blank">
-                <div class="home__link">
-                  <img
-                    src="./src/images/icons/icons8-github-30.png"
-                    alt="Github"
-                    class="animate__animated"
-                  />
-                  <p>Github</p>
-                </div>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/antoine-grubert-dev/"
-                target="_blank"
-              >
-                <div class="home__link">
-                  <img
-                    src="./src/images/icons/icons8-linkedin-30.png"
-                    alt="Github"
-                    class="animate__animated"
-                  />
-                  <p>Linkedin</p>
-                </div>
-              </a>
-              <a href="mailto:antoine.grubert@outlook.fr">
-                <div class="home__link">
-                  <img
-                    src="./src/images/icons/icons8-enveloppe-cerclée-30.png"
-                    alt="Github"
-                    class="animate__animated"
-                  />
-                  <p>antoine.grubert@outlook.fr</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="home__img">
-            <div class="bg-img">
-              <div class="front-img"></div>
+
+            <!-- Right Image (Desktop only) -->
+            <div class="hidden lg:flex lg:col-span-2 justify-center items-center animate-fade-in-right" style="animation-delay: 0.5s; opacity: 0;">
+              <div class="profile-image-container overflow-hidden w-80 h-96 shadow-2xl">
+                <img id="profile-image" src="" alt="Antoine Grubert" class="w-full h-full object-cover" />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!------ Projects section ------->
-      <section class="projects" id="projects">
-        <div class="projects__wrapper">
-          <div class="section__title">
-            PROJECTS
-            <h2>PROJECTS</h2>
+      <!-- Projects Section -->
+      <section id="projects" class="bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 max-w-7xl">
+          <!-- Section Title -->
+          <div class="section-title text-center mb-12">
+            <span>PROJETS</span>
+            <h2>PROJETS</h2>
           </div>
-          <div class="projects__grid">
-            <div class="project__cell project__cell-1">
-              <div class="project-card">
-                <div class="card__links">
-                  <a
-                    href="https://github.com/AntoineGrb/cinemate-react"
-                    target="_blank"
-                  >
-                    <img
-                      src="./src/images/icons/icons8-github-30.png"
-                      alt="Github"
-                      width="25"
-                    />
-                  </a>
-                  <a href="https://cinemate-react.vercel.app/" target="_blank">
-                    <img
-                      src="./src/images/icons/icons8-lien-50.png"
-                      alt="Website"
-                      width="25"
-                    />
-                  </a>
-                </div>
-                <div class="card__infos">
-                  <p class="project-card__title">Cinemate</p>
-                  <p class="project-card__desc">
-                    December 2023 (Personal project) - Site allowing you to
-                    search for a movie to watch based on your selection
-                    criteria.
-                  </p>
-                  <div class="project-card__technos">
-                    <div class="project-card__techno">
-                      <div class="techno-dot techno-dot--react"></div>
-                      <p>React</p>
-                    </div>
-                    <div class="project-card__techno">
-                      <div
-                        class="techno-dot techno-dot--styled-components"
-                      ></div>
-                      <p>Styled components</p>
-                    </div>
-                    <div class="project-card__techno">
-                      <div class="techno-dot techno-dot--ts"></div>
-                      <p>TypeScript</p>
-                    </div>
-                  </div>
-                </div>
+
+          <!-- Toggle Switch -->
+          <div class="flex justify-center mb-12">
+            <div id="project-toggle" class="toggle-switch">
+              <div class="toggle-slider"></div>
+              <div class="toggle-option left active" data-type="professional">
+                Professionnel
+              </div>
+              <div class="toggle-option right" data-type="personal">
+                Personnel
               </div>
             </div>
-            <div class="project__cell project__cell-2">
-              <div class="project-card">
-                <div class="card__links">
-                  <a href="" target="_blank">
-                    <img
-                      src="./src/images/icons/icons8-lien-50.png"
-                      alt="Website"
-                      width="25"
-                    />
-                  </a>
-                </div>
-                <div class="card__infos">
-                  <p class="project-card__title">Ripasso</p>
-                  <p class="project-card__desc">
-                    Coming soon
-                    <!-- April 2025 (Professional project) - Revamp and modernization of the Régime Interprofessionnel de Prévoyance association's website. -->
-                  </p>
-                  <div class="project-card__technos">
-                    <div class="project-card__techno">
-                      <div class="techno-dot techno-dot--angular"></div>
-                      <p>Angular</p>
-                    </div>
-                    <div class="project-card__techno">
-                      <div class="techno-dot techno-dot--java"></div>
-                      <p>Java</p>
-                    </div>
-                    <div class="project-card__techno">
-                      <div class="techno-dot techno-dot--tailwind"></div>
-                      <p>Tailwind CSS</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="project__cell project__cell-3">
-              <div class="project-card">
-                <div class="card__links">
-                  <a
-                    href="https://github.com/AntoineGrb/tierlist-next"
-                    target="_blank"
-                  >
-                    <img
-                      src="./src/images/icons/icons8-github-30.png"
-                      alt="Github"
-                      width="25"
-                    />
-                  </a>
-                  <a href="https://tierlist-next.vercel.app/" target="_blank">
-                    <img
-                      src="./src/images/icons/icons8-lien-50.png"
-                      alt="Website"
-                      width="25"
-                    />
-                  </a>
-                </div>
-                <div class="card__infos">
-                  <p class="project-card__title">S Tier List</p>
-                  <p class="project-card__desc">
-                    Mars 2024 (Personal project) - Full-stack web application for creating fun and
-                    customiezed tier lists.
-                  </p>
-                  <div class="project-card__technos">
-                    <div class="project-card__techno">
-                      <div class="techno-dot techno-dot--next"></div>
-                      <p>NextJS</p>
-                    </div>
-                    <div class="project-card__techno">
-                      <div class="techno-dot techno-dot--tailwind"></div>
-                      <p>Tailwind CSS</p>
-                    </div>
-                    <div class="project-card__techno">
-                      <div class="techno-dot techno-dot--prisma"></div>
-                      <p>Prisma</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="project__cell project__cell-4">
-              <div class="project-card">
-                <div class="card__infos">
-                  <p class="project-card__title">MS2000</p>
-                  <p class="project-card__desc">
-                    February 2025 (professional project) - Design and development of a back-office tool for consulting archived insurance contracts.
-                  </p>
-                  <div class="project-card__technos">
-                    <div class="project-card__techno">
-                      <div class="techno-dot techno-dot--angular"></div>
-                      <p>Angular</p>
-                    </div>
-                    <div class="project-card__techno">
-                      <div class="techno-dot techno-dot--java"></div>
-                      <p>Java</p>
-                    </div>
-                    <div class="project-card__techno">
-                      <div class="techno-dot techno-dot--tailwind"></div>
-                      <p>Tailwind CSS</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="project__cell project__cell-5">
-              <div class="project-card">
-                <div class="card__links">
-                  <a
-                    href="https://github.com/AntoineGrb/randomaize"
-                    target="_blank"
-                  >
-                    <img
-                      src="./src/images/icons/icons8-github-30.png"
-                      alt="Github"
-                      width="25"
-                    />
-                  </a>
-                </div>
-                <div class="card__infos">
-                  <p class="project-card__title">Randomaize</p>
-                  <p class="project-card__desc">
-                    January 2025 (Personal project) - Small application leveraging AI to influence the shuffle playback of Spotify playlists.
-                  </p>
-                  <div class="project-card__technos">
-                    <div class="project-card__techno">
-                      <div class="techno-dot techno-dot--next"></div>
-                      <p>NextJS</p>
-                    </div>
-                    <div class="project-card__techno">
-                      <div class="techno-dot techno-dot--ts"></div>
-                      <p>TypeScript</p>
-                    </div>
-                    <div class="project-card__techno">
-                      <div class="techno-dot techno-dot--tailwind"></div>
-                      <p>Tailwind CSS</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="project__cell project__cell-6">
-              <div class="project-card">
-                <div class="card__links">
-                  <a
-                    href="https://github.com/AntoineGrb/maxrep-front"
-                    target="_blank"
-                  >
-                    <img
-                      src="./src/images/icons/icons8-github-30.png"
-                      alt="Github"
-                      width="25"
-                    />
-                  </a>
-                  <a href="https://maxrep.vercel.app/" target="_blank">
-                    <img
-                      src="./src/images/icons/icons8-lien-50.png"
-                      alt="Website"
-                      width="25"
-                    />
-                  </a>
-                </div>
-                <div class="card__infos">
-                  <p class="project-card__title">MaxRep</p>
-                  <p class="project-card__desc">
-                    January 2024 (School project) - Full-stack web application for planning
-                    exercise sessions and tracking sports performance.
-                  </p>
-                  <div class="project-card__technos">
-                    <div class="project-card__techno">
-                      <div class="techno-dot techno-dot--react"></div>
-                      <p>React</p>
-                    </div>
-                    <div class="project-card__techno">
-                      <div class="techno-dot techno-dot--node"></div>
-                      <p>Node.js</p>
-                    </div>
-                    <div class="project-card__techno">
-                      <div class="techno-dot techno-dot--postgres"></div>
-                      <p>PostgreSQL</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="project__cell project__cell-7">
-              <div class="project-card">
-                <div class="card__links">
-                  <a
-                    href="https://github.com/AntoineGrb/tournois-generateur"
-                    target="_blank"
-                  >
-                    <img
-                      src="./src/images/icons/icons8-github-30.png"
-                      alt="Github"
-                      width="25"
-                    />
-                  </a>
-                  <a
-                    href="https://tournois-generateur.vercel.app/"
-                    target="_blank"
-                  >
-                    <img
-                      src="./src/images/icons/icons8-lien-50.png"
-                      alt="Website"
-                      width="25"
-                    />
-                  </a>
-                </div>
-                <div class="card__infos">
-                  <p class="project-card__title">Tournaments</p>
-                  <p class="project-card__desc">
-                    February 2023 (Personal project) - Small application allowing for quickly
-                    creating a tournament among friends
-                  </p>
-                  <div class="project-card__technos">
-                    <div class="project-card__techno">
-                      <div class="techno-dot techno-dot--html"></div>
-                      <p>HTML</p>
-                    </div>
-                    <div class="project-card__techno">
-                      <div class="techno-dot techno-dot--scss"></div>
-                      <p>Sass</p>
-                    </div>
-                    <div class="project-card__techno">
-                      <div class="techno-dot techno-dot--js"></div>
-                      <p>JavaScript</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="project__cell project__cell-8">
-              <div class="project-card">
-                <div class="card__links">
-                  <a
-                    href="https://github.com/AntoineGrb/spotify-dashboard"
-                    target="_blank"
-                  >
-                    <img
-                      src="./src/images/icons/icons8-github-30.png"
-                      alt="Github"
-                      width="25"
-                    />
-                  </a>
-                </div>
-                <div class="card__infos">
-                  <p class="project-card__title">Spotify Dashboard</p>
-                  <p class="project-card__desc">
-                    April 2024 (Personal Project) - Dashboard for real-time insights and trends
-                    analysis on your Spotify account.
-                  </p>
-                  <div class="project-card__technos">
-                    <div class="project-card__techno">
-                      <div class="techno-dot techno-dot--next"></div>
-                      <p>NextJS</p>
-                    </div>
-                    <div class="project-card__techno">
-                      <div class="techno-dot techno-dot--ts"></div>
-                      <p>TypeScript</p>
-                    </div>
-                    <div class="project-card__techno">
-                      <div class="techno-dot techno-dot--tailwind"></div>
-                      <p>Tailwind CSS</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            </div>
+          </div>
+
+          <!-- Projects Grid -->
+          <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Projects will be dynamically inserted -->
           </div>
         </div>
       </section>
 
-      <!------ Skills section ------->
-      <section class="skills" id="skills">
-        <div class="skills__wrapper">
-          <div class="section__title">
-            <span>SKILLS</span>
-            <h2>SKILLS</h2>
+      <!-- Skills Section -->
+      <section id="skills" class="bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 max-w-7xl">
+          <!-- Section Title -->
+          <div class="section-title text-center mb-12">
+            <span>COMPÉTENCES</span>
+            <h2>COMPÉTENCES</h2>
           </div>
-          <div class="skills__content">
-            <div class="skills__grid">
-              <article class="skill">
-                <div class="skill__icons">
-                  <img
-                    src="./src/images/icons/icons8-javascript-144.png"
-                    alt="javascript-icon"
-                  />
-                  <img
-                    src="./src/images/icons/icons8-typescript-144.png"
-                    alt="typescript-icon"
-                  />
-                </div>
-                <p class="skill__name">JavaScript, TypeScript</p>
-                <p class="skill__mastered">
-                  Regularly Used <i class="fa-solid fa-circle-check"></i>
-                </p>
-              </article>
-              <article class="skill">
-                <div class="skill__icons">
-                  <img
-                    src="./src/images/icons/icons8-next-144.png"
-                    alt="next-icon"
-                  />
-                  <img
-                    src="./src/images/icons/icons8-angularjs-144.png"
-                    alt="angular-icon"
-                  />
-                </div>
-                <p class="skill__name">NextJS, AngularJS</p>
-                <p class="skill__mastered">
-                  Regularly Used <i class="fa-solid fa-circle-check"></i>
-                </p>
-              </article>
-              <article class="skill">
-                <div class="skill__icons">
-                  <img
-                    src="./src/images/icons/icons8-nodejs-144.png"
-                    alt="node-icon"
-                  />
-                  <img
-                    src="./src/images/icons/icons8-logo-java-coffee-cup-144.png"
-                    alt="java-icon"
-                  />
-                </div>
-                <p class="skill__name">Node.js, Java</p>
-                <p class="skill__mastered">
-                  Regularly Used <i class="fa-solid fa-circle-check"></i>
-                </p>
-              </article>
-              <article class="skill">
-                <div class="skill__icons">
-                  <img
-                    src="./src/images/icons/icons8-sass-144.png"
-                    alt="html-icon"
-                  />
-                  <img
-                    src="./src/images/icons/icons8-tailwind-144.png"
-                    alt="css-icon"
-                  />
-                </div>
-                <p class="skill__name">Sass, Tailwind CSS</p>
-                <p class="skill__mastered">
-                  Regularly Used <i class="fa-solid fa-circle-check"></i>
-                </p>
-              </article>
-              <article class="skill">
-                <div class="skill__icons">
-                  <img
-                    src="./src/images/icons/icons8-postgres-144.png"
-                    alt="postgre-icon"
-                  />
-                  <img
-                    src="./src/images/icons/icons8-mariadb-144.png"
-                    alt="postgre-icon"
-                  />
-                </div>
-                <p class="skill__name">PostgreSQL, MariaDB</p>
-                <p class="skill__mastered">
-                  Regularly Used <i class="fa-solid fa-circle-check"></i>
-                </p>
-              </article>
-              <article class="skill">
-                <div class="skill__icons">
-                  <img
-                    src="./src/images/icons/icons8-mongo-144.png"
-                    alt="mongo-icon"
-                  />
-                  <img
-                    src="./src/images/icons/icons8-prisma-144.png"
-                    alt="prisma-icon"
-                  />
-                </div>
-                <p class="skill__name">MongoDB, Prisma</p>
-                <p class="skill__mastered">
-                  Occasionally used <i class="fa-regular fa-circle-check"></i>
-                </p>
-              </article>
-              <article class="skill">
-                <div class="skill__icons">
-                  <img
-                    src="./src/images/icons/icons8-python-144.png"
-                    alt="python-icon"
-                  />
-                </div>
-                <p class="skill__name">Python</p>
-                <p class="skill__mastered">
-                  Occasionally used <i class="fa-regular fa-eye"></i>
-                </p>
-              </article>
-            </div>
-          </div>
-          <div class="formation">
-            <div class="formation__wrapper">
-              <img src="./src/images/illustr/oclock.png" alt="" />
-              <div class="formation__content">
-                <p class="paragraph-1">
-                  Trained at <span>O'Clock School</span>
-                </p>
-                <p class="paragraph-2">August 2023 - February 2024</p>
-                <p class="paragraph-3">
-                  RNCP Title in WEB AND MOBILE WEB DEVELOPMENT
-                </p>
+
+          <!-- Toggle Switch -->
+          <div class="flex justify-center mb-12">
+            <div id="skills-toggle" class="toggle-switch">
+              <div class="toggle-slider"></div>
+              <div class="toggle-option left active" data-type="preferred">
+                Stack préférée
+              </div>
+              <div class="toggle-option right" data-type="all">
+                Toutes
               </div>
             </div>
-            <div class="formation__img"></div>
+          </div>
+
+          <!-- Skills Grid -->
+          <div id="skills-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+            <!-- Skills will be dynamically inserted -->
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 max-w-7xl">
+          <!-- Section Title -->
+          <div class="section-title text-center mb-16">
+            <span>À PROPOS</span>
+            <h2>À PROPOS</h2>
+          </div>
+
+          <!-- About Text -->
+          <div class="max-w-5xl mx-auto mb-16">
+            <p id="about-bio" class="text-lg text-gray-700 leading-relaxed text-center mb-12">
+              <!-- Bio will be dynamically inserted -->
+            </p>
+
+            <!-- Skills from Experience -->
+            <div id="experience-skills" class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+              <!-- Experience skills will be dynamically inserted -->
+            </div>
+          </div>
+
+          <!-- Timeline -->
+          <div class="timeline-container">
+            <div class="timeline-line"></div>
+            <div id="timeline" class="relative grid grid-cols-4 gap-x-4 py-8">
+              <!-- Timeline items will be dynamically inserted -->
+            </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <img
-        class="footer__picture"
-        src="./src/images/myAvatar.png"
-        alt="profile-picture"
-      />
-      <div class="footer__content">
-        <p>Antoine Grubert</p>
-        <p>A new and passionate Web developer!</p>
-        <div class="footer__content__icons">
-          <a href="https://github.com/AntoineGrb" target="_blank">
-            <img src="./src/images/icons/signe-github (1).png" alt="Github" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/antoine-grubert-588069118/"
-            target="_blank"
-          >
-            <img src="./src/images/icons/linkedin (1).png" alt="Linkedin" />
-          </a>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+        <div class="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+          <div class="flex items-center space-x-4">
+            <img id="footer-avatar" src="" alt="Antoine Grubert" class="w-16 h-16 rounded-full border-2 border-primary shadow-lg" />
+            <div>
+              <p id="footer-name" class="text-lg font-bold"></p>
+              <p id="footer-description" class="text-sm text-gray-400"></p>
+            </div>
+          </div>
+          <div id="footer-links" class="flex space-x-6">
+            <!-- Footer links will be dynamically inserted -->
+          </div>
+          <p class="text-gray-500 text-sm">
+            © <span id="current-year"></span> Antoine Grubert
+          </p>
         </div>
       </div>
     </footer>
+
+    <script src="./src/js/script.js" type="module"></script>
   </body>
 </html>
