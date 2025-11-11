@@ -30,8 +30,9 @@ function initializePortfolio() {
 function initializeHeader() {
   const typingTitles = [
     "Portfolio",
-    "Antoine Grb",
-    "Développeur Web"
+    "Antoine Grubert",
+    "Développeur Web",
+    "AntoineGrb"
   ];
   let currentIndex = 0;
   const headerText = document.getElementById('header-text');
