@@ -106,7 +106,7 @@ function initializeHome() {
 // Projects section
 function initializeProjects() {
   const { projects, profile } = portfolioData;
-  let currentType = 'professional';
+  let currentType = 'entreprise';
 
   const toggle = document.getElementById('project-toggle');
   const grid = document.getElementById('projects-grid');
@@ -195,7 +195,7 @@ function initializeProjects() {
   }
 
   // Initial render
-  renderProjects(projects.professional);
+  renderProjects(projects.entreprise);
 }
 
 // Skills section

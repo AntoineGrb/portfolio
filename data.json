@@ -66,11 +66,39 @@
     }
   ],
   "projects": {
-    "personal": [
+    "solo": [
+              {
+        "id": "hold-on",
+        "name": "HoldOn",
+        "description": "Application Android permettant d'insérer une micro-pause méditative avant l'ouverture d'une app.",
+        "date": "Janvier 2026",
+        "image": "./src/images/projets/hold-on.png",
+        "technologies": [
+          { "name": "React Native", "color": "#61DAFB" },
+          { "name": "Java", "color": "#007396" },
+          { "name": "Expo", "color": "#000020" }
+        ],
+        "github": "https://github.com/AntoineGrb/holdon-app",
+        "website": null
+      },
+              {
+        "id": "clear-terms",
+        "name": "Clear Terms",
+        "description": "Extension Google Chrome utilisant l'IA pour scorer et résumer les conditions d'utilisation des sites web.",
+        "date": "Octobre 2025",
+        "image": "./src/images/projets/clear-terms2.png",
+        "technologies": [
+          { "name": "HTML", "color": "#E34F26" },
+          { "name": "JavaScript", "color": "#F7DF1E" },
+          { "name": "Tailwind CSS", "color": "#06B6D4" }
+        ],
+        "github": "https://github.com/AntoineGrb/clear-terms",
+        "website": "https://clear-terms-landing.vercel.app/"
+      },
       {
         "id": "randomaize",
         "name": "Randomaize",
-        "description": "Petite application exploitant l'IA pour influencer la lecture aléatoire des playlists Spotify.",
+        "description": "Petite application utilisant l'IA pour influencer la lecture aléatoire des playlists Spotify.",
         "date": "Janvier 2025",
         "image": "./src/images/projets/randomaize.png",
         "technologies": [
@@ -94,61 +122,17 @@
         ],
         "github": "https://github.com/AntoineGrb/maxrep-front",
         "website": "https://maxrep.vercel.app/"
-      },
-      {
-        "id": "cinemate",
-        "name": "Cinemate",
-        "description": "Site permettant de rechercher un film à regarder en fonction de ses critères de sélection.",
-        "date": "Décembre 2023",
-        "image": "./src/images/projets/cinemate.png",
-        "technologies": [
-          { "name": "React", "color": "#61DAFB" },
-          { "name": "Styled components", "color": "#DB7093" },
-          { "name": "TypeScript", "color": "#3178C6" }
-        ],
-        "github": "https://github.com/AntoineGrb/cinemate-react",
-        "website": "https://cinemate-react.vercel.app/"
-      },
-      {
-        "id": "tournaments",
-        "name": "Tournaments",
-        "description": "Petite application permettant de créer rapidement un tournoi entre amis.",
-        "date": "Février 2023",
-        "image": "./src/images/projets/tournament.png",
-        "technologies": [
-          { "name": "HTML", "color": "#E34F26" },
-          { "name": "Sass", "color": "#CC6699" },
-          { "name": "JavaScript", "color": "#F7DF1E" }
-        ],
-        "github": "https://github.com/AntoineGrb/tournois-generateur",
-        "website": "https://tournois-generateur.vercel.app/"
       }
     ],
-    "professional": [
-            {
-        "id": "clear-terms",
-        "name": "Clear Terms",
-        "description": "Extension Google Chrome utilisant l'IA pour scorer et résumer les conditions d'utilisation des sites web.",
-        "date": "Octobre 2025",
-        "image": "./src/images/projets/clear-terms.png",
-        "technologies": [
-          { "name": "HTML", "color": "#E34F26" },
-          { "name": "JavaScript", "color": "#F7DF1E" },
-          { "name": "Tailwind CSS", "color": "#06B6D4" }
-        ],
-        "github": "https://github.com/AntoineGrb/clear-terms",
-        "website": "https://clear-terms-landing.vercel.app/"
-      },
+    "entreprise": [
       {
-        "id": "ms2000",
-        "name": "MS2000",
-        "description": "Conception et développement d'un outil back-office pour consulter les contrats d'assurance archivés.",
-        "date": "Février 2025",
-        "image": "./src/images/projets/ms2000.png",
+        "id": "robots",
+        "name": "Robots RPA",
+        "description": "Développement de robots RPA pour automatiser des tâches répétitives et améliorer l'efficacité des processus internes.",
+        "date": "Septembre 2025",
+        "image": "./src/images/projets/rpa.avif",
         "technologies": [
-          { "name": "Angular", "color": "#DD0031" },
-          { "name": "Java", "color": "#007396" },
-          { "name": "Tailwind CSS", "color": "#06B6D4" }
+          { "name": "Python", "color": "#306998" }
         ],
         "github": null,
         "website": null
@@ -168,13 +152,15 @@
         "website": "https://www.rip.asso.fr/"
       },
       {
-        "id": "robots",
-        "name": "Robots RPA",
-        "description": "Développement de robots RPA pour automatiser des tâches répétitives et améliorer l'efficacité des processus internes.",
-        "date": "Septembre 2025",
-        "image": "./src/images/projets/robots.png",
+        "id": "ms2000",
+        "name": "MS2000",
+        "description": "Conception et développement d'un outil back-office pour consulter des contrats d'assurance.",
+        "date": "Décembre 2024",
+        "image": "./src/images/projets/ms2000.png",
         "technologies": [
-          { "name": "Python", "color": "#306998" }
+          { "name": "Angular", "color": "#DD0031" },
+          { "name": "Java", "color": "#007396" },
+          { "name": "Tailwind CSS", "color": "#06B6D4" }
         ],
         "github": null,
         "website": null
